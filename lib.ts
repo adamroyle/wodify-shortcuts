@@ -1,4 +1,4 @@
-import type { Page } from 'puppeteer'
+import type { Page } from 'puppeteer-core'
 
 export async function login(page: Page, email: string, password: string): Promise<boolean> {
   await page.goto('https://app.wodify.com/WodifyClient/Login')
@@ -17,10 +17,10 @@ export async function login(page: Page, email: string, password: string): Promis
   return true
 }
 
-export async function workoutComponentsForDate(page: Page, date: Date): Promise<WorkoutComponent[]> {
-  await page.evaluate((dateString) => {
+export async function workoutComponentsForDate(page: Page, date: string): Promise<WorkoutComponent[]> {
+  await page.evaluate((dateString: string) => {
     localStorage.setItem('$OS_W_Theme_UI$WodifyClient_CS$ClientVars$SelectedDate', dateString)
-  }, date.toISOString().slice(0, 10))
+  }, date)
   await page.goto('https://app.wodify.com/WodifyClient/Exercise')
   const response = await page.waitForResponse(
     'https://app.wodify.com/WodifyClient/screenservices/WodifyClient_Performance/Exercise_Server/Exercise/DataActionGetAllData'
@@ -29,8 +29,8 @@ export async function workoutComponentsForDate(page: Page, date: Date): Promise<
   return data.data.ResponseWorkout.ResponseWorkoutActions.WorkoutComponents.List
 }
 
-export function primaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  const mainComponents = []
+export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+  const mainComponents: WorkoutComponent[] = []
   let includeSection = false
   for (let i = 0; i < workoutComponents.length; i++) {
     const component = workoutComponents[i]
