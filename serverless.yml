@@ -7,23 +7,40 @@ service: wodify-client-api
 # Check out our docs for more details
 frameworkVersion: '3'
 
+constructs:
+  bucket:
+    type: storage
+
 provider:
   name: aws
   runtime: nodejs14.x
-  timeout: 30
   versionFunctions: false
+  environment:
+    BUCKET: ${construct:bucket.bucketName}
 
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
 
 functions:
-  primaryWorkout:
-    handler: handler.primaryWorkout
+  receiveRequest:
+    handler: handler.receiveRequest
     events:
       - httpApi:
           path: /
           method: get
+  processRequest:
+    handler: handler.processRequest
+    timeout: 40
+    events:
+      - s3:
+          bucket: ${construct:bucket.bucketName}
+          existing: true
+          forceDeploy: true
+          event: s3:ObjectCreated:Put
+          rules:
+            - prefix: request/
 
 plugins:
   - serverless-plugin-typescript
+  - serverless-lift

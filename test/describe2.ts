@@ -1,4 +1,4 @@
-import { formatWorkout, primaryWorkout } from '../src'
+import { formatWorkout, getPrimaryWorkout } from '../lib'
 
 const components = [
   {
@@ -185,6 +185,6 @@ const components = [
   },
 ]
 
-const main = primaryWorkout(components)
+const main = getPrimaryWorkout(components)
 
 console.log(formatWorkout(main))
