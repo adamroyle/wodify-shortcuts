@@ -15,7 +15,7 @@ async function main(email: string, password: string, date: string) {
   const components = await workoutComponentsForDate(page, date)
   console.log(formatWorkout(getPrimaryWorkout(components)))
   // console.log(components)
-  // await browser.close()
+  await browser.close()
 
   const diff = Date.now() - start
   console.log(`Took ${diff}ms`)

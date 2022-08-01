@@ -1,7 +1,13 @@
 import type { Page } from 'puppeteer-core'
 
+const BASE = 'https://app.wodify.com/WodifyClient'
+const LOGIN_URL = `${BASE}/Login`
+const LOGIN_DATA_URL = `${BASE}/screenservices/WodifyClient/ActionDo_Login`
+const WORKOUT_URL = `${BASE}/Exercise`
+const WORKOUT_DATA_URL = `${BASE}/screenservices/WodifyClient_Performance/Exercise_Server/Exercise/DataActionGetAllData`
+
 export async function login(page: Page, email: string, password: string): Promise<boolean> {
-  await page.goto('https://app.wodify.com/WodifyClient/Login')
+  await page.goto(LOGIN_URL)
   await page.waitForSelector('#Input_UsernameVal')
 
   await page.type('#Input_UsernameVal', email)
@@ -10,21 +16,26 @@ export async function login(page: Page, email: string, password: string): Promis
   await page.waitForNetworkIdle()
   await page.click('button[type=submit]')
 
-  await page.waitForNetworkIdle()
+  await page.waitForResponse(LOGIN_DATA_URL)
 
-  // TODO: determine if login worked and throw error if not
+  // TODO: determine if login worked and throw error if not?
 
   return true
 }
 
 export async function workoutComponentsForDate(page: Page, date: string): Promise<WorkoutComponent[]> {
-  await page.evaluate((dateString: string) => {
-    localStorage.setItem('$OS_W_Theme_UI$WodifyClient_CS$ClientVars$SelectedDate', dateString)
-  }, date)
-  await page.goto('https://app.wodify.com/WodifyClient/Exercise')
-  const response = await page.waitForResponse(
-    'https://app.wodify.com/WodifyClient/screenservices/WodifyClient_Performance/Exercise_Server/Exercise/DataActionGetAllData'
-  )
+  await page.setRequestInterception(true)
+  page.on('request', (request) => {
+    if (request.url() === WORKOUT_DATA_URL) {
+      const body = JSON.parse(request.postData() || '{}')
+      body.screenData.variables.ClientVariables.SelectedDate = date
+      request.continue({ postData: JSON.stringify(body) })
+    } else {
+      request.continue()
+    }
+  })
+  await page.goto(WORKOUT_URL)
+  const response = await page.waitForResponse(WORKOUT_DATA_URL)
   const data = (await response.json()) as GetAllDataResponse
   return data.data.ResponseWorkout.ResponseWorkoutActions.WorkoutComponents.List
 }
