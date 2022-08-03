@@ -1,4 +1,4 @@
-import { formatWorkout, getPrimaryWorkout } from '../lib'
+import { formatWorkout, getPrimaryWorkout } from '../wodify'
 
 const components = [
   {

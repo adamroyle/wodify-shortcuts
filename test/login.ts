@@ -1,24 +1,24 @@
-import puppeteer from 'puppeteer'
-import type { Page } from 'puppeteer-core'
-import { formatWorkout, getPrimaryWorkout, login, workoutComponentsForDate } from '../lib'
+import { login } from '../wodify'
 
-async function main(email: string, password: string, date: string) {
+async function main(username: string, password: string, date: string, classId: string) {
   const start = Date.now()
 
-  if (!email) throw new Error('Email and password not supplied as arguments.')
-  if (!password) throw new Error('Password not supplied as arguments.')
+  try {
+    const session = await login(username, password)
+    console.log(session)
 
-  const browser = await puppeteer.launch({ headless: false, devtools: true })
-  const page = (await browser.newPage()) as unknown as Page
+    // const programs = await listPrograms(session)
+    // const classes = await listClasses(session, '2022-08-04')
+    // const workout = await listWorkoutComponents(session, '2022-08-04')
+    // const thing = await signinClass(session, classId:string)
+    // console.log(thing)
+    // const classAccess = await getClassAccess(session, classId:string)
+    // console.log(classAccess)
+  } catch (e: any) {
+    console.log('Error:', e.message)
+  }
 
-  await login(page, email, password)
-  const components = await workoutComponentsForDate(page, date)
-  console.log(formatWorkout(getPrimaryWorkout(components)))
-  // console.log(components)
-  await browser.close()
-
-  const diff = Date.now() - start
-  console.log(`Took ${diff}ms`)
+  console.log('Took', Date.now() - start, 'ms')
 }
 
-main(process.argv[2], process.argv[3], process.argv[4])
+main(process.argv[2], process.argv[3], process.argv[4], process.argv[5])

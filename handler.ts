@@ -1,18 +1,22 @@
-import type { Handler, APIGatewayEvent, ProxyResult, S3CreateEvent } from 'aws-lambda'
-import type { GetObjectOutput } from 'aws-sdk/clients/s3'
-import type { Browser } from 'puppeteer-core'
-import aws from 'aws-sdk'
-import chromium from 'chrome-aws-lambda'
+import type { Handler, APIGatewayEvent, ProxyResult } from 'aws-lambda'
 
-import { formatWorkout, login, workoutComponentsForDate, getPrimaryWorkout } from './lib'
+import {
+  formatWorkout,
+  getPrimaryWorkout,
+  isCrossFitProgram,
+  listClasses,
+  listPrograms,
+  listWorkoutComponents,
+  login,
+  ReservationStatusId,
+  signinClass,
+} from './wodify'
 
-const BUCKET = process.env.BUCKET || ''
-
-export const receiveRequest: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
-  const date = event.queryStringParameters?.date
-  const email = event.queryStringParameters?.email
-  const password = event.queryStringParameters?.password
-  // const tz = event.queryStringParameters?.tz || 'Australia/Brisbane'
+export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
+  const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
+  const date = formData.get('date')
+  const email = formData.get('email')
+  const password = formData.get('password')
 
   if (!date || !email || !password) {
     return {
@@ -21,111 +25,70 @@ export const receiveRequest: Handler<APIGatewayEvent, ProxyResult> = async (even
     }
   }
 
-  const s3 = new aws.S3()
-
   try {
-    const existingResponse = await s3.getObject({ Bucket: BUCKET, Key: buildResponseKey(email, date) }).promise()
+    const session = await login(email, password)
+    const workout = await listWorkoutComponents(session, date)
 
     return {
       statusCode: 200,
-      headers: { 'content-type': 'application/json' },
-      body: existingResponse.Body?.toString() || '',
+      body: formatWorkout(getPrimaryWorkout(workout)),
     }
-  } catch (e) {
-    // do nothing
-  }
-
-  let request: string | undefined
-
-  try {
-    const existingRequest = await s3.getObject({ Bucket: BUCKET, Key: buildRequestKey(email, date) }).promise()
-    request = existingRequest.Body?.toString()
-  } catch (e) {
-    // do nothing
-  }
-
-  if (!request) {
-    request = JSON.stringify({ email, password, date })
-    try {
-      await s3.putObject({ Bucket: BUCKET, Key: buildRequestKey(email, date), Body: request }).promise()
-    } catch (e) {
-      return {
-        statusCode: 500,
-        body: 'Failed to save request.',
-      }
+  } catch (error: any) {
+    return {
+      statusCode: 500,
+      body: error.message,
     }
-  }
-
-  return {
-    statusCode: 202,
-    body: 'Your request has been queued.',
   }
 }
 
-export const processRequest: Handler<S3CreateEvent> = async (event) => {
-  const s3 = new aws.S3()
-  const record = event.Records[0]
-  const objectKey = decodeURIComponent(record.s3.object.key)
-
-  let request: GetObjectOutput
-
-  try {
-    request = await s3.getObject({ Bucket: BUCKET, Key: objectKey }).promise()
-  } catch (e) {
-    console.log(`Failed to get request for ${objectKey}`)
-    return
-  }
-
-  const parsedRequest = JSON.parse(request.Body?.toString() || '{}')
-
-  const email = parsedRequest.email
-  const password = parsedRequest.password
-  const date = parsedRequest.date
+export const signinCrossfit: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
+  const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
+  const date = formData.get('date')
+  const email = formData.get('email')
+  const password = formData.get('password')
 
   if (!date || !email || !password) {
-    throw new Error('Request missing date, email or password.')
+    return {
+      statusCode: 400,
+      body: 'Date, email and password are required.',
+    }
   }
-
-  let browser: Browser | null = null
 
   try {
-    browser = await chromium.puppeteer.launch({
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      executablePath: await chromium.executablePath,
-      headless: chromium.headless,
-      ignoreHTTPSErrors: true,
-      // env: { TZ: tz },
-    })
+    const session = await login(email, password)
+    const [classes, programs] = await Promise.all([listClasses(session, date), listPrograms(session)])
 
-    const page = await browser.newPage()
+    const crossfitProgramIds = programs.filter(isCrossFitProgram).map((p) => p.ProgramId)
+    const crossfitClasses = classes.filter((c) => crossfitProgramIds.includes(c.ProgramId))
+    const alreadySignedIn = crossfitClasses.find((c) => c.ClassReservationStatusId === '3')
+    const alreadyReserved = crossfitClasses.find((c) => c.ClassReservationStatusId === '2')
+    const nextAvailable = crossfitClasses.find((c) => c.ClassReservationStatusId === '0' && c.IsAvailable)
+    const signInto = alreadyReserved || nextAvailable
 
-    await login(page, email, password)
-    const components = await workoutComponentsForDate(page, date)
-    // const result = formatWorkout(getPrimaryWorkout(components))
-    const response = JSON.stringify({
-      date,
-      primaryWorkout: formatWorkout(getPrimaryWorkout(components)),
-      completeWorkouts: formatWorkout(components),
-      components,
-    })
+    const message = await (async () => {
+      if (alreadySignedIn) {
+        return `You are already signed in to ${alreadySignedIn.Name}`
+      } else if (signInto) {
+        const status = await signinClass(session, signInto.Id)
+        if (status.NewStatusId === ReservationStatusId.SignedIn) {
+          return `You are now signed in to ${signInto.Name}`
+        }
+        return `Sorry, I was unable to sign you in to ${signInto.Name}`
+      } else if (crossfitClasses.length > 0) {
+        return 'Sorry, there are no more classes for today.'
+      } else {
+        return 'Sorry, there are no classes on today.'
+      }
+    })()
 
-    await s3.putObject({ Bucket: BUCKET, Key: buildResponseKey(email, date), Body: response }).promise()
+    return {
+      statusCode: 200,
+      body: message,
+    }
   } catch (error: any) {
-    // ignore
+    return {
+      statusCode: 500,
+      body: error.message,
+    }
   }
-
-  if (browser !== null) {
-    await browser.close()
-  }
-
-  await s3.deleteObject({ Bucket: BUCKET, Key: objectKey }).promise()
-}
-
-function buildRequestKey(email: string, date: string) {
-  return `request/${date}_${email}.json`
-}
-
-function buildResponseKey(email: string, date: string) {
-  return `response/${date}_${email}.json`
 }
