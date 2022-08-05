@@ -242,7 +242,7 @@ export async function login(username: string, password: string): Promise<Session
       'x-csrftoken': '', // empty on login, but must be set
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'M3wGAwA7WfBRFamu9pLX8Q' },
+      versionInfo: { apiVersion: 'PY3D9kBUtXg23g8+7H6tiQ' },
       viewName: 'Home.Login',
       inputParameters: {
         Request: {
@@ -326,7 +326,7 @@ export async function listWorkoutComponents(session: Session, date: string): Pro
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'F+XFjGdb5MSbQXV2XRjVfA' },
+      versionInfo: { apiVersion: 'KtVVM7Hj6Jt0H8Vht9O7TQ' },
       viewName: 'MainScreens.Exercise',
       screenData: {
         variables: {
