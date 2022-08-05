@@ -304,7 +304,11 @@ export async function listClasses(session: Session, date: string): Promise<Class
       screenData: {
         variables: {
           ClassDate: date,
-          ClientVariables: { ActiveLocationId: session.User.ActiveLocationId, TenantId: session.User.TenantId },
+          ClientVariables: {
+            ActiveLocationId: session.User.ActiveLocationId,
+            TenantId: session.User.TenantId,
+            UserId: session.User.UserId,
+          },
         },
       },
     }),
