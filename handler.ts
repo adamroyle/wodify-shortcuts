@@ -1,4 +1,6 @@
 import type { Handler, APIGatewayEvent, ProxyResult } from 'aws-lambda'
+import { z } from 'zod'
+import { zfd } from 'zod-form-data'
 
 import {
   formatWorkout,
@@ -13,21 +15,18 @@ import {
 } from './wodify'
 
 export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
-  const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
-  const date = formData.get('date')
-  const email = formData.get('email')
-  const password = formData.get('password')
+  const formBody = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
 
-  if (!date || !email || !password) {
-    return {
-      statusCode: 400,
-      body: 'Date, email and password are required.',
-    }
-  }
+  const schema = zfd.formData({
+    email: z.string().trim().email(),
+    password: z.string().min(1),
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  })
 
   try {
-    const session = await login(email, password)
-    const workout = await listWorkoutComponents(session, date)
+    const params = schema.parse(formBody)
+    const session = await login(params.email, params.password)
+    const workout = await listWorkoutComponents(session, params.date)
 
     return {
       statusCode: 200,

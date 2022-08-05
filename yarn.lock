@@ -3260,3 +3260,13 @@ zip-stream@^4.1.0:
     archiver-utils "^2.1.0"
     compress-commons "^4.1.0"
     readable-stream "^3.6.0"
+
+zod-form-data@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/zod-form-data/-/zod-form-data-1.2.1.tgz#6da07d7964765b464e959a75f0d797690ee477f7"
+  integrity sha512-L4zocmlzikYB9A2uVVj3OUKX/t3spOZTzQLOhoCXECn9w+eN3bw0D/KYGX4J72iLdCIwDP6YJyYwVXkx3WTu7A==
+
+zod@^3.17.10:
+  version "3.17.10"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.17.10.tgz#8716a05e6869df6faaa878a44ffe3c79e615defb"
+  integrity sha512-IHXnQYQuOOOL/XgHhgl8YjNxBHi3xX0mVcHmqsvJgcxKkEczPshoWdxqyFwsARpf41E0v9U95WUROqsHHxt0UQ==
