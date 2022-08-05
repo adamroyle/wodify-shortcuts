@@ -60,9 +60,9 @@ export const signinCrossfit: Handler<APIGatewayEvent, ProxyResult> = async (even
 
     const crossfitProgramIds = programs.filter(isCrossFitProgram).map((p) => p.ProgramId)
     const crossfitClasses = classes.filter((c) => crossfitProgramIds.includes(c.ProgramId))
-    const alreadySignedIn = crossfitClasses.find((c) => c.ClassReservationStatusId === '3')
-    const alreadyReserved = crossfitClasses.find((c) => c.ClassReservationStatusId === '2')
-    const nextAvailable = crossfitClasses.find((c) => c.ClassReservationStatusId === '0' && c.IsAvailable)
+    const alreadySignedIn = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
+    const alreadyReserved = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
+    const nextAvailable = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.None && c.IsAvailable) // prettier-ignore
     const signInto = alreadyReserved || nextAvailable
 
     const message = await (async () => {
