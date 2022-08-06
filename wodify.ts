@@ -303,10 +303,8 @@ async function createApiCache(): Promise<ApiCache> {
 
 export async function preloadApiCache(): Promise<ApiCache> {
   if (!apiCache) {
-    console.log('No api cache found, creating one!')
     apiCache = await createApiCache()
   }
-  console.log('Using cached api cache')
   return apiCache
 }
 
