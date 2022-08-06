@@ -19,6 +19,7 @@ export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) =
   const password = formData.get('password')
 
   if (!date || !email || !password) {
+    console.error('Date, email and password are required.', { date, email })
     return {
       statusCode: 400,
       body: 'Date, email and password are required.',
@@ -34,6 +35,7 @@ export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) =
       body: formatWorkout(getPrimaryWorkout(workout)) || 'Sorry, but there is no workout for that date.',
     }
   } catch (error: any) {
+    console.error(error.message, { email, date })
     return {
       statusCode: 500,
       body: error.message,
@@ -48,6 +50,7 @@ export const signinCrossfit: Handler<APIGatewayEvent, ProxyResult> = async (even
   const password = formData.get('password')
 
   if (!date || !email || !password) {
+    console.error('Date, email and password are required.', { date, email })
     return {
       statusCode: 400,
       body: 'Date, email and password are required.',
@@ -81,11 +84,14 @@ export const signinCrossfit: Handler<APIGatewayEvent, ProxyResult> = async (even
       }
     })()
 
+    console.log(message, { email, date })
+
     return {
       statusCode: 200,
       body: message,
     }
   } catch (error: any) {
+    console.error(error.message, { email, date })
     return {
       statusCode: 500,
       body: error.message,
