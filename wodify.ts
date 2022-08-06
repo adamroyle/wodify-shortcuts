@@ -303,7 +303,9 @@ async function createApiCache(): Promise<ApiCache> {
 
 export async function preloadApiCache(): Promise<ApiCache> {
   if (!apiCache) {
+    const start = Date.now()
     apiCache = await createApiCache()
+    console.log(`Preloaded api cache in ${Date.now() - start}ms`)
   }
   return apiCache
 }
