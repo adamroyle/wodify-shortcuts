@@ -210,6 +210,10 @@ function toJson<T>(errorResolver?: (json: T) => RequestError) {
   }
 }
 
+function toText(response: Response) {
+  return response.text()
+}
+
 function getProgramsFromLocationsProgramsResponse(data: LocationsProgramsResponse): Program[] {
   return data.data.Locations.List.map((location) => {
     return location.LocalPrograms.List.map((program) => {
@@ -235,14 +239,90 @@ const topLevelErrorResolver = (responseData: { data: { ErrorMessage: string } })
   }
 }
 
+type ApiName =
+  | 'Login'
+  | 'LocationsPrograms'
+  | 'GetClasses'
+  | 'GetAllData'
+  | 'GetClassAccesses'
+  | 'CreateClassReservation'
+  | 'SignInClass'
+  | 'CancelClassReservation'
+
+const apiEndpoints: { [key in ApiName]: string } = {
+  Login: 'screenservices/WodifyClient/ActionDo_Login',
+  LocationsPrograms: 'screenservices/WodifyClient_CS/ActionSyncLocationsPrograms',
+  GetClasses: 'screenservices/WodifyClient_Class/Classes/Classes/DataActionGetClasses',
+  GetAllData: 'screenservices/WodifyClient_Performance/Exercise_Server/Exercise/DataActionGetAllData',
+  GetClassAccesses: 'screenservices/WodifyClient_Class/Classes/Class/DataActionGetClassAccesses',
+  CreateClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICreateClassReservation',
+  SignInClass: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass',
+  CancelClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICancelClassReservation',
+}
+
+type Api = {
+  endpoint: string
+  apiVersion: string
+}
+
+type ApiCache = Record<ApiName, Api>
+
+let apiCache: ApiCache | undefined
+
+async function createApiCache(): Promise<ApiCache> {
+  const codebase = await Promise.all([
+    fetch(`${BASE}/scripts/WodifyClient.controller.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_CS.controller.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_Performance.Exercise_Server.Exercise.mvc.js`).then(toText),
+  ]).then((str) => str.join(''))
+
+  const createApi: (apiName: ApiName) => Api = (apiName: ApiName) => {
+    const matches = codebase.match(new RegExp(`"${apiEndpoints[apiName]}", "(.*?)"`))
+    if (!matches) {
+      throw new Error(`Could not find api ${apiName}`)
+    }
+    return {
+      endpoint: `${BASE}/${apiEndpoints[apiName]}`,
+      apiVersion: matches[1],
+    }
+  }
+
+  return {
+    Login: createApi('Login'),
+    LocationsPrograms: createApi('LocationsPrograms'),
+    GetAllData: createApi('GetAllData'),
+    GetClasses: createApi('GetClasses'),
+    GetClassAccesses: createApi('GetClassAccesses'),
+    CreateClassReservation: createApi('CreateClassReservation'),
+    SignInClass: createApi('SignInClass'),
+    CancelClassReservation: createApi('CancelClassReservation'),
+  }
+}
+
+export async function preloadApiCache(): Promise<ApiCache> {
+  if (!apiCache) {
+    console.log('No api cache found, creating one!')
+    apiCache = await createApiCache()
+  }
+  console.log('Using cached api cache')
+  return apiCache
+}
+
+async function getApi(apiName: ApiName): Promise<Api> {
+  return preloadApiCache().then((cache) => cache[apiName])
+}
+
 export async function login(username: string, password: string): Promise<Session> {
-  const response = await fetch(`${BASE}/screenservices/WodifyClient/ActionDo_Login`, {
+  const { endpoint, apiVersion } = await getApi('Login')
+  const response = await fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': '', // empty on login, but must be set
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'PY3D9kBUtXg23g8+7H6tiQ' },
+      versionInfo: { apiVersion },
       viewName: 'Home.Login',
       inputParameters: {
         Request: {
@@ -271,13 +351,14 @@ export async function login(username: string, password: string): Promise<Session
 }
 
 export async function listPrograms(session: Session): Promise<Program[]> {
-  return fetch(`${BASE}/screenservices/WodifyClient_CS/ActionSyncLocationsPrograms`, {
+  const { endpoint, apiVersion } = await getApi('LocationsPrograms')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'kiwpC+bXbgmpSrf5tp3pKg' },
+      versionInfo: { apiVersion },
       viewName: 'Home.Login',
       inputParameters: {
         CustomerId: session.User.TenantId,
@@ -292,14 +373,15 @@ export async function listPrograms(session: Session): Promise<Program[]> {
 }
 
 export async function listClasses(session: Session, date: string): Promise<Class[]> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Class/Classes/Classes/DataActionGetClasses`, {
+  const { endpoint, apiVersion } = await getApi('GetClasses')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'AujDhvyW55tDCs+3H4v2UA' },
+      versionInfo: { apiVersion },
       viewName: 'MainScreens.Scheduler',
       screenData: {
         variables: {
@@ -319,14 +401,15 @@ export async function listClasses(session: Session, date: string): Promise<Class
 }
 
 export async function listWorkoutComponents(session: Session, date: string): Promise<WorkoutComponent[]> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Performance/Exercise_Server/Exercise/DataActionGetAllData`, {
+  const { endpoint, apiVersion } = await getApi('GetAllData')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'KtVVM7Hj6Jt0H8Vht9O7TQ' },
+      versionInfo: { apiVersion },
       viewName: 'MainScreens.Exercise',
       screenData: {
         variables: {
@@ -347,14 +430,15 @@ export async function listWorkoutComponents(session: Session, date: string): Pro
 }
 
 export async function getClassAccess(session: Session, classId: string): Promise<ClassAccess> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Class/Classes/Class/DataActionGetClassAccesses`, {
+  const { endpoint, apiVersion } = await getApi('GetClassAccesses')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: '23q0VR0cJSiFvyY8+12r8A' },
+      versionInfo: { apiVersion },
       viewName: 'Classes.Class',
       screenData: {
         variables: {
@@ -374,14 +458,15 @@ export async function getClassAccess(session: Session, classId: string): Promise
 }
 
 export async function reserveClass(session: Session, classId: string): Promise<ReservationStatus> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Class/Classes/Class/ServiceAPICreateClassReservation`, {
+  const { endpoint, apiVersion } = await getApi('CreateClassReservation')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: '1AJRlWfa59_3jei3j+OUmA' },
+      versionInfo: { apiVersion },
       viewName: 'Classes.Class',
       inputParameters: {
         Request: {
@@ -398,14 +483,15 @@ export async function reserveClass(session: Session, classId: string): Promise<R
 }
 
 export async function signinClass(session: Session, classId: string): Promise<ReservationStatus> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass`, {
+  const { endpoint, apiVersion } = await getApi('SignInClass')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'mHpCzhO_XDz0lg2qwtzepw' },
+      versionInfo: { apiVersion },
       viewName: 'Classes.Class',
       inputParameters: {
         Request: {
@@ -422,14 +508,15 @@ export async function signinClass(session: Session, classId: string): Promise<Re
 }
 
 export async function cancelReservation(session: Session, classReservationId: string): Promise<ReservationStatus> {
-  return fetch(`${BASE}/screenservices/WodifyClient_Class/Classes/Class/ServiceAPICancelClassReservation`, {
+  const { endpoint, apiVersion } = await getApi('CancelClassReservation')
+  return fetch(endpoint, {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrftoken': session.CsrfToken,
       cookie: session.Cookie,
     },
     body: JSON.stringify({
-      versionInfo: { apiVersion: 'ntafw2WRQ13h3oCW4JyjBw' },
+      versionInfo: { apiVersion },
       viewName: 'Classes.Class',
       inputParameters: {
         Request: {
@@ -502,7 +589,7 @@ function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutCompon
 //       cookie,
 //     },
 //     body: JSON.stringify({
-//       versionInfo: { apiVersion: 'LpuILuYkRL9qWQXRqHguCg' },
+//       versionInfo: { apiVersion },
 //       viewName: 'MainScreens.Home',
 //       screenData: {
 //         variables: {},

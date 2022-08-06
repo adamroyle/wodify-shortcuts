@@ -8,9 +8,12 @@ import {
   listPrograms,
   listWorkoutComponents,
   login,
+  preloadApiCache,
   ReservationStatusId,
   signinClass,
 } from './wodify'
+
+preloadApiCache() // Preload the API cache so we don't have to do it on every request
 
 export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
   const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
