@@ -32,7 +32,7 @@ export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) =
 
     return {
       statusCode: 200,
-      body: formatWorkout(getPrimaryWorkout(workout)) || 'Sorry, but there is no workout for that date.',
+      body: formatWorkout(getPrimaryWorkout(workout)) || 'Oh no! There is no workout posted.',
     }
   } catch (error: any) {
     console.error(error.message, { email, date })
