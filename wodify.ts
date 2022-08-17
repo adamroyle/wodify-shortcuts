@@ -314,27 +314,38 @@ async function getApi(apiName: ApiName): Promise<Api> {
   return preloadApiCache().then((cache) => cache[apiName])
 }
 
-export async function login(username: string, password: string): Promise<Session> {
-  const { endpoint, apiVersion } = await getApi('Login')
+async function callApi(apiName: ApiName, session: Session | null, body: object): Promise<Response> {
+  const { endpoint, apiVersion } = await getApi(apiName)
+  const start = Date.now()
+  console.log(`callApi ${apiName}`)
   const response = await fetch(endpoint, {
+    method: 'POST',
     headers: {
       'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': '', // empty on login, but must be set
+      'x-csrftoken': session?.CsrfToken || '',
+      cookie: session?.Cookie || '',
     },
     body: JSON.stringify({
       versionInfo: { apiVersion },
-      viewName: 'Home.Login',
-      inputParameters: {
-        Request: {
-          UserName: username,
-          Password: password,
-          IsToLogin: true,
-          CustomerId: '0',
-          UserId: '0',
-        },
-      },
+      ...body,
     }),
-    method: 'POST',
+  })
+  console.log(`${apiName} took ${Date.now() - start}ms [${response.status}] ${response.statusText}`)
+  return response
+}
+
+export async function login(username: string, password: string): Promise<Session> {
+  const response = await callApi('Login', null, {
+    viewName: 'Home.Login',
+    inputParameters: {
+      Request: {
+        UserName: username,
+        Password: password,
+        IsToLogin: true,
+        CustomerId: '0',
+        UserId: '0',
+      },
+    },
   })
 
   const loginResponse = await toJson<LoginResponse>(defaultErrorResolver)(response)
@@ -351,183 +362,114 @@ export async function login(username: string, password: string): Promise<Session
 }
 
 export async function listPrograms(session: Session): Promise<Program[]> {
-  const { endpoint, apiVersion } = await getApi('LocationsPrograms')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
+  return callApi('LocationsPrograms', session, {
+    viewName: 'Home.Login',
+    inputParameters: {
+      CustomerId: session.User.TenantId,
+      UserId: session.User.UserId,
+      ActiveLocationId: session.User.ActiveLocationId,
     },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'Home.Login',
-      inputParameters: {
-        CustomerId: session.User.TenantId,
-        UserId: session.User.UserId,
-        ActiveLocationId: session.User.ActiveLocationId,
-      },
-    }),
-    method: 'POST',
   })
     .then(toJson<LocationsProgramsResponse>(topLevelErrorResolver))
     .then(getProgramsFromLocationsProgramsResponse)
 }
 
 export async function listClasses(session: Session, date: string): Promise<Class[]> {
-  const { endpoint, apiVersion } = await getApi('GetClasses')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'MainScreens.Scheduler',
-      screenData: {
-        variables: {
-          ClassDate: date,
-          ClientVariables: {
-            ActiveLocationId: session.User.ActiveLocationId,
-            TenantId: session.User.TenantId,
-            UserId: session.User.UserId,
-          },
+  return callApi('GetClasses', session, {
+    viewName: 'MainScreens.Scheduler',
+    screenData: {
+      variables: {
+        ClassDate: date,
+        ClientVariables: {
+          ActiveLocationId: session.User.ActiveLocationId,
+          TenantId: session.User.TenantId,
+          UserId: session.User.UserId,
         },
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<GetClassesResponse>(defaultErrorResolver))
     .then((json) => json.data.Response.ResponseClassList.Class.List)
 }
 
 export async function listWorkoutComponents(session: Session, date: string): Promise<WorkoutComponent[]> {
-  const { endpoint, apiVersion } = await getApi('GetAllData')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'MainScreens.Exercise',
-      screenData: {
-        variables: {
-          ClientVariables: {
-            SelectedDate: date,
-            ActiveLocationId: session.User.ActiveLocationId,
-            GymProgramId: session.User.GymProgramId,
-            TenantId: session.User.TenantId,
-            UserId: session.User.UserId,
-          },
+  return callApi('GetAllData', session, {
+    viewName: 'MainScreens.Exercise',
+    screenData: {
+      variables: {
+        ClientVariables: {
+          SelectedDate: date,
+          ActiveLocationId: session.User.ActiveLocationId,
+          GymProgramId: session.User.GymProgramId,
+          TenantId: session.User.TenantId,
+          UserId: session.User.UserId,
         },
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<GetAllDataResponse>(topLevelErrorResolver))
     .then((json) => json.data.ResponseWorkout.ResponseWorkoutActions.WorkoutComponents.List)
 }
 
 export async function getClassAccess(session: Session, classId: string): Promise<ClassAccess> {
-  const { endpoint, apiVersion } = await getApi('GetClassAccesses')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'Classes.Class',
-      screenData: {
-        variables: {
-          ClassId: classId,
-          ClientVariables: {
-            ActiveLocationId: session.User.ActiveLocationId,
-            TenantId: session.User.TenantId,
-            UserId: session.User.UserId,
-          },
+  return callApi('GetClassAccesses', session, {
+    viewName: 'Classes.Class',
+    screenData: {
+      variables: {
+        ClassId: classId,
+        ClientVariables: {
+          ActiveLocationId: session.User.ActiveLocationId,
+          TenantId: session.User.TenantId,
+          UserId: session.User.UserId,
         },
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<GetClassAccessesResponse>(defaultErrorResolver))
     .then((json) => json.data.Response.ResponseClassAccess)
 }
 
 export async function reserveClass(session: Session, classId: string): Promise<ReservationStatus> {
-  const { endpoint, apiVersion } = await getApi('CreateClassReservation')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'Classes.Class',
-      inputParameters: {
-        Request: {
-          ClassId: classId,
-          TenantId: session.User.TenantId,
-          UserId: session.User.UserId,
-        },
+  return callApi('CreateClassReservation', session, {
+    viewName: 'Classes.Class',
+    inputParameters: {
+      Request: {
+        ClassId: classId,
+        TenantId: session.User.TenantId,
+        UserId: session.User.UserId,
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<ReservationResponse>(defaultErrorResolver))
     .then((json) => json.data.Response)
 }
 
 export async function signinClass(session: Session, classId: string): Promise<ReservationStatus> {
-  const { endpoint, apiVersion } = await getApi('SignInClass')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'Classes.Class',
-      inputParameters: {
-        Request: {
-          ClassId: classId,
-          TenantId: session.User.TenantId,
-          UserId: session.User.UserId,
-        },
+  return callApi('SignInClass', session, {
+    viewName: 'Classes.Class',
+    inputParameters: {
+      Request: {
+        ClassId: classId,
+        TenantId: session.User.TenantId,
+        UserId: session.User.UserId,
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<ReservationResponse>(defaultErrorResolver))
     .then((json) => json.data.Response)
 }
 
 export async function cancelReservation(session: Session, classReservationId: string): Promise<ReservationStatus> {
-  const { endpoint, apiVersion } = await getApi('CancelClassReservation')
-  return fetch(endpoint, {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session.CsrfToken,
-      cookie: session.Cookie,
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      viewName: 'Classes.Class',
-      inputParameters: {
-        Request: {
-          ClassReservationId: classReservationId,
-          TenantId: session.User.TenantId,
-          UserId: session.User.UserId,
-          IsClient: true,
-        },
+  return callApi('CancelClassReservation', session, {
+    viewName: 'Classes.Class',
+    inputParameters: {
+      Request: {
+        ClassReservationId: classReservationId,
+        TenantId: session.User.TenantId,
+        UserId: session.User.UserId,
+        IsClient: true,
       },
-    }),
-    method: 'POST',
+    },
   })
     .then(toJson<ReservationResponse>(defaultErrorResolver))
     .then((json) => json.data.Response)
