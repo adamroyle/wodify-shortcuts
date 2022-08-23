@@ -1,11 +1,13 @@
 {
-  "include": ["handler_old.ts", "lib.ts", "wodify.ts", "test"],
+  "include": ["handler.ts", "lib.ts", "wodify.ts", "test"],
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["node"],
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
   }
 }

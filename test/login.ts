@@ -7,7 +7,7 @@ import {
   listWorkoutComponents,
   login,
   signinClass,
-} from '../wodify'
+} from '../wodify.js'
 
 async function main(username: string, password: string, date: string, classId: string) {
   const start = Date.now()

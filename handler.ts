@@ -10,7 +10,7 @@ import {
   login,
   ReservationStatusId,
   signinClass,
-} from './wodify'
+} from './wodify.js'
 
 export const getWorkout: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
   const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))

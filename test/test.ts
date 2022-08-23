@@ -1,4 +1,4 @@
-import { preloadApiCache } from '../wodify'
+import { preloadApiCache } from '../wodify.js'
 
 async function main() {
   const start = Date.now()

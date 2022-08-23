@@ -1,4 +1,4 @@
-import fetch, { Response } from 'node-fetch'
+import fetch, { AbortError, Response } from 'node-fetch'
 import cookieBuilder from 'cookie'
 import cookieParser from 'set-cookie-parser'
 
@@ -318,18 +318,46 @@ async function callApi(apiName: ApiName, session: Session | null, body: object):
   const { endpoint, apiVersion } = await getApi(apiName)
   const start = Date.now()
   console.log(`callApi ${apiName}`)
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'x-csrftoken': session?.CsrfToken || '',
-      cookie: session?.Cookie || '',
-    },
-    body: JSON.stringify({
-      versionInfo: { apiVersion },
-      ...body,
-    }),
-  })
+
+  const response = await (async () => {
+    const maxRetries = 1
+    for (let retries = 0; retries <= maxRetries; retries++) {
+      const timeoutController = new AbortController()
+      const timeoutMs = 3000 * (retries + 1)
+      const timeout = setTimeout(() => timeoutController.abort(), timeoutMs)
+      try {
+        return await fetch(endpoint, {
+          signal: timeoutController.signal,
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json; charset=UTF-8',
+            'x-csrftoken': session?.CsrfToken || '',
+            cookie: session?.Cookie || '',
+          },
+          body: JSON.stringify({
+            versionInfo: { apiVersion },
+            ...body,
+          }),
+        })
+      } catch (error) {
+        if (error instanceof AbortError) {
+          console.log(`${apiName} TIMED OUT after ${timeoutMs}ms`)
+        } else {
+          console.log(`${apiName} error`, error)
+        }
+        if (retries < maxRetries) {
+          console.log(`${apiName} Retrying`)
+        } else {
+          console.log(`${apiName} Giving up`)
+          throw error
+        }
+      } finally {
+        clearTimeout(timeout)
+      }
+    }
+    throw new Error('unreachable')
+  })()
+
   console.log(`${apiName} took ${Date.now() - start}ms [${response.status}] ${response.statusText}`)
   return response
 }
