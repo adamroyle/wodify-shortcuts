@@ -545,7 +545,7 @@ function formatWorkoutComponent(component: WorkoutComponent): string {
 }
 
 function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutComponent[]) {
-  return !(c.IsSection && arr[i + 1].IsSection)
+  return !(c.IsSection && arr[i + 1]?.IsSection)
 }
 
 // unused
