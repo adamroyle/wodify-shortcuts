@@ -1,5 +1,5 @@
 {
-  "include": ["handler.ts", "lib.ts", "wodify.ts", "test"],
+  "include": ["handler.ts", "lib.ts", "wodify.ts", "test", "api"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
