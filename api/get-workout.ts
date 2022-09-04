@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 
-import { login, listWorkoutComponents, formatWorkout, getPrimaryWorkout } from '../wodify'
+import { login, listWorkoutComponents, formatWorkout, getPrimaryWorkout } from '../wodify.js'
 
 export default async (request: VercelRequest, response: VercelResponse) => {
   const { date, email, password } = request.body
