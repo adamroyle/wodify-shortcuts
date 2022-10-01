@@ -1,21 +1,16 @@
-import {
-  formatWorkout,
-  getClassAccess,
-  getPrimaryWorkout,
-  listClasses,
-  listPrograms,
-  listWorkoutComponents,
-  login,
-  signinClass,
-} from '../wodify.js'
+import { login, listClasses } from '../src/wodify/api'
 
 async function main(username: string, password: string, date: string, classId: string) {
   const start = Date.now()
 
   try {
     const session = await login(username, password)
-    const workout = await listWorkoutComponents(session, date)
-    console.log(formatWorkout(getPrimaryWorkout(workout)) || 'No workout found')
+    // const programs = await listPrograms(session)
+    const classes = await listClasses(session, date)
+    // console.log(programs)
+    console.log(classes)
+    // const workout = await listWorkoutComponents(session, date)
+    // console.log(formatWorkout(getPrimaryWorkout(workout)) || 'No workout found')
     // console.log(workout)
 
     // const programs = await listPrograms(session)

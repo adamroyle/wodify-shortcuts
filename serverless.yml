@@ -9,13 +9,13 @@ provider:
 
 functions:
   getWorkout:
-    handler: handler.getWorkout
+    handler: src/handler.getWorkoutHandler
     events:
       - httpApi:
           path: /workout
           method: post
   signinCrossfit:
-    handler: handler.signinCrossfit
+    handler: src/handler.signinCrossfitHandler
     events:
       - httpApi:
           path: /signin-crossfit

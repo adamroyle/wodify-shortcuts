@@ -1,5 +1,5 @@
 {
-  "include": ["handler.ts", "lib.ts", "wodify.ts", "test"],
+  "include": ["src", "test"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -9,5 +9,6 @@
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
+    "allowJs": true,
   }
 }
