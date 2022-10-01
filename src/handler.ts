@@ -1,8 +1,8 @@
-import type { Handler, APIGatewayEvent, ProxyResult } from 'aws-lambda'
+import type { Handler, APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda'
 
-import { getWorkout, signinCrossfit } from './functions.js'
+import { getWorkout, signin } from './functions.js'
 
-export const getWorkoutHandler: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
+export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2> = async (event) => {
   const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
   const date = formData.get('date')
   const email = formData.get('email')
@@ -30,11 +30,12 @@ export const getWorkoutHandler: Handler<APIGatewayEvent, ProxyResult> = async (e
   }
 }
 
-export const signinCrossfitHandler: Handler<APIGatewayEvent, ProxyResult> = async (event) => {
+export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2> = async (event) => {
   const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
+  const className = event.rawPath == '/signin-crossfit' ? 'crossfit' : formData.get('class') || ''
 
   if (!date || !email || !password) {
     console.error('Date, email and password are required.', { date, email })
@@ -45,14 +46,14 @@ export const signinCrossfitHandler: Handler<APIGatewayEvent, ProxyResult> = asyn
   }
 
   try {
-    const message = await signinCrossfit(email, password, date)
-    console.log(message, { email, date })
+    const message = await signin(email, password, date, className)
+    console.log(message, { email, date, className })
     return {
       statusCode: 200,
       body: message,
     }
   } catch (error: any) {
-    console.error(error.message, { email, date })
+    console.error(error.message, { email, date, className })
     return {
       statusCode: 500,
       body: error.message,

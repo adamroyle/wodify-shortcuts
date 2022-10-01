@@ -1,6 +1,6 @@
-import { login, listWorkoutComponents, listClasses, listPrograms, signinClass } from './wodify/api.js'
+import { login, listWorkoutComponents, listClasses, signinClass } from './wodify/api.js'
 import { formatWorkout, getPrimaryWorkout } from './wodify/format.js'
-import { ReservationStatusId, Program } from './wodify/types.js'
+import { ReservationStatusId } from './wodify/types.js'
 
 export async function getWorkout(username: string, password: string, date: string): Promise<string> {
   const session = await login(username, password)
@@ -8,15 +8,18 @@ export async function getWorkout(username: string, password: string, date: strin
   return formatWorkout(getPrimaryWorkout(workout)) || 'Oh no! There is no workout posted.'
 }
 
-export async function signinCrossfit(username: string, password: string, date: string): Promise<string> {
+export async function signin(
+  username: string,
+  password: string,
+  date: string,
+  className: string = ''
+): Promise<string> {
   const session = await login(username, password)
-  const [classes, programs] = await Promise.all([listClasses(session, date), listPrograms(session)])
-
-  const crossfitProgramIds = programs.filter(isCrossFitProgram).map((p) => p.ProgramId)
-  const crossfitClasses = classes.filter((c) => crossfitProgramIds.includes(c.ProgramId))
-  const alreadySignedIn = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
-  const alreadyReserved = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
-  const nextAvailable = crossfitClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.None && c.IsAvailable) // prettier-ignore
+  const classes = await listClasses(session, date)
+  const filteredClasses = classes.filter((c) => c.Name.toLowerCase().includes(className.toLowerCase()))
+  const alreadySignedIn = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
+  const alreadyReserved = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
+  const nextAvailable = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.None && c.IsAvailable) // prettier-ignore
   const signInto = alreadyReserved || nextAvailable
 
   if (alreadySignedIn) {
@@ -27,13 +30,9 @@ export async function signinCrossfit(username: string, password: string, date: s
       return `You are now signed in to ${signInto.Name}`
     }
     return `Sorry, I was unable to sign you in to ${signInto.Name}`
-  } else if (crossfitClasses.length > 0) {
+  } else if (filteredClasses.length > 0) {
     return 'Sorry, there are no more classes for today.'
   } else {
     return 'Sorry, there are no classes on today.'
   }
-}
-
-export function isCrossFitProgram(program: Program) {
-  return program.Name.toLowerCase().includes('crossfit')
 }
