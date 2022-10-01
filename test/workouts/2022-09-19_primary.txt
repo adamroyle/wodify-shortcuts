@@ -1,8 +1,6 @@
-Pre-Metcon
+PRE-METCON
 
 Power Clean + Push Jerk
-
-
 
 1x [ 2 Power Cleans + 2 Push Jerks ], 65% 1RM
 1x [ 2 Power Cleans + 2 Push Jerks ], 70% 1RM
@@ -10,12 +8,10 @@ Power Clean + Push Jerk
 1x [ 1 Power Clean + 1 Push Jerk ], 82% 1RM
 1x [ 1 Power Clean + 1 Push Jerk ], 85% 1RM
 
-
 *Set 4: 80-82% 1RM
 
-Metcon
+METCON
 
-Metcon
 Every 2 mins for 12 mins.
 12 Deadlifts
 9 Hang Power Cleans
