@@ -8,7 +8,8 @@ function main() {
   const files = fs.readdirSync(DIR)
   // iterate each file
   for (const file of files) {
-    const basename = file.split('.')[0]
+    const [basename, ext] = file.split('.')
+    if (ext !== 'json') continue
     // parse file
     const components = JSON.parse(fs.readFileSync(`${DIR}/${file}`, 'utf8'))
     // format workout
