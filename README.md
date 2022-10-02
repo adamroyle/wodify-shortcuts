@@ -12,13 +12,13 @@ TODO: Add shortcuts
 
 ## Privacy
 
-**Your username and password is used to login to your Wodify account.**
+**Your email and password is used to login to your Wodify account.**
 
-However, I have taken steps to protect your personal details.
+However, I have taken steps to protect your personal information.
 
 1. All data is encrypted by SSL while in transit.
 2. No personal data or Wodify session tokens are stored or logged.
-3. For debugging purposes, a MD5 hash of your username & password is logged on each request.
+3. A truncated hash of your email is logged on each request. This allows me to track the number of unique users without exposing your email address.
 
 # Technical details below (if you are so inclined)
 
