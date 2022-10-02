@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { formatWorkout, getPrimaryWorkout } from '../src/wodify/format.js'
 
-const DIR = 'test/workouts'
+const DIR = 'scripts/workouts'
 
 function main() {
   // get directory listing
