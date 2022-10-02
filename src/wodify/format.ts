@@ -20,6 +20,7 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
   return workoutComponents
     .filter(includeSections ? Boolean : (c) => !c.IsSection)
     .filter(excludeEmptySections)
+    .map(trimmed)
     .map(formatWorkoutComponent)
     .join('\n\n')
     .replace(/\r/g, '') // remove carriage returns
@@ -27,36 +28,49 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
     .replace(/\n\n\n+/g, '\n\n') // remove extra newlines
 }
 
-function formatWorkoutComponent(component: WorkoutComponent): string {
-  if (component.IsSection) {
-    return component.Name.trim().toLocaleUpperCase()
+function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComponent[]): string {
+  if (c.IsSection) {
+    return c.Name.toLocaleUpperCase()
   }
+  const prevSection = arr[i - 1]?.IsSection ? arr[i - 1] : undefined
   return [
-    [
-      cleanWorkoutName(component.Name, component.Description.trim() || component.Comment.trim()),
-      removeFillerText(component.Description),
-    ]
-      .filter(Boolean)
-      .join('\n'),
-    component.TotalWeightLiftingComponents.List.join('\n'),
-    removeFillerText(component.Comment.trim()),
+    [workoutName(c, prevSection), removeFillerText(c.Description)].filter(Boolean).join('\n'),
+    c.TotalWeightLiftingComponents.List.join('\n'),
+    removeFillerText(c.Comment),
   ]
     .filter(Boolean)
     .join('\n\n')
+}
+
+function trimmed(c: WorkoutComponent): WorkoutComponent {
+  return {
+    ...c,
+    Name: c.Name.trim(),
+    Description: c.Description.trim(),
+    Comment: c.Comment.trim(),
+  }
 }
 
 function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutComponent[]) {
   return !(c.IsSection && (i + 1 === arr.length || arr[i + 1].IsSection))
 }
 
-function cleanWorkoutName(name: string, description: string): string {
-  name = name.trim()
-  if (name.toLowerCase() == 'metcon') {
+function workoutName(component: WorkoutComponent, section?: WorkoutComponent): string {
+  const name = component.Name
+  const lcName = name.toLocaleLowerCase()
+  const lcSectionName = section?.Name.toLocaleLowerCase() || ''
+  const lcDescription = component.Description.toLocaleLowerCase()
+  const lcComment = component.Comment.toLocaleLowerCase()
+
+  if (
+    lcName === lcSectionName ||
+    lcDescription.startsWith(lcName) ||
+    (!lcDescription && lcComment.startsWith(lcName)) ||
+    lcName === 'metcon'
+  ) {
     return ''
   }
-  if (description.toLocaleLowerCase().startsWith(name.toLocaleLowerCase())) {
-    return ''
-  }
+
   return name
 }
 
