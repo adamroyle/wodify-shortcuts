@@ -1,18 +1,34 @@
 import type { WorkoutComponent } from './types.js'
 
-export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+export function filterWorkout(
+  workoutComponents: WorkoutComponent[],
+  includeSections: string[],
+  excludeSections: string[]
+): WorkoutComponent[] {
+  includeSections = includeSections.map((s) => s.toLocaleLowerCase())
+  excludeSections = excludeSections.map((s) => s.toLocaleLowerCase())
   const mainComponents: WorkoutComponent[] = []
   let includeSection = false
   for (let i = 0; i < workoutComponents.length; i++) {
     const component = workoutComponents[i]
     if (component.IsSection) {
-      includeSection = component.Name === 'Pre-Metcon' || component.Name === 'Metcon'
+      if (includeSections.length > 0) {
+        includeSection = includeSections.includes(component.Name.toLocaleLowerCase())
+      } else if (excludeSections.length > 0) {
+        includeSection = !excludeSections.includes(component.Name.toLocaleLowerCase())
+      } else {
+        includeSection = true
+      }
     }
     if (includeSection) {
       mainComponents.push(component)
     }
   }
   return mainComponents
+}
+
+export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+  return filterWorkout(workoutComponents, ['Pre-Metcon', 'Metcon'], [])
 }
 
 export function formatWorkout(workoutComponents: WorkoutComponent[]): string {

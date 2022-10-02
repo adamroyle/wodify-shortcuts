@@ -7,6 +7,8 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
+  const includeSections = formData.getAll('include_section').filter(Boolean)
+  const excludeSections = formData.getAll('exclude_section').filter(Boolean)
 
   if (!date || !email || !password) {
     console.error('Date, email and password are required.', { date, email })
@@ -19,7 +21,7 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   try {
     return {
       statusCode: 200,
-      body: await getWorkout(email, password, date),
+      body: await getWorkout({ username: email, password, date, includeSections, excludeSections }),
     }
   } catch (error: any) {
     console.error(error.message, { email, date })
@@ -35,7 +37,13 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
-  const className = event.rawPath == '/signin-crossfit' ? 'crossfit' : formData.get('class') || ''
+  const includeClasses = formData.getAll('include_class').filter(Boolean)
+  const excludeClasses = formData.getAll('exclude_class').filter(Boolean)
+
+  // backwards compatibility
+  if (event.rawPath == '/signin-crossfit') {
+    includeClasses.push('crossfit')
+  }
 
   if (!date || !email || !password) {
     console.error('Date, email and password are required.', { date, email })
@@ -46,14 +54,14 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
   }
 
   try {
-    const message = await signin(email, password, date, className)
-    console.log(message, { email, date, className })
+    const message = await signin({ username: email, password, date, includeClasses, excludeClasses })
+    console.log(message, { email, date, includeClasses, excludeClasses })
     return {
       statusCode: 200,
       body: message,
     }
   } catch (error: any) {
-    console.error(error.message, { email, date, className })
+    console.error(error.message, { email, date, includeClasses, excludeClasses })
     return {
       statusCode: 500,
       body: error.message,
