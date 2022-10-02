@@ -20,12 +20,13 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   }
 
   try {
+    console.log({ user: hash(email), date, includeSections, excludeSections })
     return {
       statusCode: 200,
       body: await getWorkout({ username: email, password, date, includeSections, excludeSections }),
     }
   } catch (error: any) {
-    console.error(error.message, { user: hash(email, password), date, includeSections, excludeSections })
+    console.error(error.message, { user: hash(email), date, includeSections, excludeSections })
     return {
       statusCode: 500,
       body: error.message,
@@ -56,13 +57,13 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
 
   try {
     const message = await signin({ username: email, password, date, includeClasses, excludeClasses })
-    console.log(message, { user: hash(email, password), date, includeClasses, excludeClasses })
+    console.log(message, { user: hash(email), date, includeClasses, excludeClasses })
     return {
       statusCode: 200,
       body: message,
     }
   } catch (error: any) {
-    console.error(error.message, { user: hash(email, password), date, includeClasses, excludeClasses })
+    console.error(error.message, { user: hash(email), date, includeClasses, excludeClasses })
     return {
       statusCode: 500,
       body: error.message,
@@ -70,6 +71,6 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
   }
 }
 
-function hash(email: string, password: string): string {
-  return crypto.createHash('md5').update(`${email}:${password}`).digest('hex')
+function hash(email: string): string {
+  return crypto.createHash('sha256').update(email, 'utf8').digest('hex').slice(0, 8)
 }
