@@ -36,6 +36,7 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
   return workoutComponents
     .filter(includeSections ? Boolean : (c) => !c.IsSection)
     .filter(excludeEmptySections)
+    .map(htmlToPlainText)
     .map(trimmed)
     .map(formatWorkoutComponent)
     .join('\n\n')
@@ -46,7 +47,7 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
 
 function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComponent[]): string {
   if (c.IsSection) {
-    return c.Name.toLocaleUpperCase()
+    return [c.Name.toLocaleUpperCase(), removeFillerText(c.Comment)].filter(Boolean).join('\n\n')
   }
   const prevSection = arr[i - 1]?.IsSection ? arr[i - 1] : undefined
   return [
@@ -67,8 +68,14 @@ function trimmed(c: WorkoutComponent): WorkoutComponent {
   }
 }
 
+function htmlToPlainText(c: WorkoutComponent): WorkoutComponent {
+  const Comment = c.Comment.replace(/<br \/>/g, '\n').replace(/<[^>]+>/g, '')
+  const Description = c.Description.replace(/<br \/>/g, '\n').replace(/<[^>]+>/g, '')
+  return { ...c, Comment, Description }
+}
+
 function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutComponent[]) {
-  return !(c.IsSection && (i + 1 === arr.length || arr[i + 1].IsSection))
+  return !(c.IsSection && !c.Comment && (i + 1 === arr.length || arr[i + 1].IsSection))
 }
 
 function workoutName(component: WorkoutComponent, section?: WorkoutComponent): string {
