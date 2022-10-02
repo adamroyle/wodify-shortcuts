@@ -11,8 +11,8 @@
  * 1. I deployed the lambda functions to each region using the serverless framework.
  *    eg. sls deploy --stage test --region ap-southeast-2
  * 2. I copied the API endpoint URLs into the regions array below.
- * 3. I ran the test in the terminal and copied the results into a spreadsheet.
- *    eg. ts-node test/benchmark.ts email@example.com password 2022-10-01
+ * 3. I ran the script in the terminal and copied the results into a spreadsheet.
+ *    eg. ts-node scripts/benchmark.ts email@example.com password 2022-10-01
  *
  * Results
  *
