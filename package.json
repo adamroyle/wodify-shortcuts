@@ -1,8 +1,9 @@
 {
-  "name": "wodify-client-api",
+  "name": "wodify-api",
+  "private": true,
   "version": "0.0.1",
-  "description": "Retrieve data from Wodify Client using puppeteer",
-  "repository": "https://github.com/adamroyle/wodify-client-api",
+  "description": "An unofficial Wodify API for retrieving workouts and signing into classes.",
+  "repository": "https://github.com/adamroyle/wodify-api",
   "author": {
     "name": "Adam Royle",
     "url": "https://github.com/adamroyle"
