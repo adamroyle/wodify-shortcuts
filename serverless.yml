@@ -14,13 +14,16 @@ functions:
       - httpApi:
           path: /workout
           method: post
+      - httpApi:
+          path: /workout-main
+          method: post
   signin:
     handler: src/handler.signinHandler
     events:
       - httpApi:
           path: /signin
           method: post
-      - httpApi: # deprecated
+      - httpApi:
           path: /signin-crossfit
           method: post
 
