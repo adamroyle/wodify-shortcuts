@@ -81,7 +81,7 @@ type Api = {
 
 type ApiCache = Record<ApiName, Api>
 
-let apiCache: ApiCache | undefined
+let apiCache: Promise<ApiCache> | undefined
 
 export async function createApiCache(): Promise<ApiCache> {
   const codebase = await Promise.all([
@@ -118,8 +118,8 @@ export async function createApiCache(): Promise<ApiCache> {
 export async function preloadApiCache(): Promise<ApiCache> {
   if (!apiCache) {
     const start = Date.now()
-    apiCache = await createApiCache()
-    console.log(`Preloaded api cache in ${Date.now() - start}ms`)
+    apiCache = createApiCache()
+    apiCache.then(() => console.log('Preloaded API cache in', Date.now() - start, 'ms'))
   }
   return apiCache
 }
