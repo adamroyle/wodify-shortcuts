@@ -17,7 +17,7 @@ export async function getWorkout({
   includeSections,
   excludeSections,
 }: GetWorkoutParams): Promise<string> {
-  const session = await login(username, password)
+  const session = await loginWrapper(username, password)
   const workout = await listWorkoutComponents(session, date)
   const filteredWorkout = filterWorkout(workout, includeSections, excludeSections)
   return formatWorkout(filteredWorkout) || 'Oh no! There is no workout posted.'
@@ -38,7 +38,7 @@ export async function signin({
   includeClasses,
   excludeClasses,
 }: SigninParams): Promise<string> {
-  const session = await login(username, password)
+  const session = await loginWrapper(username, password)
   const classes = await listClasses(session, date)
   const filteredClasses = classes.filter(createClassesFilter(includeClasses, excludeClasses))
   const alreadySignedIn = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
@@ -75,4 +75,21 @@ function createClassesFilter(includeClasses: string[], excludeClasses: string[])
       return true
     }
   }
+}
+
+/**
+ * A wrapper that will race two login calls if the first character of the
+ * password is capitalized. Apple Shortcuts will capitalize the first character
+ * of the password when it is entered for the first time and people may not realise,
+ * so we try both passwords and return the first one that succeeds.
+ */
+function loginWrapper(username: string, password: string): ReturnType<typeof login> {
+  const passwordAlt = password.slice(0, 1).toLowerCase() + password.slice(1)
+  if (password === passwordAlt) {
+    return login(username, password)
+  }
+  return Promise.any([login(username, password), login(username, passwordAlt)]).catch((e: AggregateError) =>
+    // return the first error instead of the AggregateError
+    Promise.reject(e.errors[0])
+  )
 }
