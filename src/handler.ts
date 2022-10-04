@@ -8,8 +8,8 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
-  const includeSections = formData.getAll('include_section').filter(Boolean)
-  const excludeSections = formData.getAll('exclude_section').filter(Boolean)
+  const includeSections = formData.getAll('include_section').flatMap(splitAndTrim).filter(Boolean)
+  const excludeSections = formData.getAll('exclude_section').flatMap(splitAndTrim).filter(Boolean)
 
   if (!date || !email || !password) {
     console.error('Date, email and password are required.')
@@ -39,8 +39,8 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
-  const includeClasses = formData.getAll('include_class').filter(Boolean)
-  const excludeClasses = formData.getAll('exclude_class').filter(Boolean)
+  const includeClasses = formData.getAll('include_class').flatMap(splitAndTrim).filter(Boolean)
+  const excludeClasses = formData.getAll('exclude_class').flatMap(splitAndTrim).filter(Boolean)
 
   // backwards compatibility
   if (event.rawPath == '/signin-crossfit') {
@@ -73,4 +73,8 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
 
 function hash(email: string): string {
   return crypto.createHash('sha256').update(email.toLowerCase(), 'utf8').digest('hex').slice(0, 8)
+}
+
+function splitAndTrim(str: string): string[] {
+  return str.split('\n').map((s) => s.trim())
 }
