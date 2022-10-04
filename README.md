@@ -79,10 +79,10 @@ curl https://adam.royle.dev/wodify/signin \
 
 ## Running scripts locally
 
-As this projects uses TypeScript and ESM, running the scripts locally are a bit verbose.
+As this projects uses TypeScript and ESM, you need to use `tsm` instead of `node` directly. It will generate [some warnings](https://github.com/lukeed/tsm/issues/12) but these can be ignored.
 
 ```sh
-node --experimental-specifier-resolution=node --loader ts-node/esm scripts/login.ts email@example.com YourPassword1 2022-08-23
+tsm scripts/login.ts email@example.com YourPassword1 2022-08-23
 ```
 
 ## Deploy this API to your AWS account
