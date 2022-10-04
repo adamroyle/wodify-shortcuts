@@ -64,13 +64,13 @@ export async function signin({
 // this filter uses partial matching rules and is case-insensitive
 // eg. if you pass in "barbell" it will match "Barbell Club"
 function createClassesFilter(includeClasses: string[], excludeClasses: string[]): (c: Class) => boolean {
-  includeClasses = includeClasses.map((s) => s.toLocaleLowerCase())
-  excludeClasses = excludeClasses.map((s) => s.toLocaleLowerCase())
+  includeClasses = includeClasses.map((s) => s.toLowerCase())
+  excludeClasses = excludeClasses.map((s) => s.toLowerCase())
   return (c) => {
     if (includeClasses.length > 0) {
-      return includeClasses.some((n) => c.Name.toLocaleLowerCase().includes(n))
+      return includeClasses.some((n) => c.Name.toLowerCase().includes(n))
     } else if (excludeClasses.length > 0) {
-      return !excludeClasses.some((n) => c.Name.toLocaleLowerCase().includes(n))
+      return !excludeClasses.some((n) => c.Name.toLowerCase().includes(n))
     } else {
       return true
     }

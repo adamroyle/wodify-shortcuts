@@ -5,17 +5,17 @@ export function filterWorkout(
   includeSections: string[],
   excludeSections: string[]
 ): WorkoutComponent[] {
-  includeSections = includeSections.map((s) => s.toLocaleLowerCase())
-  excludeSections = excludeSections.map((s) => s.toLocaleLowerCase())
+  includeSections = includeSections.map((s) => s.toLowerCase())
+  excludeSections = excludeSections.map((s) => s.toLowerCase())
   const mainComponents: WorkoutComponent[] = []
   let includeSection = false
   for (let i = 0; i < workoutComponents.length; i++) {
     const component = workoutComponents[i]
     if (component.IsSection) {
       if (includeSections.length > 0) {
-        includeSection = includeSections.includes(component.Name.toLocaleLowerCase())
+        includeSection = includeSections.includes(component.Name.toLowerCase())
       } else if (excludeSections.length > 0) {
-        includeSection = !excludeSections.includes(component.Name.toLocaleLowerCase())
+        includeSection = !excludeSections.includes(component.Name.toLowerCase())
       } else {
         includeSection = true
       }
@@ -80,10 +80,10 @@ function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutCompon
 
 function workoutName(component: WorkoutComponent, section?: WorkoutComponent): string {
   const name = component.Name
-  const lcName = name.toLocaleLowerCase()
-  const lcSectionName = section?.Name.toLocaleLowerCase() || ''
-  const lcDescription = component.Description.toLocaleLowerCase()
-  const lcComment = component.Comment.toLocaleLowerCase()
+  const lcName = name.toLowerCase()
+  const lcSectionName = section?.Name.toLowerCase() || ''
+  const lcDescription = component.Description.toLowerCase()
+  const lcComment = component.Comment.toLowerCase()
 
   if (
     lcName === lcSectionName ||
