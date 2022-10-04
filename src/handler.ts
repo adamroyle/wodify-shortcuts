@@ -72,5 +72,5 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
 }
 
 function hash(email: string): string {
-  return crypto.createHash('sha256').update(email, 'utf8').digest('hex').slice(0, 8)
+  return crypto.createHash('sha256').update(email.toLowerCase(), 'utf8').digest('hex').slice(0, 8)
 }
