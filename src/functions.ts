@@ -67,13 +67,14 @@ function createClassesFilter(includeClasses: string[], excludeClasses: string[])
   includeClasses = includeClasses.map((s) => s.toLowerCase())
   excludeClasses = excludeClasses.map((s) => s.toLowerCase())
   return (c) => {
+    let include = true
     if (includeClasses.length > 0) {
-      return includeClasses.some((n) => c.Name.toLowerCase().includes(n))
-    } else if (excludeClasses.length > 0) {
-      return !excludeClasses.some((n) => c.Name.toLowerCase().includes(n))
-    } else {
-      return true
+      include = includeClasses.some((n) => c.Name.toLowerCase().includes(n))
     }
+    if (include && excludeClasses.length > 0) {
+      include = !excludeClasses.some((n) => c.Name.toLowerCase().includes(n))
+    }
+    return include
   }
 }
 
