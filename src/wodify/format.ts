@@ -12,12 +12,12 @@ export function filterWorkout(
   for (let i = 0; i < workoutComponents.length; i++) {
     const component = workoutComponents[i]
     if (component.IsSection) {
+      includeSection = true
       if (includeSections.length > 0) {
-        includeSection = includeSections.includes(component.Name.toLowerCase())
-      } else if (excludeSections.length > 0) {
-        includeSection = !excludeSections.includes(component.Name.toLowerCase())
-      } else {
-        includeSection = true
+        includeSection = includeSections.some((s) => component.Name.toLowerCase().includes(s))
+      }
+      if (includeSection && excludeSections.length > 0) {
+        includeSection = !excludeSections.some((s) => component.Name.toLowerCase().includes(s))
       }
     }
     if (includeSection) {
@@ -28,7 +28,7 @@ export function filterWorkout(
 }
 
 export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  return filterWorkout(workoutComponents, ['Pre-Metcon', 'Metcon'], [])
+  return filterWorkout(workoutComponents, ['Metcon'], [])
 }
 
 export function formatWorkout(workoutComponents: WorkoutComponent[]): string {

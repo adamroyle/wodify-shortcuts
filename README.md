@@ -44,13 +44,13 @@ POST https://adam.royle.dev/wodify/workout
 
 **Params**
 
-| Name            | Required |                                                                                                                                                                                |
-| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| email           | Yes      | The email used to login to Wodify.                                                                                                                                             |
-| password        | Yes      | The password used to login to Wodify.                                                                                                                                          |
-| date            | Yes      | The date in ISO 8601 format.                                                                                                                                                   |
-| include_section | No       | Exclude sections without a matching title. Case-insensitive. Multiple supported with duplicate param or separated by a newline.                                                |
-| exclude_section | No       | Exclude sections with a matching title. Case-insensitive. Will be ignored if `include_section` is provided. Multiple supported with duplicate param or separated by a newline. |
+| Name            | Required |                                                                                                                                                                                                            |
+| --------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| email           | Yes      | The email used to login to Wodify.                                                                                                                                                                         |
+| password        | Yes      | The password used to login to Wodify.                                                                                                                                                                      |
+| date            | Yes      | The date in ISO 8601 format.                                                                                                                                                                               |
+| include_section | No       | Exclude sections without a matching title. Case-insensitive. **Allows partial matches.** Multiple supported with duplicate param or separated by a newline.                                                |
+| exclude_section | No       | Exclude sections with a matching title. Case-insensitive. **Allows partial matches.** Will be ignored if `include_section` is provided. Multiple supported with duplicate param or separated by a newline. |
 
 **Example**
 
