@@ -1,17 +1,46 @@
 # Sign into CrossFit (Wodify) using Siri
 
+"Hands? Where we're going, we don't need hands!" – *Adam Royle, allegedly*
+
 https://user-images.githubusercontent.com/25002779/193733401-108d7680-cace-4871-af75-717e0d7c6065.mp4
 
-What's today's workout?
-https://www.icloud.com/shortcuts/bb1346c13eea47dabde31d415d9e19eb 
+## Wait!? How does that work?
 
-What's tomorrow's workout?
-https://www.icloud.com/shortcuts/5ed9d6f634324547b86b2b1ece65510a 
+It uses [Shortcuts](https://support.apple.com/en-au/guide/shortcuts/welcome/ios) to imitate the actions you'd normally take on [Wodify's mobile app](https://www.wodify.com/products/mobile-app). You can trigger these shortcuts with your voice, your phone's location, or even your finger if you prefer!
 
-Sign me in to CrossFit
-https://www.icloud.com/shortcuts/9ccd608d101244b190e8c72b5efb8fcd 
+## OK, that's very cool, will they work for me?
 
-## How to install these shortcuts on your iPhone
+Of course! Tap these icons to save them to your Shortcuts app.
+
+<p>
+<a href="https://www.icloud.com/shortcuts/9ccd608d101244b190e8c72b5efb8fcd"><img src="https://user-images.githubusercontent.com/25002779/194006190-03cd4606-6a92-486a-87e0-60798a13ad61.png" width="200" /></a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://www.icloud.com/shortcuts/bb1346c13eea47dabde31d415d9e19eb"><img src="https://user-images.githubusercontent.com/25002779/194006197-9d2a3b18-4658-4998-b6ea-99799d513750.png" width="200" /></a>
+&nbsp;&nbsp;&nbsp;
+  <a href="https://www.icloud.com/shortcuts/5ed9d6f634324547b86b2b1ece65510a"><img src="https://user-images.githubusercontent.com/25002779/194006203-8642e8ce-5902-4f1c-808d-e290c4490b04.png" width="200" /></a>
+</p>
+
+On setup you will be prompted to enter your Wodify login details (email and password) and some optional configuration.
+
+They will now appear in your list of shortcuts and can then be added to your homescreen if you like.
+
+When you first run each shortcut, you will need to allow connections to `adam.royle.dev`.
+
+<img src="https://user-images.githubusercontent.com/25002779/194011680-48b2132b-c4c8-493a-8888-bb823ff19817.png" width="400" />
+
+## Privacy Considerations
+
+Unfortunately Wodify doesn't let us take actions on your behalf without knowing your login details.
+
+However, we take security and privacy seriously and we've taken these steps to protect your personal information.
+
+1. All data is encrypted using SSL while transmitted.
+2. No personal information or security tokens are stored or logged in our system.
+3. A truncated hash of your email is logged on each request (it looks something like `e42dc77f`). This allows tracking the number of unique users without saving your email address.
+
+*Disclaimer: Use these shortcuts at your own risk. No responsibility will be taken if your Wodify account is compromised or login details exposed.*
+
+## Questions (and answers!)
 
 <details><summary>
 
@@ -26,18 +55,21 @@ You can create a personal automation that will sign you into the next class when
 <img src="https://user-images.githubusercontent.com/25002779/193749897-28f9b530-a649-46bf-898b-4e9c697336ac.png" width="250" />
 <img src="https://user-images.githubusercontent.com/25002779/193749898-c759f62c-5227-47cb-8981-9ef073a636b5.png" width="250" />
 <img src="https://user-images.githubusercontent.com/25002779/193749900-d7afd777-91d4-46be-bae5-87e9617d3071.png" width="250" />
-
 </details>
 
-## Privacy Considerations
+### Got a question?
 
-**Use these shortcuts at your own risk.** No responsibility will be taken if your Wodify account is compromised or account details exposed.
+[Start a discussion](https://github.com/adamroyle/wodify-api/discussions) or [send an email](adam@royle.dev).
 
-However, we take these steps to protect your personal information.
+### It's not working!</summary>
 
-1. All data is encrypted using SSL while transmitted.
-2. No personal information or security tokens are stored or logged in our system.
-3. A truncated hash of your email is logged on each request (it looks something like `e42dc77f`). This allows tracking the number of unique users without saving your email address.
+If you get an error, try again! Sometimes Wodify is slow to respond. If it's still broken the following day, [open an issue](https://github.com/adamroyle/wodify-api/issues) or [send an email](adam@royle.dev).
+   
+### Thank you, can I buy you a coffee?
+
+Why certainly! [Buy me a coffee](https://ko-fi.com/adamroyle) online or at the gym if you know me in person.
+
+---
 
 ## API documentation
 
