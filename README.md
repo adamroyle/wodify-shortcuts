@@ -59,11 +59,11 @@ You can create a personal automation that will sign you into the next class when
 
 ### Got a question?
 
-[Start a discussion](https://github.com/adamroyle/wodify-api/discussions) or [send an email](adam@royle.dev).
+[Start a discussion](https://github.com/adamroyle/wodify-shortcuts/discussions) or [send an email](adam@royle.dev).
 
 ### It's not working!</summary>
 
-If you get an error, try again! Sometimes Wodify is slow to respond. If it's still broken the following day, [open an issue](https://github.com/adamroyle/wodify-api/issues) or [send an email](adam@royle.dev).
+If you get an error, try again! Sometimes Wodify is slow to respond. If it's still broken the following day, [open an issue](https://github.com/adamroyle/wodify-shortcuts/issues) or [send an email](adam@royle.dev).
    
 ### Thank you, can I buy you a coffee?
 
@@ -151,8 +151,8 @@ This project uses the [serverless framework](https://www.serverless.com/framewor
 Assuming you have installed `awscli` and are logged in, you should be able to deploy these functions to your AWS account.
 
 ```
-git clone https://github.com/adamroyle/wodify-api
-cd wodify-api
+git clone https://github.com/adamroyle/wodify-shortcuts
+cd wodify-shortcuts
 yarn
 yarn sls deploy
 ```
