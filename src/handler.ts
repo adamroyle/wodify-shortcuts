@@ -19,12 +19,6 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
     }
   }
 
-  // preset for CrossFit CrossAxed
-  if (event.rawPath == '/workout-main') {
-    includeSections.push('Pre-Metcon')
-    includeSections.push('Metcon')
-  }
-
   try {
     console.log({ user: hash(email), date, includeSections, excludeSections })
     return {
@@ -48,7 +42,7 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
   const includeClasses = formData.getAll('include_class').flatMap(splitAndTrim).filter(Boolean)
   const excludeClasses = formData.getAll('exclude_class').flatMap(splitAndTrim).filter(Boolean)
 
-  // preset for CrossFit CrossAxed
+  // backwards compatibility
   if (event.rawPath == '/signin-crossfit') {
     includeClasses.push('crossfit')
   }
