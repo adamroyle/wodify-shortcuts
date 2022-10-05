@@ -2,6 +2,15 @@
 
 https://user-images.githubusercontent.com/25002779/193733401-108d7680-cace-4871-af75-717e0d7c6065.mp4
 
+What's today's workout?
+https://www.icloud.com/shortcuts/bb1346c13eea47dabde31d415d9e19eb 
+
+What's tomorrow's workout?
+https://www.icloud.com/shortcuts/5ed9d6f634324547b86b2b1ece65510a 
+
+Sign me in to CrossFit
+https://www.icloud.com/shortcuts/9ccd608d101244b190e8c72b5efb8fcd 
+
 ## How to install these shortcuts on your iPhone
 
 <details><summary>
