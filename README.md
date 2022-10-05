@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/25002779/193733401-108d7680-cace-4871-
 
 ### Sign in when you arrive at the gym (using Location Services)</summary>
 
-Never forget to sign in again! You can create a personal automation that will prompt you to sign in when you arrive at the gym.
+You can create a personal automation that will sign you into the next class when you arrive at the gym. A story in pictures!
 
 <img src="https://user-images.githubusercontent.com/25002779/193749886-8b25137c-569f-4c7f-a953-5c7a03a8ec7d.png" width="250" />
 <img src="https://user-images.githubusercontent.com/25002779/193749891-46bad621-1593-4d23-9b93-cc6e4686c20f.png" width="250" />
