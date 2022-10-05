@@ -1,3 +1,5 @@
+import decodeEntities from 'entities-decode'
+
 import type { WorkoutComponent } from './types.js'
 
 export function filterWorkout(
@@ -36,8 +38,7 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
   return workoutComponents
     .filter(includeSections ? Boolean : (c) => !c.IsSection)
     .filter(excludeEmptySections)
-    .map(htmlToPlainText)
-    .map(trimmed)
+    .map(cleanText)
     .map(formatWorkoutComponent)
     .join('\n\n')
     .replace(/\r/g, '') // remove carriage returns
@@ -59,19 +60,20 @@ function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComp
     .join('\n\n')
 }
 
-function trimmed(c: WorkoutComponent): WorkoutComponent {
+function cleanText(c: WorkoutComponent): WorkoutComponent {
   return {
     ...c,
     Name: c.Name.trim(),
-    Description: c.Description.trim(),
-    Comment: c.Comment.trim(),
+    Description: htmlToPlainText(c.Description).trim(),
+    Comment: htmlToPlainText(c.Comment).trim(),
   }
 }
 
-function htmlToPlainText(c: WorkoutComponent): WorkoutComponent {
-  const Comment = c.Comment.replace(/<br \/>/g, '\n').replace(/<[^>]+>/g, '')
-  const Description = c.Description.replace(/<br \/>/g, '\n').replace(/<[^>]+>/g, '')
-  return { ...c, Comment, Description }
+function htmlToPlainText(html: string): string {
+  html = html.replace(/<\/p>/g, '\n')
+  html = html.replace(/<br \/>/g, '\n')
+  html = html.replace(/<[^>]+>/g, '')
+  return decodeEntities(html)
 }
 
 function excludeEmptySections(c: WorkoutComponent, i: number, arr: WorkoutComponent[]) {
