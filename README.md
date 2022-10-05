@@ -59,8 +59,8 @@ curl https://adam.royle.dev/wodify/workout \
   --data email=email@example.com \
   --data password=YourPassword1 \
   --data date=2022-09-27 \
-  --data include_section=Pre-Metcon \
-  --data include_section=Metcon
+  --data include_section=Metcon \
+  --data exclude_section=Pre-Metcon
 ```
 
 ---
