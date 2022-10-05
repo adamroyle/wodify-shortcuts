@@ -75,8 +75,6 @@ Why certainly! [Buy me a coffee](https://ko-fi.com/adamroyle) online or at the g
 
 For those who want to customise their shortcuts for a specific reason.
 
----
-
 ### Get the workout for a specific date
 
 ```
