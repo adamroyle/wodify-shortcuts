@@ -1,6 +1,6 @@
 [
   {
-    "Id": "68910893",
+    "Id": "68956963",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -10,55 +10,6 @@
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
     "Name": "Warm-up",
-    "Comment": "<table width=\"323\"><tbody><tr height=\"442\"><td width=\"323\" height=\"442\">3 rounds for quality of:<br />Jog or Choice Machine, 1 min<br />5 - 3 position Ring Rows<br />5 Inch Worm to Push Up<br />5 Beat swings into 5 Pull Ups<br />5 DB Deadlifts each side</td></tr></tbody></table>",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "68910901",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -82,23 +33,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68910903",
+    "Id": "68956966",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -117,37 +67,36 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"323\"><tbody><tr height=\"477\"><td width=\"323\" height=\"477\">For time:<br />30 Ski Erg/Row Calories<br />30 Pull Ups<br />30 Dumbbell Snatches, 22.5/15kg<br />30 Ski Erg/Row Calories<br />20 Pull Ups<br />20 Dumbbell Snatches, 22.5/15kg<br />30 Ski Erg/Row Calories<br />10 Pull Ups<br />10 Dumbbell Snatches, 22.5/15kg<br />30 Ski Erg/Row Calories<br />5 Pull Ups<br />5 Dumbbell Snatches, 22.5/15kg<br /><br /><br />RX+: 8 Ring Muscle-ups per round in place of Pull Ups, 32/22.5kg DB</td></tr></tbody></table>",
+    "Description": "<table width=\"232\"><tbody><tr height=\"442\"><td width=\"232\" height=\"442\">Jog 400m<br />Then:<br />3 rounds of:<br />10 Box Step ups<br />2 Wall Walks<br />30s Wall Facing HS Hold</td></tr></tbody></table>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
+    "IsResultTypeNoMeasure": true,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 3,
-    "ComponentId": "27363916",
+    "ScalingId": 2,
+    "ComponentId": "27379372",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68910909",
+    "Id": "68956973",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -156,7 +105,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Extra Work",
+    "Name": "Pre-Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -180,82 +129,32 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "68910920",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
       "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68910929",
+    "Id": "68956981",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
     "IsGymnastics": false,
-    "IsWeightlifting": true,
+    "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Clean",
-    "Comment": "<table width=\"323\"><tbody><tr height=\"362\"><td width=\"323\" height=\"362\">Power Clean 3-3-3-3-2-2-2<br /><br />Use the heaviest weight you can for each set.<br />Rest as needed between sets.<br /><br />Athlete Instructions<br />Instructions<br />Complete sets every 2 mins for 14 mins.<br /><br />Start at 65% 1RM and build over the 7 sets.</td></tr></tbody></table>",
+    "Name": "Handstand Practice",
+    "Comment": "<p>Skill work&nbsp;</p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -263,7 +162,7 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "3-3-3-3-2-2-2",
+    "MeasureRepScheme": "",
     "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
@@ -272,29 +171,76 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "47",
+    "ComponentId": "15696382",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
-    "HasPerformedAtLeastOnce": true,
+    "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68910939",
+    "Id": "68956983",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Handstand Walk",
+    "Comment": "<table width=\"232\"><tbody><tr height=\"45\"><td width=\"232\" height=\"45\">Skill work&nbsp;</td></tr></tbody></table>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "35055",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "68956986",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -303,7 +249,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Gymnastics",
+    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -327,23 +273,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68910945",
+    "Id": "68956987",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -362,7 +307,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"323\"><tbody><tr height=\"90\"><td width=\"323\" height=\"90\">Complete as many rounds as possible in 12 mins of:<br />Handstand Walk, 15m<br />25 GHD Sit-ups</td></tr></tbody></table>",
+    "Description": "<table width=\"232\"><tbody><tr height=\"477\"><td width=\"232\" height=\"477\">20 Minute AMRAP<br />Run 400m<br />22 Box Jump Overs 24/20<br />Row 400m<br />22m Handstand Walk</td></tr></tbody></table>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -370,23 +315,22 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27363933",
+    "ComponentId": "27379374",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "128406195",
-          "StartTime": "07:00:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
