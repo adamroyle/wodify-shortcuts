@@ -1,6 +1,6 @@
 # Sign into CrossFit (Wodify) using Siri
 
-"Hands? Where we're going, we don't need hands!" – *Adam Royle, allegedly*
+"Hands? Where we're going, we don't need hands!" – _Adam Royle, allegedly_
 
 https://user-images.githubusercontent.com/25002779/193733401-108d7680-cace-4871-af75-717e0d7c6065.mp4
 
@@ -38,7 +38,7 @@ However, we take security and privacy seriously and we've taken these steps to p
 2. No personal information or security tokens are stored or logged in our system.
 3. A truncated hash of your email is logged on each request (it looks something like `e42dc77f`). This allows tracking the number of unique users without saving your email address.
 
-*Disclaimer: Use these shortcuts at your own risk. No responsibility will be taken if your Wodify account is compromised or login details exposed.*
+_Disclaimer: Use these shortcuts at your own risk. No responsibility will be taken if your Wodify account is compromised or login details exposed._
 
 ## Questions (and answers!)
 
@@ -64,7 +64,7 @@ You can create a personal automation that will sign you into the next class when
 ### It's not working!</summary>
 
 If you get an error, try again! Sometimes Wodify is slow to respond. If it's still broken the following day, [open an issue](https://github.com/adamroyle/wodify-shortcuts/issues) or [send an email](adam@royle.dev).
-   
+
 ### Thank you, can I buy you a coffee?
 
 Why certainly! [Buy me a coffee](https://ko-fi.com/adamroyle) online or at the gym if you know me in person.
