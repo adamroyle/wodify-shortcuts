@@ -13,11 +13,11 @@ It uses [Shortcuts](https://support.apple.com/en-au/guide/shortcuts/welcome/ios)
 Of course! Tap these icons to save them to your Shortcuts app.
 
 <p>
-<a href="https://www.icloud.com/shortcuts/9f134312530442e484b3534259c3a219"><img src="https://user-images.githubusercontent.com/25002779/194006190-03cd4606-6a92-486a-87e0-60798a13ad61.png" width="200" /></a>
+<a href="https://www.icloud.com/shortcuts/9f134312530442e484b3534259c3a219"><img src="https://user-images.githubusercontent.com/25002779/194006190-03cd4606-6a92-486a-87e0-60798a13ad61.png" width="200" alt="Sign me in to CrossFit" /></a>
 &nbsp;&nbsp;&nbsp;
-<a href="https://www.icloud.com/shortcuts/c64cd184e91a49a295879b46150c4f74"><img src="https://user-images.githubusercontent.com/25002779/194006197-9d2a3b18-4658-4998-b6ea-99799d513750.png" width="200" /></a>
+<a href="https://www.icloud.com/shortcuts/06a278db0bcc40bf930ea9449c660d30"><img src="https://user-images.githubusercontent.com/25002779/194006197-9d2a3b18-4658-4998-b6ea-99799d513750.png" width="200" alt="What's today's workout?" /></a>
 &nbsp;&nbsp;&nbsp;
-  <a href="https://www.icloud.com/shortcuts/fac8f558717849d48bb8af5af53fdcda"><img src="https://user-images.githubusercontent.com/25002779/194006203-8642e8ce-5902-4f1c-808d-e290c4490b04.png" width="200" /></a>
+  <a href="https://www.icloud.com/shortcuts/939bd28350a44760b1f70dbcaff4b5b9"><img src="https://user-images.githubusercontent.com/25002779/194006203-8642e8ce-5902-4f1c-808d-e290c4490b04.png" width="200" alt="What's tomorrow's workout?" /></a>
 </p>
 
 On setup you will be prompted to enter your Wodify login details (email and password) and some optional configuration.
