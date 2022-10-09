@@ -1,55 +1,6 @@
 [
   {
-    "Id": "68957277",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Warm-up",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "68957282",
+    "Id": "69234031",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -58,7 +9,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Metcon",
+    "Name": "Warm Up",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -68,7 +19,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"359\"><tbody><tr height=\"442\"><td width=\"359\" height=\"442\">4 rounds of:<br />100m Run<br />10 Scap Pull-ups, 5 Beat swings<br />10 Back Extensions<br />10 GHD Sit-ups&nbsp;</td></tr></tbody></table>",
+    "Description": "<table width=\"388\"><tbody><tr height=\"280\"><td width=\"388\" height=\"280\"><p>RD 1<br />Jog 200m<br />3 Burpees<br />3 DB Snatch<br />5 box step overs<br /><br />RD 2<br />Run 200m<br />3 Single DB Devils Press<br />5 Box Jump Overs<br /><br />RD 3<br />Sprint 200m<br />3 Double DB Devils Press<br />5 Burpee Box Jump Overs</p><p> </p><p> </p></td></tr></tbody></table>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -76,78 +27,28 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27379454",
+    "ComponentId": "27470364",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "68957288",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Metcon",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
       "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957291",
+    "Id": "69234039",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -166,37 +67,84 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"359\"><tbody><tr height=\"477\"><td width=\"359\" height=\"477\">4 rounds, each round for time, of:<br />Run, 400 m<br />19 Toes-to-bars<br />9 Power Snatches, 61/43kg<br /><br />Go every 4 mins.<br /><br />RX+:75/52kg</td></tr></tbody></table>",
+    "Description": "<table width=\"388\"><tbody><tr height=\"477\"><td width=\"388\" height=\"477\"><p>4 rounds, 4 mins each, for max reps of:<br />Run 200m<br />12 Devil Press, 22.5/15kg<br />max reps in remaining time Burpee Box Jump Overs, 24/20 in<br /><br />Rest 1 min between each round.</p><p> </p><p> </p></td></tr></tbody></table>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 3,
-    "ComponentId": "27379460",
+    "ScalingId": 2,
+    "ComponentId": "27470367",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957297",
+    "Id": "69234042",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<table width=\"388\"><tbody><tr height=\"93\"><td width=\"388\" height=\"93\"><p>4 rounds for quality of:<br />5 L/5 R Seated Single Arm Dumbbell Strict Press, pick load<br />10 DB Bent Over Rows, pick load<br />Kettlebell Farmers + Waiters Carry, pick load, L+R 15m/R+L 15m</p><p> </p><p> </p></td></tr></tbody></table>",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27470370",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69234045",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -229,23 +177,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957300",
+    "Id": "69234056",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -278,23 +225,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957310",
+    "Id": "69234054",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -303,8 +249,8 @@
     "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Clean and Jerk",
-    "Comment": "<table width=\"359\"><tbody><tr height=\"362\"><td width=\"359\" height=\"362\">Clean &amp; Jerk 1x3 at 75% 1RM<br />Clean &amp; Jerk 1x3 at 75% 1RM<br />Clean &amp; Jerk 1x2 at 80% 1RM<br />Clean &amp; Jerk 1x2 at 85% 1RM<br />Clean &amp; Jerk 1x2 at 85% 1RM<br /><br />Rest 3 mins between sets.<br /><br /><br />*Set 1: 70-75% 1RM<br />*Set 2: 75% 1RM<br />*Set 3: 75-80% 1RM<br />*Set 4: 80-85% 1RM<br />*Set 5: 85+% 1RM<br /><br />Split jerks for these sets.</td></tr></tbody></table>",
+    "Name": "Snatch Pull",
+    "Comment": "<table width=\"388\"><tbody><tr height=\"453\"><td width=\"388\" height=\"453\"><p>3-3-3-3<br /><br />Use the heaviest weight you can for each set.<br /><br />*Rest 2-3 mins between sets.<br /><br />Set 1: 100% 1RM Snatch<br />Set 2: 100% 1RM Snatch<br />Set 3: 105+% 1RM Snatch<br />Set 4: 105+% 1RM Snatch<br /><br />Athlete Notes<br />Try to go heavier than last week but do not compromise technique.</p><p> </p><p> </p></td></tr></tbody></table>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -312,7 +258,7 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "3-3-2-2-2",
+    "MeasureRepScheme": "3-3-3-3",
     "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
@@ -321,29 +267,28 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "29",
+    "ComponentId": "58",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
-    "HasPerformedAtLeastOnce": true,
+    "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957311",
+    "Id": "69234060",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -352,7 +297,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Gymnastics",
+    "Name": "Aerobic Conditioning",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -376,23 +321,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "68957317",
+    "Id": "69234064",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -411,7 +355,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"359\"><tbody><tr height=\"68\"><td width=\"359\" height=\"68\">5 Rounds<br />5 Deficit eccentric HSPU<br />3 second lower, kip back to top</td></tr></tbody></table>",
+    "Description": "<table width=\"388\"><tbody><tr height=\"90\"><td width=\"388\" height=\"90\">Go every 5 mins:<br />Ski Erg: 6x 1000 m<br /><br />Each for time.</td></tr></tbody></table>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -419,23 +363,22 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27379469",
+    "ComponentId": "27470377",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125781299",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
