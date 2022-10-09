@@ -5,6 +5,7 @@ export interface User {
   FirstName: string
   GlobalUserId: string
   GymProgramId: string
+  IsCoachOrAbove: boolean
   IsNonPrd: boolean
   IsUse24HourTime: true
   IsUserSuspended: boolean
@@ -76,6 +77,7 @@ export interface WorkoutComponent {
   IsSection: boolean
   Comment: string
   Description: string
+  IsWeightlifting: boolean
   TotalWeightLiftingComponents: { List: string[] }
 }
 

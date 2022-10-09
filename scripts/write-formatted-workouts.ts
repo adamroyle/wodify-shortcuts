@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { formatWorkout, getPrimaryWorkout } from '../src/wodify/format.js'
+import { fixCrossAxedWorkoutComponents, formatWorkout, getPrimaryWorkout } from '../src/wodify/format.js'
 
 const DIR = 'scripts/workouts'
 
@@ -11,7 +11,8 @@ function main() {
     const [basename, ext] = file.split('.')
     if (ext !== 'json') continue
     // parse file
-    const components = JSON.parse(fs.readFileSync(`${DIR}/${file}`, 'utf8'))
+    const components = fixCrossAxedWorkoutComponents(JSON.parse(fs.readFileSync(`${DIR}/${file}`, 'utf8')))
+
     // format workout
     const formatted = formatWorkout(components)
     const formattedPrimary = formatWorkout(getPrimaryWorkout(components))

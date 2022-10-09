@@ -1,5 +1,5 @@
 import { login, listWorkoutComponents, listClasses, signinClass } from './wodify/api.js'
-import { filterWorkout, formatWorkout } from './wodify/format.js'
+import { filterWorkout, fixCrossAxedWorkoutComponents, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
 interface GetWorkoutParams {
@@ -19,7 +19,8 @@ export async function getWorkout({
 }: GetWorkoutParams): Promise<string> {
   const session = await loginWrapper(username, password)
   const workout = await listWorkoutComponents(session, date)
-  const filteredWorkout = filterWorkout(workout, includeSections, excludeSections)
+  const fixedWorkout = fixCrossAxedWorkoutComponents(workout)
+  const filteredWorkout = filterWorkout(fixedWorkout, includeSections, excludeSections)
   return formatWorkout(filteredWorkout) || 'Oh no! There is no workout posted.'
 }
 

@@ -2,6 +2,40 @@ import decodeEntities from 'entities-decode'
 
 import type { WorkoutComponent } from './types.js'
 
+// really wish we didn't need this, but apparently we do
+export function fixCrossAxedWorkoutComponents(components: WorkoutComponent[]): WorkoutComponent[] {
+  let comps = components.slice()
+
+  // add a section for each component that is missing one
+  for (let i = 0; i < comps.length; i++) {
+    const c = comps[i]
+    if (!c.IsSection && looksLikeSectionName(c.Name) && !comps[i - 1]?.IsSection) {
+      comps.splice(i, 0, { ...c, IsSection: true })
+    }
+
+    if (!c.IsSection && !comps[i - 1]?.IsSection && c.IsWeightlifting && comps[i + 1]?.Name == 'Metcon') {
+      comps.splice(i, 0, {
+        IsSection: true,
+        Name: 'Pre-Metcon',
+        Comment: '',
+        Description: '',
+        IsWeightlifting: false,
+        TotalWeightLiftingComponents: { List: [] },
+      })
+    }
+  }
+
+  // rename warm up to warm-up
+  comps = comps.map((c) => {
+    if (c.Name.match(/Warm up/i)) {
+      return { ...c, Name: 'Warm-up' }
+    }
+    return c
+  })
+
+  return comps
+}
+
 export function filterWorkout(
   workoutComponents: WorkoutComponent[],
   includeSections: string[],
@@ -101,4 +135,10 @@ function workoutName(component: WorkoutComponent, section?: WorkoutComponent): s
 
 function removeFillerText(text: string): string {
   return text.replace(/^(Athlete Instructions|Instructions|Athlete Notes|Extra Details)$/gim, '')
+}
+
+function looksLikeSectionName(name: string): boolean {
+  return !!name.match(
+    /^(Metcon|Warm-up|Warm up|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength)$/i
+  )
 }
