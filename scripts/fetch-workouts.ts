@@ -14,9 +14,14 @@ async function main(username: string, password: string) {
   // fetch workouts
   for (const day of days) {
     const date = day.toISOString().split('T')[0]
+    const filename = `scripts/workouts/${date}.json`
+    if (fs.existsSync(filename)) {
+      console.log(`Skipping ${date} (already exists)`)
+      continue
+    }
     const workout = await listWorkoutComponents(session, date)
     if (workout.length) {
-      fs.writeFileSync(`scripts/workouts/${date}.json`, JSON.stringify(workout, null, 2))
+      fs.writeFileSync(filename, JSON.stringify(workout, null, 2))
     }
   }
 }
