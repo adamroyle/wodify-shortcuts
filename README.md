@@ -15,9 +15,9 @@ Of course! Tap these icons to save them to your Shortcuts app.
 <p>
 <a href="https://www.icloud.com/shortcuts/9f134312530442e484b3534259c3a219"><img src="https://user-images.githubusercontent.com/25002779/194006190-03cd4606-6a92-486a-87e0-60798a13ad61.png" width="200" alt="Sign me in to CrossFit" /></a>
 &nbsp;&nbsp;&nbsp;
-<a href="https://www.icloud.com/shortcuts/06a278db0bcc40bf930ea9449c660d30"><img src="https://user-images.githubusercontent.com/25002779/194006197-9d2a3b18-4658-4998-b6ea-99799d513750.png" width="200" alt="What's today's workout?" /></a>
+<a href="https://www.icloud.com/shortcuts/fe4749c122514a67a9bf39eadb71ae01"><img src="https://user-images.githubusercontent.com/25002779/194006197-9d2a3b18-4658-4998-b6ea-99799d513750.png" width="200" alt="What's today's workout?" /></a>
 &nbsp;&nbsp;&nbsp;
-  <a href="https://www.icloud.com/shortcuts/939bd28350a44760b1f70dbcaff4b5b9"><img src="https://user-images.githubusercontent.com/25002779/194006203-8642e8ce-5902-4f1c-808d-e290c4490b04.png" width="200" alt="What's tomorrow's workout?" /></a>
+  <a href="https://www.icloud.com/shortcuts/320b006c0cf945bc92a8de556047c8b6"><img src="https://user-images.githubusercontent.com/25002779/194006203-8642e8ce-5902-4f1c-808d-e290c4490b04.png" width="200" alt="What's tomorrow's workout?" /></a>
 </p>
 
 On setup you will be prompted to enter your Wodify login details (email and password) and some optional configuration.
@@ -83,13 +83,13 @@ POST https://adam.royle.dev/wodify/workout
 
 **Params**
 
-| Name            | Required |                                                                                                                                                             |
-| --------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| email           | Yes      | The email used to login to Wodify.                                                                                                                          |
-| password        | Yes      | The password used to login to Wodify.                                                                                                                       |
-| date            | Yes      | The date in ISO 8601 format.                                                                                                                                |
-| include_section | No       | Exclude sections without a matching title. Case-insensitive. **Allows partial matches.** Multiple supported with duplicate param or separated by a newline. |
-| exclude_section | No       | Exclude sections with a matching title. Case-insensitive. **Allows partial matches.** Multiple supported with duplicate param or separated by a newline.    |
+| Name           | Required |                                                        |
+| -------------- | -------- | ------------------------------------------------------ |
+| email          | Yes      | The email used to login to Wodify.                     |
+| password       | Yes      | The password used to login to Wodify.                  |
+| date           | Yes      | The date in ISO 8601 format.                           |
+| include_warmup | No       | Set to "1" to include warmup sections. Default is "0". |
+| include_extras | No       | Set to "1" to include extras sections. Default is "0". |
 
 **Example**
 
@@ -98,8 +98,8 @@ curl https://adam.royle.dev/wodify/workout \
   --data email=email@example.com \
   --data password=YourPassword1 \
   --data date=2022-09-27 \
-  --data include_section=Metcon \
-  --data exclude_section=Pre-Metcon
+  --data include_warmup=1 \
+  --data include_extras=1
 ```
 
 ---

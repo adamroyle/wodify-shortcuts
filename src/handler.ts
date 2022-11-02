@@ -8,8 +8,8 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   const date = formData.get('date')
   const email = formData.get('email')
   const password = formData.get('password')
-  const includeSections = formData.getAll('include_section').flatMap(splitAndTrim).filter(Boolean)
-  const excludeSections = formData.getAll('exclude_section').flatMap(splitAndTrim).filter(Boolean)
+  const includeWarmup = formData.get('include_warmup') === '1'
+  const includeExtras = formData.get('include_extras') === '1'
 
   if (!date || !email || !password) {
     console.error('Date, email and password are required.')
@@ -20,13 +20,13 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
   }
 
   try {
-    console.log({ user: hash(email), date, includeSections, excludeSections })
+    console.log({ user: hash(email), date, includeWarmup, includeExtras })
     return {
       statusCode: 200,
-      body: await getWorkout({ username: email, password, date, includeSections, excludeSections }),
+      body: await getWorkout({ username: email, password, date, includeWarmup, includeExtras }),
     }
   } catch (error: any) {
-    console.error(error.message, { user: hash(email), date, includeSections, excludeSections })
+    console.error(error.message, { user: hash(email), date, includeWarmup, includeExtras })
     return {
       statusCode: 500,
       body: error.message,

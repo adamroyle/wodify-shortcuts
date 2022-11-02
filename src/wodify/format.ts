@@ -69,11 +69,11 @@ export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): Workou
   return workoutComponents
 }
 
-function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+export function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   return filterWorkout(workoutComponents, [], ['Warm-up', 'Warm up', 'Warmup'])
 }
 
-function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   const extrasIndex = workoutComponents.findIndex((c) => looksLikeExtrasSectionName(c.Name))
   if (extrasIndex > 0) {
     return workoutComponents.slice(0, extrasIndex)

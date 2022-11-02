@@ -1,27 +1,32 @@
 import { login, listWorkoutComponents, listClasses, signinClass } from './wodify/api.js'
-import { filterWorkout, fixCrossAxedWorkoutComponents, formatWorkout } from './wodify/format.js'
+import { excludeExtras, excludeWarmup, fixCrossAxedWorkoutComponents, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
 interface GetWorkoutParams {
   username: string
   password: string
   date: string
-  includeSections: string[]
-  excludeSections: string[]
+  includeWarmup: boolean
+  includeExtras: boolean
 }
 
 export async function getWorkout({
   username,
   password,
   date,
-  includeSections,
-  excludeSections,
+  includeWarmup,
+  includeExtras,
 }: GetWorkoutParams): Promise<string> {
   const session = await loginWrapper(username, password)
-  const workout = await listWorkoutComponents(session, date)
-  const fixedWorkout = fixCrossAxedWorkoutComponents(workout)
-  const filteredWorkout = filterWorkout(fixedWorkout, includeSections, excludeSections)
-  return formatWorkout(filteredWorkout) || 'Oh no! There is no workout posted.'
+  let workout = await listWorkoutComponents(session, date)
+  workout = fixCrossAxedWorkoutComponents(workout)
+  if (!includeWarmup) {
+    workout = excludeWarmup(workout)
+  }
+  if (!includeExtras) {
+    workout = excludeExtras(workout)
+  }
+  return formatWorkout(workout) || 'Oh no! There is no workout posted.'
 }
 
 interface SigninParams {
