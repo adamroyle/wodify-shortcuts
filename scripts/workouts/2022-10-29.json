@@ -1,6 +1,54 @@
 [
   {
-    "Id": "69219764",
+    "Id": "69775586",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 rounds for quality (10 min cap) of:<br />Cardio Choice, 1 min<br />Wall Thoracic Extension, 30 secs<br />10 PVC Pass Throughs + 10 Overhead Squats<br />10 Sumo Deadlifts<br />5 Hang Muscle Snatches<br />5 Squat Jumps</p><p> </p><p> </p>",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27659695",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69775588",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -9,8 +57,8 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Warm-up",
-    "Comment": "<p>3 rounds for quality of:<br />Ski/row, 45 secs<br />Banded Lat Stretch, L 45 secs/R 45 secs<br />10 L/10 R Cossack Squats<br />5 Deadlifts<br />5 Strict Press</p><p> </p><p> </p>",
+    "Name": "Metcon",
+    "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -33,72 +81,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69219769",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Midline",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>Complete as many rounds as possible in 8 mins of:<br />20 Hollow Rocks<br />20 Toe Touches<br />20 V-ups</p><p> </p><p> </p>",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27465812",
-    "TotalWeightLiftingComponents": {
       "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219783",
+    "Id": "69775596",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -107,7 +105,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Metcon",
+    "Name": "Terrible Treble, In Partners",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -117,7 +115,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>2 rounds, each round for time, of:</p><p>20 Ski/Row Erg Calories<br />20 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />15 Ski/Row Erg Calories<br />15 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />10 Ski/Row Erg Calories<br />10 Handstand Push-ups<br />10 Deadlifts, 100/70kg</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>RX+: 125/85kg, Strict HSPU</p>",
+    "Description": "(you go I go, complete 1 RD or full distance before swapping)\n0:00-7:00\nAMRAP \n5 Power Snatch 52/38kg\n5 Bar Facing Burpees\n\n7:00-14:00\nAMRAP\nEcho Bike Cals\n\n14:00-21:00\nAMRAP\n30 Double Unders\n3 Wall Walks\n\n*Each AMRAP scored separately\n1 - reps\n2 - Cals\n3 - reps\n\nRX+:61/43kg, 15m HS Walk in place of wall walks.",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -125,29 +123,28 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 3,
-    "ComponentId": "27465816",
+    "ComponentId": "27659698",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219822",
+    "Id": "69775600",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -180,23 +177,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69234059",
+    "Id": "69775601",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -229,23 +225,70 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219826",
+    "Id": "69775605",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": true,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Push Press",
+    "Comment": "<p>5 Push Press, pick load<br /><br />Every 3 mins for 15 mins.<br /><br /><br />Extra Details<br />75+% 1RM<br /><br />Instructions<br />Touch-and-go reps.</p><p> </p><p> </p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "5-5-5-5-5",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "50",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": true,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69775608",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,8 +297,8 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Cleans + Hang Power Cleans + Push Jerks ",
-    "Comment": "",
+    "Name": "Durability",
+    "Comment": "<p>For total reps of strict pull ups</p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -264,7 +307,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p> </p><p>1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]</p><p> </p><p>Use the heaviest weight you can for each set.</p><p> </p><p>Complete sets every 1:30 for 9 mins.</p><p> </p><p>Athlete Notes<br />Build up to a heavy complex for the day over the course of the 6 rounds. Start with 2-3 warm-up sets before starting the clock.</p>",
+    "Description": "<p>3 rounds for max reps of:<br />16 Kettlebell Gorilla Rows, pick load<br />12 Dumbbell Romanian Deadlifts, pick load<br />max rep Strict Pull-ups</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -272,23 +315,22 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465836",
+    "ComponentId": "27659704",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false

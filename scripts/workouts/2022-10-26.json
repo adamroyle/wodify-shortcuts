@@ -1,6 +1,6 @@
 [
   {
-    "Id": "69236132",
+    "Id": "69773748",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -19,7 +19,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>3 rounds for quality of:<br />Jump Rope Practice, 30 secs<br />10 Barbell Good Mornings<br />5 Back Squats<br />5 Barbell Squat Jumps<br />10 Behind-the-Neck Elbow Punch Throughs</p><p> </p><p> </p>",
+    "Description": "<p>For quality:<br />Every 1 min for 8 mins, alternating between:<br />Broad Jump, 15m<br />Row, 300/250 m<br />7 Burpees Over Rower<br />15 Banded Face Pulls</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -27,7 +27,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27471103",
+    "ComponentId": "27659055",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -35,7 +35,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -49,7 +49,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236133",
+    "Id": "69773750",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -58,7 +58,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Pre-Metcon",
+    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -84,7 +84,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -98,7 +98,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236134",
+    "Id": "69773757",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -107,8 +107,8 @@
     "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Squat Clean Thruster",
-    "Comment": "<p>1 Squat Clean Thruster, pick load<br /><br />Every 1:30 for 12 mins.<br /><br />Athlete Instructions<br />Instructions<br />Start at ~60% 1RM clean and jerk and build across sets.</p>",
+    "Name": "Thruster",
+    "Comment": "<p>7-7-5-5-3-3-7-7-5-5-3-3<br /><br />Use the heaviest weight you can for each set.<br />Rest as needed between sets.<br /><br />Complete sets every 1 min for 12 mins.<br /><br /><br />Treat these as waves. You go heavier on the second set of each thruster set than the first.</p><p> </p><p> </p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -116,7 +116,7 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "1-1-1-1-1-1-1-1",
+    "MeasureRepScheme": "7-7-5-5-3-3-7-7-5-5-3-3",
     "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
@@ -125,7 +125,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "66",
+    "ComponentId": "67",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -133,7 +133,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -147,56 +147,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236135",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Metcon",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>Accessory Work, 3 rounds of:<br />8 Dumbbell Hammer Curls, pick load<br />8 Dumbbell Bicep Curls, pick load<br />8 Dumbbell Reverse Curls, pick load<br />max effort Dead Hang<br />Rest 30 secs<br />10 Dumbbell Pull Overs, pick load<br />15 Dumbbell Tricep Kickbacks, pick load<br />Rest 1 min<br /><br />Athlete Instructions<br />Extra Details<br />Dumbbell Hammer Curls- heavy<br />Dumbbell Bicep Curls- moderate<br />Dumbbell Reverse Curls- light<br /><br />All movements dual dumbbell.</p>",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": true,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27471104",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125996412",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69236136",
+    "Id": "69773765",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -231,7 +182,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -245,7 +196,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236139",
+    "Id": "69773768",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -280,7 +231,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -294,17 +245,17 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236142",
+    "Id": "69773769",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
     "IsGymnastics": false,
-    "IsWeightlifting": true,
+    "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Front Squat",
-    "Comment": "<p>Log your best Front Squat 1 rep max lift.<br /><br />Only log the heaviest 1 rep, do not include sets prior to it.<br /><br />Find a 1RM on a 15 min clock. Rest as needed between attempts.</p><p> </p><p> </p>",
+    "Name": "Isabel",
+    "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -312,8 +263,8 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "1",
-    "Description": "",
+    "MeasureRepScheme": "",
+    "Description": "For Time:  30 Snatches, 135# / 95#",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -321,7 +272,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "35",
+    "ComponentId": "142",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -329,7 +280,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126341728",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -340,104 +291,6 @@
       ]
     },
     "HasPerformedAtLeastOnce": true,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69236146",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Midline",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>6 rounds<br />40 GHDSU<br />40 Russian KB Swings (Light)<br /><br />*this is 240 GHDSU, if you have not done 150 in a workout recently then do 6 rounds of 10-20 or 30 but remember this movement is notorious for causing rhabdo and severe DOMs. Do not hit the rx reps if you are not conditioned to that volume, if you are unsure then you are not conditioned to that volume.</p><p> </p><p> </p>",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27471110",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125996412",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69236154",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Aerobic Capacity",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>Go every 5 mins:<br />Row: 6x 1000 m<br /><br />Each for time.</p>",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27471115",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125996412",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   }
 ]

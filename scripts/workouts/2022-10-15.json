@@ -19,7 +19,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"297\"><tbody><tr height=\"280\"><td width=\"297\" height=\"280\"><p>Jog 400m (find a WOD Buddy)<br /><br />Then<br />5 rounds of:<br />20 skips<br />3 burpees<br />3 pull ups<br />2 Synchro Wall walks with partner</p><p> </p><p> </p></td></tr></tbody></table>",
+    "Description": "<p>Jog 400m (find a WOD Buddy)<br /><br />Then<br />5 rounds of:<br />20 skips<br />3 burpees<br />3 pull ups<br />2 Synchro Wall walks with partner</p><p> </p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -33,16 +33,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -67,7 +68,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"297\"><tbody><tr height=\"477\"><td width=\"297\" height=\"477\"><p>In Pairs:<br /><br />25 Minute AMRAP:<br />Row, 2000 m, Or 5k Bike, or 2k Ski (buy in)<br />-- then --<br />5 rounds of:<br />100 Double Unders<br />10 Burpee Pull Ups<br />30m Wheel Barrow (15m each)<br />—then—<br />Remaining time row, bike or ski for Cals<br /><br />*RX+:<br />12 Ring Muscle-ups<br />Handstand Walk, 30m (15m each)<br /><br />**Split reps as required, your score is your cals once back on the machine<br /><br />You will need to work together to get back to the machine on this one, the first effort should be kept to around 8 minutes or less, at the top end each of the movements after that will take about 1 minute to complete leaving 2 minutes spare… Scale wisely and make it back to the machine.</p><p> </p><p> </p></td></tr></tbody></table>",
+    "Description": "<p>In Pairs:<br /><br />25 Minute AMRAP:<br />Row, 2000 m, Or 5k Bike, or 2k Ski (buy in)<br />-- then --<br />5 rounds of:<br />100 Double Unders<br />10 Burpee Pull Ups<br />30m Wheel Barrow (15m each)<br />—then—<br />Remaining time row, bike or ski for Cals<br /><br />*RX+:<br />12 Ring Muscle-ups<br />Handstand Walk, 30m (15m each)<br /><br />**Split reps as required, your score is your cals once back on the machine<br /><br />You will need to work together to get back to the machine on this one, the first effort should be kept to around 8 minutes or less, at the top end each of the movements after that will take about 1 minute to complete leaving 2 minutes spare… Scale wisely and make it back to the machine.</p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -81,16 +82,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -129,16 +131,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -177,16 +180,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -202,7 +206,7 @@
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
     "Name": "Deficit Deadlift",
-    "Comment": "<table width=\"297\"><tbody><tr height=\"453\"><td width=\"297\" height=\"453\"><p>Use the heaviest weight you can for each set.<br />Rest 3 mins between sets.<br /><br />Athlete Instructions<br />Extra Details<br />*Rest 2-3 mins between sets.<br /><br />Set 1: 75% 3RM (week 2)<br />Set 2: 75% 3RM (week 2)<br />Set 3: 75-80% 3RM (week 2)<br />Set 4: 75-80% 3RM (week 2)<br />Set 5: 80-85% 3RM (week 2)<br /><br />Instructions<br />Stand on a 4 inch plate. These reps are to be done dead-stop. Reset on each pull off the floor.</p><p> </p><p> </p></td></tr></tbody></table>",
+    "Comment": "<p>Use the heaviest weight you can for each set.<br />Rest 3 mins between sets.<br /><br />Athlete Instructions<br />Extra Details<br />*Rest 2-3 mins between sets.<br /><br />Set 1: 75% 3RM (week 2)<br />Set 2: 75% 3RM (week 2)<br />Set 3: 75-80% 3RM (week 2)<br />Set 4: 75-80% 3RM (week 2)<br />Set 5: 80-85% 3RM (week 2)<br /><br />Instructions<br />Stand on a 4 inch plate. These reps are to be done dead-stop. Reset on each pull off the floor.</p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -225,16 +229,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -259,7 +264,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<table width=\"297\"><tbody><tr height=\"249\"><td width=\"297\" height=\"249\"><p>4 rounds for quality of:<br />8 Romanian Deadlifts, pick load<br />https://youtu.be/GZAKFRNtxLY<br />15 Weighted Hip Extensions, pick load<br />https://youtu.be/CHRbTdJF_0M</p><p> </p><p> </p></td></tr></tbody></table>",
+    "Description": "<p>4 rounds for quality of:<br />8 Romanian Deadlifts, pick load<br />https://youtu.be/GZAKFRNtxLY<br />15 Weighted Hip Extensions, pick load<br />https://youtu.be/CHRbTdJF_0M</p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -273,16 +278,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "126025135",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false

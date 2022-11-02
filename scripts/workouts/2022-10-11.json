@@ -33,16 +33,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -81,16 +82,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -129,16 +131,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -177,16 +180,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -225,16 +229,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -273,16 +278,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -321,16 +327,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
@@ -369,16 +376,17 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false
-      }
+      "List": [
+        {
+          "ClassId": "125883694",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false

@@ -1,6 +1,6 @@
 [
   {
-    "Id": "69236132",
+    "Id": "69456810",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -19,7 +19,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>3 rounds for quality of:<br />Jump Rope Practice, 30 secs<br />10 Barbell Good Mornings<br />5 Back Squats<br />5 Barbell Squat Jumps<br />10 Behind-the-Neck Elbow Punch Throughs</p><p> </p><p> </p>",
+    "Description": "<p>2 rounds for quality of:<br />Jog, 200 m<br />10 Inchworm + Push-ups<br />10 KB Stiff Legged Deadlifts<br />10 Beat swings<br />5 Ring Rows/Pull Ups&nbsp;</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -27,7 +27,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27471103",
+    "ComponentId": "27549482",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -35,7 +35,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -49,8 +49,8 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236133",
-    "IsSection": true,
+    "Id": "69456822",
+    "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
@@ -59,6 +59,55 @@
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
     "Name": "Pre-Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Pull Up, CTB Pull Up and Bar Muscle Up skill session.</p><p> </p><p>Our aim for today is to have you leave with a plan for improving your pull ups. A lot of the time strength will be the limiting factor therefore most of your accessory work should start there. Our team will have a takeaway for you to work on.</p><p> </p><p> </p>",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27549486",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "126065074",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69456830",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -84,7 +133,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -98,56 +147,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236134",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": true,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Squat Clean Thruster",
-    "Comment": "<p>1 Squat Clean Thruster, pick load<br /><br />Every 1:30 for 12 mins.<br /><br />Athlete Instructions<br />Instructions<br />Start at ~60% 1RM clean and jerk and build across sets.</p>",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "1-1-1-1-1-1-1-1",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "66",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125996412",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69236135",
+    "Id": "69456828",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -156,7 +156,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Metcon",
+    "Name": "Helen",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -166,15 +166,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>Accessory Work, 3 rounds of:<br />8 Dumbbell Hammer Curls, pick load<br />8 Dumbbell Bicep Curls, pick load<br />8 Dumbbell Reverse Curls, pick load<br />max effort Dead Hang<br />Rest 30 secs<br />10 Dumbbell Pull Overs, pick load<br />15 Dumbbell Tricep Kickbacks, pick load<br />Rest 1 min<br /><br />Athlete Instructions<br />Extra Details<br />Dumbbell Hammer Curls- heavy<br />Dumbbell Bicep Curls- moderate<br />Dumbbell Reverse Curls- light<br /><br />All movements dual dumbbell.</p>",
+    "Description": "3 Rounds for time of:  \n400m Run  \n21 Kettlebell Swings, 53# / 35#  \n12 Pull-ups",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": true,
+    "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27471104",
+    "ComponentId": "134",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -182,7 +182,56 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": true,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69456854",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Hellin",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "3 Rounds for time:\n\nRun 400m\n21 Kettlebell Swings 32/24kg\n12 Bar Muscle Ups",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27549491",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -196,7 +245,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236136",
+    "Id": "69456867",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -231,7 +280,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -245,7 +294,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236139",
+    "Id": "69456882",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,7 +303,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
+    "Name": "Strength",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -280,7 +329,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -294,7 +343,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236142",
+    "Id": "69456881",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -303,8 +352,8 @@
     "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Front Squat",
-    "Comment": "<p>Log your best Front Squat 1 rep max lift.<br /><br />Only log the heaviest 1 rep, do not include sets prior to it.<br /><br />Find a 1RM on a 15 min clock. Rest as needed between attempts.</p><p> </p><p> </p>",
+    "Name": "Back Squat",
+    "Comment": "<p>1 Back Squat, pick load<br /><br />Every 1 min for 12 mins.<br /><br />Instructions<br />From 90-95% 1RM for all sets.</p><p> </p><p> </p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -312,7 +361,7 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "1",
+    "MeasureRepScheme": "1-1-1-1-1-1-1-1-1-1-1-1",
     "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
@@ -321,7 +370,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "35",
+    "ComponentId": "22",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -329,7 +378,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -343,8 +392,8 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236146",
-    "IsSection": false,
+    "Id": "69456890",
+    "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
@@ -352,7 +401,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Midline",
+    "Name": "Gymnastics",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -362,15 +411,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>6 rounds<br />40 GHDSU<br />40 Russian KB Swings (Light)<br /><br />*this is 240 GHDSU, if you have not done 150 in a workout recently then do 6 rounds of 10-20 or 30 but remember this movement is notorious for causing rhabdo and severe DOMs. Do not hit the rx reps if you are not conditioned to that volume, if you are unsure then you are not conditioned to that volume.</p><p> </p><p> </p>",
+    "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27471110",
+    "ScalingId": 0,
+    "ComponentId": "0",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -378,7 +427,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -392,17 +441,17 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69236154",
+    "Id": "69456932",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
     "IsGymnastics": false,
-    "IsWeightlifting": false,
+    "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Aerobic Capacity",
-    "Comment": "",
+    "Name": "Strict Pull Ups",
+    "Comment": "<p>EMOM<br />Start with whatever number you can hold for 10 mins.<br /><br />If you cannot do strict do toe assisted strict and begin at 4’s, retest when you get to 8 for 6 mins.<br /><br />Each week increase the reps, if you can’t hold it for ten mins, repeat weekly until you can.<br /><br />Once you get to 50 total reps ie 5 reps for 10 mins then reduce the total mins and increase the reps per minute.<br /><br />So you would go from 5 a min for 10mins, to 6 a min for 8 mins, then 7 for 7mins, 8 for 6mins, 9 for 5 mins and 10 for 4 mins<br /><br />Once you are here, re-add the minutes but keep the reps at 10, until you can reach 10 a minute for 10 minutes.</p><p> </p><p> </p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -410,8 +459,8 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>Go every 5 mins:<br />Row: 6x 1000 m<br /><br />Each for time.</p>",
+    "MeasureRepScheme": "4-4-4-4-4-4-4-4-4-4",
+    "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -419,7 +468,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27471115",
+    "ComponentId": "22458563",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -427,7 +476,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125996412",
+          "ClassId": "126065074",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",

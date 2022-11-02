@@ -1,6 +1,6 @@
 [
   {
-    "Id": "69219764",
+    "Id": "70128674",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -10,7 +10,7 @@
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
     "Name": "Warm-up",
-    "Comment": "<p>3 rounds for quality of:<br />Ski/row, 45 secs<br />Banded Lat Stretch, L 45 secs/R 45 secs<br />10 L/10 R Cossack Squats<br />5 Deadlifts<br />5 Strict Press</p><p> </p><p> </p>",
+    "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -33,32 +33,31 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219769",
+    "Id": "70128675",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
-    "IsWarmup": false,
+    "IsWarmup": true,
     "IsGymnastics": false,
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Midline",
+    "Name": "Warm-up",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -68,37 +67,84 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>Complete as many rounds as possible in 8 mins of:<br />20 Hollow Rocks<br />20 Toe Touches<br />20 V-ups</p><p> </p><p> </p>",
+    "Description": "Line Drills\r\nLunges\r\nBear Crawl\r\nCrab Walk\r\nHigh Knees\r\nGymnastics Inch Worm\r\n…\r\n…",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "27780808",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "70128785",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Ring and Bar dip skill/work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "Bar Support - Ring Support\r\nBar Dip - Ring Dip",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27465812",
+    "ScalingId": 1,
+    "ComponentId": "27780810",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219783",
+    "Id": "70128800",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -117,37 +163,36 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>2 rounds, each round for time, of:</p><p>20 Ski/Row Erg Calories<br />20 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />15 Ski/Row Erg Calories<br />15 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />10 Ski/Row Erg Calories<br />10 Handstand Push-ups<br />10 Deadlifts, 100/70kg</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>RX+: 125/85kg, Strict HSPU</p>",
+    "Description": "For time:\r\n12 Deadlifts, 110/80kg\r\n12 Ring Muscle-ups\r\n10 Deadlifts, 124/90kg\r\n10 Ring Muscle-ups\r\n8 Deadlifts, 143/100kg\r\n8 Ring Muscle-ups\r\n6 Deadlifts 150kg/108kg\r\n6 Ring Muscle-ups\r\n4 Deadlifts, 165kg/115kg\r\n4 Ring Muscle-ups",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 3,
-    "ComponentId": "27465816",
+    "ScalingId": 2,
+    "ComponentId": "27780815",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219822",
+    "Id": "70128836",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -180,32 +225,31 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69234059",
-    "IsSection": true,
+    "Id": "70128837",
+    "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
     "IsGymnastics": false,
-    "IsWeightlifting": false,
+    "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
+    "Name": "Push Press ",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -214,38 +258,37 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
+    "MeasureRepScheme": "5-3-3-3-5",
+    "Description": "Use the heaviest weight you can for each set.\r\nRest as needed between sets.\r\n\r\nSet 1: 60% 1RM\r\nSet 2: 70% 1RM\r\nSet 3: 80% 1RM\r\nSet 4: 80+% 1RM\r\nSet 5: 5RM\r\n\r\nComplete sets every 2 mins for 10 mins.\"",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
+    "ScalingId": 1,
+    "ComponentId": "27780831",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219826",
+    "Id": "70128850",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,7 +297,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Cleans + Hang Power Cleans + Push Jerks ",
+    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -264,31 +307,30 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p> </p><p>1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]</p><p> </p><p>Use the heaviest weight you can for each set.</p><p> </p><p>Complete sets every 1:30 for 9 mins.</p><p> </p><p>Athlete Notes<br />Build up to a heavy complex for the day over the course of the 6 rounds. Start with 2-3 warm-up sets before starting the clock.</p>",
+    "Description": "3 rounds for quality of:\r\n10 Ring Push-ups\r\nSingle Arm Ring Plank, L 15 secs/R 15 secs\r\n8 L/8 R Single Arm Push Press, pick load\r\nSingle Arm Overhead Carry, pick load, L 15m/R 15m",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
+    "IsResultTypeNoMeasure": true,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465836",
+    "ComponentId": "27780834",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false

@@ -1,6 +1,6 @@
 [
   {
-    "Id": "69219764",
+    "Id": "70128495",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -10,7 +10,7 @@
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
     "Name": "Warm-up",
-    "Comment": "<p>3 rounds for quality of:<br />Ski/row, 45 secs<br />Banded Lat Stretch, L 45 secs/R 45 secs<br />10 L/10 R Cossack Squats<br />5 Deadlifts<br />5 Strict Press</p><p> </p><p> </p>",
+    "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -33,24 +33,71 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219769",
+    "Id": "70128502",
     "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": true,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "For today, if you trained Monday and did the clean and Jerks then complete the snatches today, if you had Monday off, your call on either the snatches or Macho Man.",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "3 rounds for quality of: \r\nCardio Choice, 1 min\r\n8 Snatch Grip Push Press\r\n6 Inchworm Push-ups\r\nTall Kneeling Pallof Press Hold, L 30 secs/R 30 secs \r\n10 Barbell Good Mornings\r\n8 Back Squats\r\n6 Jumping Back Squats",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "27780706",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "70128508",
+    "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
     "IsWarmup": false,
@@ -58,7 +105,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Midline",
+    "Name": "Workout",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -68,37 +115,36 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>Complete as many rounds as possible in 8 mins of:<br />20 Hollow Rocks<br />20 Toe Touches<br />20 V-ups</p><p> </p><p> </p>",
+    "Description": "",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27465812",
+    "ScalingId": 0,
+    "ComponentId": "0",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219783",
+    "Id": "70128509",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -117,37 +163,84 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>2 rounds, each round for time, of:</p><p>20 Ski/Row Erg Calories<br />20 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />15 Ski/Row Erg Calories<br />15 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />10 Ski/Row Erg Calories<br />10 Handstand Push-ups<br />10 Deadlifts, 100/70kg</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>RX+: 125/85kg, Strict HSPU</p>",
+    "Description": "EMOM for as long as possible (capped at 15 mins)\r\n\r\n3 Power Snatch 61/43kg\r\n5 Overhead Squats 61/43kg",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 3,
-    "ComponentId": "27465816",
+    "ScalingId": 2,
+    "ComponentId": "27780710",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219822",
+    "Id": "70128590",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Macho Man",
+    "Comment": "Will be capping at 15 minutes today",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "Every Minute for 20mins\r\n3 Power Cleans\r\n3 Front Squats\r\n3 Push jerks\r\n\r\nWeights - 85kg/60kg",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "10435897",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "70128621",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -180,72 +273,22 @@
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69234059",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
       "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219826",
+    "Id": "70128622",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,7 +297,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Cleans + Hang Power Cleans + Push Jerks ",
+    "Name": "Metcon",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -264,31 +307,30 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p> </p><p>1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]</p><p> </p><p>Use the heaviest weight you can for each set.</p><p> </p><p>Complete sets every 1:30 for 9 mins.</p><p> </p><p>Athlete Notes<br />Build up to a heavy complex for the day over the course of the 6 rounds. Start with 2-3 warm-up sets before starting the clock.</p>",
+    "Description": "Each for time:\r\nRun 1600 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 800 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 400 m\r\nRun 800 m\r\n\r\nRest as needed between efforts.\r\n\r\nAthlete Instructions\r\nOrder\r\nAM or PM Session\r\n\r\nInstructions\r\nComplete as:\r\n1600 m- easy warm-up\r\n-- then -- \r\n3 rounds of:\r\n400 m- 1 mi race pace\r\n400 m- active recovery jog\r\n-- then -- \r\n800 m- easy\r\n-- then -- \r\n3 rounds of:\r\n400 m- 1 mi race pace\r\n400 m- active recovery jog\r\n-- then -- \r\n800 m- easy cool down\r\n\r\nExtra Details\r\nV02 Max Focus",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "27465836",
+    "ScalingId": 1,
+    "ComponentId": "27780755",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
     },
     "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false
+      }
     },
     "HasPerformedAtLeastOnce": false,
     "HasAtLeastOneWorkoutComponentResult": false

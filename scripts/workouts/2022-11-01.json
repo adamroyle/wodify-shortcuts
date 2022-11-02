@@ -1,55 +1,6 @@
 [
   {
-    "Id": "69219764",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Warm-up",
-    "Comment": "<p>3 rounds for quality of:<br />Ski/row, 45 secs<br />Banded Lat Stretch, L 45 secs/R 45 secs<br />10 L/10 R Cossack Squats<br />5 Deadlifts<br />5 Strict Press</p><p> </p><p> </p>",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69219769",
+    "Id": "70031916",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -58,7 +9,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Midline",
+    "Name": "Warm Up",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -68,15 +19,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>Complete as many rounds as possible in 8 mins of:<br />20 Hollow Rocks<br />20 Toe Touches<br />20 V-ups</p><p> </p><p> </p>",
+    "Description": "<p>3 rounds for quality of:<br />1x [ Dead Hang, 15 secs + Active Hang, 15 secs ]<br />Plank Hold, 30 secs<br />Hollow Hold, 30 secs<br />8 Bar Kip Swings<br />6-8 Jumping Pull-ups<br />Side Plank, L 15 secs/R 15 secs</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
+    "IsResultTypeNoMeasure": true,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465812",
+    "ComponentId": "27750310",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -84,8 +35,8 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
+          "ClassId": "126560890",
+          "StartTime": "09:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
           "FullyFormattedResult": "",
@@ -98,7 +49,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219783",
+    "Id": "70031927",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -117,7 +68,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>2 rounds, each round for time, of:</p><p>20 Ski/Row Erg Calories<br />20 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />15 Ski/Row Erg Calories<br />15 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />10 Ski/Row Erg Calories<br />10 Handstand Push-ups<br />10 Deadlifts, 100/70kg</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>RX+: 125/85kg, Strict HSPU</p>",
+    "Description": "<p>For time:<br />2 rounds of:<br />18 Pull Ups<br />12/8 Echo Bike Calories<br />Dumbbell Farmers Carry, 32/24kg 100m<br />-- Rest 2 mins --<br />2 rounds of:<br />12 Pull Ups<br />12/8 Echo Bike Calories<br />Dumbbell Farmers Carry, 32/24kg 100m<br />-- Rest 2 mins --<br />2 rounds of:<br />6 Pull Ups<br />12/8 Echo Bike Calories<br />Dumbbell Farmers Carry, 32/24kg 100m<br /><br />RX+:12-8-6 BMU</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -125,7 +76,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 3,
-    "ComponentId": "27465816",
+    "ComponentId": "27750315",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -133,8 +84,8 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
+          "ClassId": "126560890",
+          "StartTime": "09:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
           "FullyFormattedResult": "",
@@ -147,7 +98,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219822",
+    "Id": "70051256",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -182,8 +133,8 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
+          "ClassId": "126560890",
+          "StartTime": "09:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
           "FullyFormattedResult": "",
@@ -196,56 +147,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69234059",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69219826",
+    "Id": "70051268",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,7 +156,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Cleans + Hang Power Cleans + Push Jerks ",
+    "Name": "Aerobic Conditioning",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -264,7 +166,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p> </p><p>1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]</p><p> </p><p>Use the heaviest weight you can for each set.</p><p> </p><p>Complete sets every 1:30 for 9 mins.</p><p> </p><p>Athlete Notes<br />Build up to a heavy complex for the day over the course of the 6 rounds. Start with 2-3 warm-up sets before starting the clock.</p>",
+    "Description": "<p>For time:<br />Run, 3 km<br />50/35 Echo Bike Calories<br />Row, 3 km<br />50/35 Echo Bike Calories</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
@@ -272,7 +174,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465836",
+    "ComponentId": "27756404",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -280,8 +182,57 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
+          "ClassId": "126560890",
+          "StartTime": "09:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "70051306",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Gymnastics Conditioning",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 rounds for quality of:<br />Chin Over Bar Hold, 15 secs<br />10 Maltese Raises, pick load<br />GHD Side Plank Pallof Press Hold, L 15 secs/R 15 secs<br /><br />https://youtu.be/Wt8dRpM0wGU<br />https://youtu.be/FETirgtiuik</p><p> </p><p> </p>",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27756419",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "126560890",
+          "StartTime": "09:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
           "FullyFormattedResult": "",

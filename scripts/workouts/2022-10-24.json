@@ -1,55 +1,6 @@
 [
   {
-    "Id": "69219764",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Warm-up",
-    "Comment": "<p>3 rounds for quality of:<br />Ski/row, 45 secs<br />Banded Lat Stretch, L 45 secs/R 45 secs<br />10 L/10 R Cossack Squats<br />5 Deadlifts<br />5 Strict Press</p><p> </p><p> </p>",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69219769",
+    "Id": "69719139",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -58,7 +9,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Midline",
+    "Name": "Warm Up ",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -68,15 +19,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>Complete as many rounds as possible in 8 mins of:<br />20 Hollow Rocks<br />20 Toe Touches<br />20 V-ups</p><p> </p><p> </p>",
+    "Description": "<p>3 rounds for quality of:<br />Run, 200 m<br />10 Dumbbell Glute Bridges<br />5 Push-ups<br />10 Dumbbell Deadlifts<br />5 Step Ups</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
+    "IsResultTypeNoMeasure": true,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465812",
+    "ComponentId": "27641429",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -84,7 +35,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
+          "ClassId": "126341726",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -98,7 +49,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219783",
+    "Id": "69719142",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -117,15 +68,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>2 rounds, each round for time, of:</p><p>20 Ski/Row Erg Calories<br />20 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />15 Ski/Row Erg Calories<br />15 Handstand Push-ups<br />10 Deadlifts, 100/70kg<br />10 Ski/Row Erg Calories<br />10 Handstand Push-ups<br />10 Deadlifts, 100/70kg</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>RX+: 125/85kg, Strict HSPU</p>",
+    "Description": "<p>For time:<br />3 rounds of:<br />15 Row/Ski Calories<br />15 Dumbbell Box Step Overs, 22.5/15kg 24/20 in<br />10 Devil Press, 22.5/15kg<br />-- Rest 5 mins --<br />3 rounds of:<br />15 Row/Ski Calories<br />Dumbbell Front Rack Walking Lunge, 22.5/15kg, 15m<br />15 Dumbbell Front Squats, 22.5/15kg</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
     "IsResultTypeNoMeasure": false,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
-    "ScalingId": 3,
-    "ComponentId": "27465816",
+    "ScalingId": 2,
+    "ComponentId": "27641430",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -133,7 +84,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
+          "ClassId": "126341726",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -147,7 +98,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69219822",
+    "Id": "69719144",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -182,7 +133,7 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
+          "ClassId": "126341726",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
@@ -196,56 +147,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "69234059",
-    "IsSection": true,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Weightlifting",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 0,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 0,
-    "ComponentId": "0",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [
-        {
-          "ClassId": "125843010",
-          "StartTime": "06:15:00",
-          "HasResultsForClass": false,
-          "PerformanceResultId": "0",
-          "FullyFormattedResult": "",
-          "IsRx": false,
-          "IsRxPlus": false
-        }
-      ]
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "69219826",
+    "Id": "69719156",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -254,7 +156,7 @@
     "IsWeightlifting": false,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Power Cleans + Hang Power Cleans + Push Jerks ",
+    "Name": "Strength",
     "Comment": "",
     "VideoURL": "",
     "VideoURLComment": "",
@@ -264,15 +166,15 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p> </p><p>1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 2 Push Jerks ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 2 Power Cleans + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]<br />1x [ 1 Power Clean + 1 Hang Power Clean + 1 Push Jerk ]</p><p> </p><p>Use the heaviest weight you can for each set.</p><p> </p><p>Complete sets every 1:30 for 9 mins.</p><p> </p><p>Athlete Notes<br />Build up to a heavy complex for the day over the course of the 6 rounds. Start with 2-3 warm-up sets before starting the clock.</p>",
+    "Description": "<p>3 rounds for quality of:<br />8 L/8 R Bulgarian Split Squats, pick load<br />5 L/5 R Single Leg Box Jumps<br />Wall Sit March, 30 secs</p><p> </p><p> </p>",
     "Rounds": 0,
     "ResultTypeId": 0,
     "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
+    "IsResultTypeNoMeasure": true,
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "27465836",
+    "ComponentId": "27641435",
     "TotalWeightLiftingComponents": {
       "List": [],
       "EmptyListItem": ""
@@ -280,7 +182,56 @@
     "WorkoutComponentResults": {
       "List": [
         {
-          "ClassId": "125843010",
+          "ClassId": "126341726",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "69719162",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Durability",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Complete as many rounds as possible in 10 mins of:<br />5 L x [ 1 Single Arm Kettlebell Squat Clean + 1 Cluster + 1 Snatch ], 32/24kg<br />5 R x [ 1 Single Arm Kettlebell Squat Clean + 1 Cluster + 1 Snatch ], 32/24kg<br />10 Kettlebell Box Step Overs, 32/24kg 24/20 in</p><p> </p><p> </p>",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "27641438",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "126341726",
           "StartTime": "06:15:00",
           "HasResultsForClass": false,
           "PerformanceResultId": "0",
