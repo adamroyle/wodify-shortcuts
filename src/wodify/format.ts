@@ -64,7 +64,21 @@ export function filterWorkout(
 }
 
 export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  return filterWorkout(workoutComponents, ['Metcon'], [])
+  workoutComponents = excludeWarmup(workoutComponents)
+  workoutComponents = excludeExtras(workoutComponents)
+  return workoutComponents
+}
+
+function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+  return filterWorkout(workoutComponents, [], ['Warm-up', 'Warm up', 'Warmup'])
+}
+
+function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+  const extrasIndex = workoutComponents.findIndex((c) => looksLikeExtrasSectionName(c.Name))
+  if (extrasIndex > 0) {
+    return workoutComponents.slice(0, extrasIndex)
+  }
+  return workoutComponents
 }
 
 export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
@@ -140,5 +154,11 @@ function removeFillerText(text: string): string {
 function looksLikeSectionName(name: string): boolean {
   return !!name.match(
     /^(Metcon|Warm-up|Warm up|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength)$/i
+  )
+}
+
+function looksLikeExtrasSectionName(name: string): boolean {
+  return !!name.match(
+    /^(Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY)$/i
   )
 }
