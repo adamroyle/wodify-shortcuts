@@ -1,6 +1,8 @@
 export interface User {
   ActiveLocationId: string
   ClientHasProgression: boolean
+  CustomerId: string
+  CustomerPublicName: string
   FirstDayOfWeek: number
   FirstName: string
   GlobalUserId: string
@@ -14,8 +16,6 @@ export interface User {
   LocalTimeZoneDifference: number
   SystemOfMeasureDistance: number
   SystemOfMeasureWeight: number
-  TenantId: string
-  TenantPublicName: string
   UserAllowedToComment: boolean
   UserId: string
 }

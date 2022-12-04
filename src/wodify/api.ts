@@ -55,7 +55,7 @@ export async function listPrograms(session: Session): Promise<Program[]> {
   return callApi('LocationsPrograms', session, {
     viewName: 'Home.Login',
     inputParameters: {
-      CustomerId: session.User.TenantId,
+      CustomerId: session.User.CustomerId,
       UserId: session.User.UserId,
       ActiveLocationId: session.User.ActiveLocationId,
     },
@@ -75,7 +75,7 @@ export async function listClasses(session: Session, date: string): Promise<Class
         },
         ClientVariables: {
           ActiveLocationId: session.User.ActiveLocationId,
-          TenantId: session.User.TenantId,
+          CustomerId: session.User.CustomerId,
           UserId: session.User.UserId,
         },
       },
@@ -94,7 +94,7 @@ export async function listWorkoutComponents(session: Session, date: string): Pro
           SelectedDate: date,
           ActiveLocationId: session.User.ActiveLocationId,
           GymProgramId: session.User.GymProgramId,
-          TenantId: session.User.TenantId,
+          CustomerId: session.User.CustomerId,
           UserId: session.User.UserId,
         },
       },
@@ -112,7 +112,7 @@ export async function getClassAccess(session: Session, classId: string): Promise
         ClassId: classId,
         ClientVariables: {
           ActiveLocationId: session.User.ActiveLocationId,
-          TenantId: session.User.TenantId,
+          CustomerId: session.User.CustomerId,
           UserId: session.User.UserId,
         },
       },
@@ -128,7 +128,7 @@ export async function reserveClass(session: Session, classId: string): Promise<R
     inputParameters: {
       Request: {
         ClassId: classId,
-        TenantId: session.User.TenantId,
+        CustomerId: session.User.CustomerId,
         UserId: session.User.UserId,
       },
     },
@@ -143,7 +143,7 @@ export async function signinClass(session: Session, classId: string): Promise<Re
     inputParameters: {
       Request: {
         ClassId: classId,
-        TenantId: session.User.TenantId,
+        CustomerId: session.User.CustomerId,
         UserId: session.User.UserId,
       },
     },
@@ -158,7 +158,7 @@ export async function cancelReservation(session: Session, classReservationId: st
     inputParameters: {
       Request: {
         ClassReservationId: classReservationId,
-        TenantId: session.User.TenantId,
+        CustomerId: session.User.CustomerId,
         UserId: session.User.UserId,
         IsClient: true,
       },
