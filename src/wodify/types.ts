@@ -9,9 +9,9 @@ export interface User {
   GymProgramId: string
   IsCoachOrAbove: boolean
   IsNonPrd: boolean
-  IsUse24HourTime: true
+  IsUse24HourTime: boolean
   IsUserSuspended: boolean
-  IsWorkoutTrackingEnabled: true
+  IsWorkoutTrackingEnabled: boolean
   LastName: string
   LocalTimeZoneDifference: number
   SystemOfMeasureDistance: number
