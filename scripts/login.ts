@@ -5,6 +5,7 @@ async function main(username: string, password: string, date: string) {
 
   try {
     const session = await login(username, password)
+    console.log(session)
     const classes = await listClasses(session, date)
     console.log(classes)
   } catch (e: any) {
