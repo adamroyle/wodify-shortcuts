@@ -18,7 +18,9 @@ export async function getWorkout({
   includeExtras,
 }: GetWorkoutParams): Promise<string> {
   const session = await loginWrapper(username, password)
-  let workout = await listWorkoutComponents(session, date)
+  // hack for crossfit crossaxed - if gym program is "CrossFit", change it to "CrossFit GPP"
+  const programId = session.User.GymProgramId === '20714' ? '109084' : session.User.GymProgramId
+  let workout = await listWorkoutComponents(session, date, programId)
   workout = fixCrossAxedWorkoutComponents(workout)
   if (!includeWarmup) {
     workout = excludeWarmup(workout)
