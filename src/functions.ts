@@ -47,8 +47,7 @@ export async function signin({
   excludeClasses,
 }: SigninParams): Promise<string> {
   const session = await loginWrapper(username, password)
-  const gymTime = await getGymDateTime(session)
-  const classes = await listClasses(session, date)
+  const [gymTime, classes] = await Promise.all([getGymDateTime(session), listClasses(session, date)])
   const filteredClasses = classes.filter(createClassesFilter(includeClasses, excludeClasses))
   const alreadySignedIn = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
   const alreadyReserved = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
