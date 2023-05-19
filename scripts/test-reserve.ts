@@ -1,7 +1,7 @@
 import { listClasses, login, reserveClass } from '../src/wodify/api'
-import { ReservationStatusId } from '../src/wodify/types'
+import { Class, ReservationStatusId } from '../src/wodify/types'
 
-interface ReserveParams {
+type ReserveParams = {
   username: string
   password: string
   date: string

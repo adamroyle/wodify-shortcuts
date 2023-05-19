@@ -2,7 +2,7 @@ import { login, listWorkoutComponents, listClasses, signinClass, getGymDateTime 
 import { excludeExtras, excludeWarmup, fixCrossAxedWorkoutComponents, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
-interface GetWorkoutParams {
+type GetWorkoutParams = {
   username: string
   password: string
   date: string
@@ -31,7 +31,7 @@ export async function getWorkout({
   return formatWorkout(workout) || 'Oh no! There is no workout posted.'
 }
 
-interface SigninParams {
+type SigninParams = {
   username: string
   password: string
   date: string

@@ -25,7 +25,7 @@
 
 import fetch from 'node-fetch'
 
-interface Region {
+type Region = {
   name: string
   url: string
 }

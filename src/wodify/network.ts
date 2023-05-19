@@ -5,7 +5,7 @@ const BASE = 'https://app.wodify.com/WodifyClient'
 
 // data
 
-export interface Session {
+export type Session = {
   CsrfToken: string
   Cookie: string
   User: User

@@ -1,4 +1,4 @@
-export interface User {
+export type User = {
   ActiveLocationId: string
   ClientHasProgression: boolean
   CustomerId: string
@@ -20,14 +20,14 @@ export interface User {
   UserId: string
 }
 
-export interface Program {
+export type Program = {
   Name: string
   ProgramId: string
   LocationId: string
   LocationName: string
 }
 
-export interface Class {
+export type Class = {
   CanSignin: boolean
   ClassLimit: number
   ClassReservationStatusId: string
@@ -45,7 +45,7 @@ export interface Class {
   WaitlistTypeId: string
 }
 
-export interface ClassAccess {
+export type ClassAccess = {
   BlockedMessageSpan: string
   BlockedMessageTitle: string
   CanCancelReservation: boolean
@@ -72,7 +72,7 @@ export interface ClassAccess {
   ClassAttendanceVisible: boolean
 }
 
-export interface WorkoutComponent {
+export type WorkoutComponent = {
   Name: string
   IsSection: boolean
   Comment: string
@@ -95,12 +95,12 @@ export type GymDateTime = {
 
 // network
 
-export interface RequestError {
+export type RequestError = {
   HasError: boolean
   ErrorMessage: string
 }
 
-export interface LoginResponse {
+export type LoginResponse = {
   data: {
     Response: {
       ResponseUserData: User
@@ -109,7 +109,7 @@ export interface LoginResponse {
   }
 }
 
-export interface LocationsProgramsResponse {
+export type LocationsProgramsResponse = {
   data: {
     ErrorMessage: string
     Locations: {
@@ -141,7 +141,7 @@ export interface LocationsProgramsResponse {
   }
 }
 
-export interface GetClassesResponse {
+export type GetClassesResponse = {
   data: {
     Response: {
       Error: RequestError
@@ -154,7 +154,7 @@ export interface GetClassesResponse {
   }
 }
 
-export interface GetAllDataResponse {
+export type GetAllDataResponse = {
   data: {
     ErrorMessage: string
     ResponseWorkout: {
@@ -168,7 +168,7 @@ export interface GetAllDataResponse {
   }
 }
 
-export interface GetClassesAttendanceResponse {
+export type GetClassesAttendanceResponse = {
   data: {
     GymCurrDate: string
     GymCurrTime: string
@@ -176,7 +176,7 @@ export interface GetClassesAttendanceResponse {
   }
 }
 
-export interface GetClassAccessesResponse {
+export type GetClassAccessesResponse = {
   data: {
     Response: {
       ResponseClassAccess: ClassAccess
@@ -185,14 +185,14 @@ export interface GetClassAccessesResponse {
   }
 }
 
-export interface ReservationStatus {
+export type ReservationStatus = {
   Error: RequestError
   Message: string
   NewStatusId: ReservationStatusId
   MessageTypeId: number
 }
 
-export interface ReservationResponse {
+export type ReservationResponse = {
   data: {
     Response: ReservationStatus
   }
