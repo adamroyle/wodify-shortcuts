@@ -22,6 +22,8 @@ import type {
   GetClassAccessesResponse,
   ReservationStatus,
   ReservationResponse,
+  GymDateTime,
+  GetClassesAttendanceResponse,
 } from './types.js'
 
 export async function login(username: string, password: string): Promise<Session> {
@@ -49,6 +51,24 @@ export async function login(username: string, password: string): Promise<Session
     Cookie: cookie,
     User: loginResponse.data.Response.ResponseUserData,
   }
+}
+
+export async function getGymDateTime(session: Session): Promise<GymDateTime> {
+  return callApi('GetClassesAttendance', session, {
+    viewName: 'MainScreens.Home',
+    screenData: {
+      variables: {
+        ClientVariables: {
+          CustomerId: session.User.CustomerId,
+        },
+      },
+    },
+  })
+    .then(toJson<GetClassesAttendanceResponse>((json) => json.data.Classes)) // this is the error resolver
+    .then((json) => ({
+      GymCurrDate: json.data.GymCurrDate,
+      GymCurrTime: json.data.GymCurrTime,
+    }))
 }
 
 export async function listPrograms(session: Session): Promise<Program[]> {
@@ -85,7 +105,11 @@ export async function listClasses(session: Session, date: string): Promise<Class
     .then((json) => json.data.Response.ResponseClassList.Class.List)
 }
 
-export async function listWorkoutComponents(session: Session, date: string): Promise<WorkoutComponent[]> {
+export async function listWorkoutComponents(
+  session: Session,
+  date: string,
+  programId?: string
+): Promise<WorkoutComponent[]> {
   return callApi('GetAllData', session, {
     viewName: 'MainScreens.Exercise',
     screenData: {
@@ -93,7 +117,7 @@ export async function listWorkoutComponents(session: Session, date: string): Pro
         ClientVariables: {
           SelectedDate: date,
           ActiveLocationId: session.User.ActiveLocationId,
-          GymProgramId: session.User.GymProgramId,
+          GymProgramId: programId || session.User.GymProgramId,
           CustomerId: session.User.CustomerId,
           UserId: session.User.UserId,
         },

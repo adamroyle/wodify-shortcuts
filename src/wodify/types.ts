@@ -88,6 +88,11 @@ export enum ReservationStatusId {
   SignedIn = '3',
 }
 
+export type GymDateTime = {
+  GymCurrDate: string
+  GymCurrTime: string
+}
+
 // network
 
 export interface RequestError {
@@ -160,6 +165,14 @@ export interface GetAllDataResponse {
         }
       }
     }
+  }
+}
+
+export interface GetClassesAttendanceResponse {
+  data: {
+    GymCurrDate: string
+    GymCurrTime: string
+    Classes: RequestError
   }
 }
 

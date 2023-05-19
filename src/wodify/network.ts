@@ -56,6 +56,7 @@ export const topLevelErrorResolver = (responseData: { data: { ErrorMessage: stri
 type ApiName =
   | 'Login'
   | 'LocationsPrograms'
+  | 'GetClassesAttendance'
   | 'GetClasses'
   | 'GetAllData'
   | 'GetClassAccesses'
@@ -66,6 +67,7 @@ type ApiName =
 const apiEndpoints: { [key in ApiName]: string } = {
   Login: 'screenservices/WodifyClient/ActionDo_Login',
   LocationsPrograms: 'screenservices/WodifyClient_CS/ActionSyncLocationsPrograms',
+  GetClassesAttendance: 'screenservices/WodifyClient_Class/Classes/Attendance/DataActionGetClasses',
   GetClasses: 'screenservices/WodifyClient_Class/Classes/Classes/DataActionGetClasses',
   GetAllData: 'screenservices/WodifyClient_Performance/Exercise_Server/Workout/DataActionGetAllData',
   GetClassAccesses: 'screenservices/WodifyClient_Class/Classes/Class/DataActionGetClassAccesses',
@@ -87,6 +89,7 @@ export async function createApiCache(): Promise<ApiCache> {
   const codebase = await Promise.all([
     fetch(`${BASE}/scripts/WodifyClient.controller.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_CS.controller.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_Performance.Exercise_Server.Workout.mvc.js`).then(toText),
@@ -106,6 +109,7 @@ export async function createApiCache(): Promise<ApiCache> {
   return {
     Login: createApi('Login'),
     LocationsPrograms: createApi('LocationsPrograms'),
+    GetClassesAttendance: createApi('GetClassesAttendance'),
     GetAllData: createApi('GetAllData'),
     GetClasses: createApi('GetClasses'),
     GetClassAccesses: createApi('GetClassAccesses'),
