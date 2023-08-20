@@ -1,0 +1,366 @@
+[
+  {
+    "Id": "80818738",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80818723",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><strong>1. Movement Prep/Activation</strong><br />3 rounds</p><p>10 Banded Good Mornings</p><p>5 Inchworm to push up</p><p>5 Hip opener complexes</p><p>5 leg swings each leg</p><p>5 Cossack Squats</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "31905800",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80818746",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80902825",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Loredo",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "6 Rounds for time of:  \r\n24 Squats  \r\n24 Push-ups  \r\n24 Walking Lunge Steps  \r\n400m Run",
+    "Rounds": 0,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "161",
+    "ComponentExternalURL": "https://www.wodconnect.com/workouts/loredo--5",
+    "ComponentSystemComment": "In honor of U.S. Army Staff Sergeant Edwardo Loredo, 34, of Houston, TX, was killed on June 24, 2010",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": true,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80818753",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "31905825",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80818735",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<ul><li>1 min foot smash w/ lacrosse ball (each side)</li><li>1 min Couch Stretch (each side)</li><li>1 min Seal Pose</li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "31905818",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80818772",
+    "IsSection": false,
+    "IsVideoURL": true,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "",
+    "Comment": "",
+    "VideoURL": "https://youtu.be/XUA-vy3H4Tw",
+    "VideoURLComment": "<p>Barbell Mobility Freestyle Part 1</p>",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826927",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

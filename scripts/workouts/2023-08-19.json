@@ -1,0 +1,522 @@
+[
+  {
+    "Id": "81180270",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180248",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><strong>Warm Up</strong></p><p>Find a Partner then Jog 400m</p><p> </p><p>With your partner 2x:</p><p>1 - Bikes 5 Cal</p><p>2 - 10 Barbell Deadlifts</p><p>3 - Partner Spotted Eccentric Ball Up</p><p>4 - 3 Syncho Burpees</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "32055715",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180290",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180334",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Partner workout</p><p> </p><p>8 Total Rounds (4 rounds of each section per athlete)</p><p> </p><p>Partner 1 does:</p><p>10/8 Cal Echo Bike</p><p>10 Deadlifts 84/61kg</p><p> </p><p>Partner 2 does</p><p>50m Sprint</p><p>2 rope climb (RX+: Legless)</p><p>50m Sprint</p><p> </p><p>remaining time in 1:30</p><p> </p><p>Synchro Bar Facing Burpees</p><p> </p><p>Rest 1:30</p><p> </p><p> </p><p> </p><p>*Score is total number of Synchro Burpees</p><p>**Scale weight of deadlift and to 50m sprint, 2 laybacks and 50m sprint for RC</p><p>***Reduce cals if not making it to the burpees</p><p>****If there is a big discrepancy in Burpee speed alternate reps into desired amounts rather then synchro.</p>",
+    "Rounds": 8,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Reps",
+    "ScalingId": 2,
+    "ComponentId": "32055740",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81286630",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180379",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Option 2: Mayhem Mini Pump",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180318",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mayhem Mini-Pump – Arms and Shoulders",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>4 Rounds</p><ul><li>10 Barbell Strict Press @ Moderate weight – maintain control and quality</li><li>12 Plate Front Raise @ moderate weight – maintain quality</li><li>10 Standing Alternating DB Curl + Single DB Double Head Curl @ moderate weight – maintain quality</li><li>10 Single Arm Standing Tricep DB French Press (each side) @ moderate weight – maintain quality</li></ul><p>-Rest 3 min b/t rounds-</p>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "32055736",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180309",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180410",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<ul><li>1 min couch stretch (each side)</li><li>1 min twisted cross (each side)</li><li>30 sec bicep stretch on wall (each side</li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "32055770",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81180414",
+    "IsSection": false,
+    "IsVideoURL": true,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "",
+    "Comment": "",
+    "VideoURL": "https://youtu.be/qRZTwIFXK0o",
+    "VideoURLComment": "<p>Back Health with Rich Boning</p>",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138713976",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

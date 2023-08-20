@@ -139,7 +139,8 @@ function workoutName(component: WorkoutComponent, section?: WorkoutComponent): s
     lcName === lcSectionName ||
     lcDescription.startsWith(lcName) ||
     (!lcDescription && lcComment.startsWith(lcName)) ||
-    lcName === 'metcon'
+    lcName === 'metcon' ||
+    lcName === 'workout'
   ) {
     return ''
   }
@@ -153,12 +154,12 @@ function removeFillerText(text: string): string {
 
 function looksLikeSectionName(name: string): boolean {
   return !!name.match(
-    /^(Metcon|Warm-up|Warm up|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength)$/i
+    /^(Metcon|Warm-up|Warm up|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|Workout|Mobility)$/i
   )
 }
 
 function looksLikeExtrasSectionName(name: string): boolean {
   return !!name.match(
-    /^(Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY)$/i
+    /^(Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY|Mobility)$/i
   )
 }

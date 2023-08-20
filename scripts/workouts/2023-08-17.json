@@ -1,0 +1,366 @@
+[
+  {
+    "Id": "81179861",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81179855",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Warm Up</p><p>2 rounds</p><p>20 Jumping Jacks</p><p>Complete 5 reps of Junkyard dog</p><p>10 Hip Circles</p><p>3 sets of Prone IYT's</p><p>5 Back roll to straddle stretch</p><p>5 tempo burpees focusing on technique and position</p><p>5 Ring Rows</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "32055549",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81179878",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81254704",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Ryan",
+    "Comment": "<p>Option 1</p><p>5 Rounds for time</p><p>7 Bar Muscle Ups or Jumping BMU</p><p>21 Burpees</p><p> </p><p>Option 2</p><p>5 rounds for time</p><p>7 CTB Pull Ups or Pull Ups</p><p>21 Burpees</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "Five rounds for time:  \r\n7 Muscle-ups   \r\n21 Burpees\r\n\r\nEach burpee terminates with a jump one foot above max standing reach.",
+    "Rounds": 0,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "198",
+    "ComponentExternalURL": "https://www.crossfit.com/workout/2008/10/08#/comments",
+    "ComponentSystemComment": "In honor Maplewood, MO Firefighter, Ryan Hummert, 22, killed by sniper fire July 21st 2008.",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81179903",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81179834",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<ul><li>1 min foam Roll Quads</li><li>1 min foot smash with Lacrosse ball (each side)</li><li>30-sec single leg down dog (each side - focus on calf stretch)</li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "32055539",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81179908",
+    "IsSection": false,
+    "IsVideoURL": true,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "",
+    "Comment": "",
+    "VideoURL": "https://youtu.be/opNw_54fH5k",
+    "VideoURLComment": "<p>Trunk Function and Down Regulation</p>",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "136089423",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

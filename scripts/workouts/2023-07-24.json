@@ -1,0 +1,366 @@
+[
+  {
+    "Id": "80298998",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80298960",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><strong>1. Movement Prep/Activation</strong><br />Hip Halo Warmup<br />-into-<br />Crossover Symmetry or Banded 7's Warmup<br />-into-<br />8:00 Amrap<br />20 sec Assault Bike<br />4 Updowns to Seal Pose + Box Get-over<br />5 GHD’s to Parallel<br />4 Kip Swings + 2 Pull Ups<br />4 inch Worms</p><p> </p><p><strong>2. Workout Prep</strong><br />2 sets:<br />2 Burpee Box Get Overs<br />5/4 Calorie Assault Bike<br />5 GHD’s<br />1 Bar Muscle Up</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "31697526",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80299020",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80320533",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Chipper",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>25 Burpee Box Jump/Get Over (30/24)<br />40/32 Calorie Echo Bike<br />25 GHD Sit-Up <br />15 Bar Muscle-Up (Or 30 Chest to Bar)<br />25 GHD Sit-Up <br />40/32 Calorie Echo Bike<br />25 Burpee Box Get/Jump Over (30/24)<br /><br />Option 1<br />25 Burpee Box Get Over (24/20)<br />32/24 Calorie Echo Bike<br />20 GHD Sit-Up <br />10 Bar Muscle-Up (Or 20 Chest to Bar)<br />20 GHD Sit-Up <br />32/24 Calorie Echo Bike<br />25 Burpee Box Get Over (24/20)<br /><br />Option 2<br />25 Up Down Box Get/jump Over (24/20)<br />24/18 Calorie Echo Bike<br />25 Sit Ups<br />20 Pull Ups<br />25 Sit Ups<br />30/24 Calorie Assault Bike (OR 24/18 Calorie Echo Bike)<br />25 Up Down Box Get Over (24/20)<br /><br />* Target time: 20-22 minutes<br />* Time cap: 25 minutes</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "31706851",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80299032",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "31697554",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80299051",
+    "IsSection": false,
+    "IsVideoURL": true,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "",
+    "Comment": "",
+    "VideoURL": "https://youtu.be/6apA20udc3s",
+    "VideoURLComment": "<p>Daily Maintenance 10 Mins Sagan Hips</p>",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "80298970",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<ul><li>1 min couch stretch (each side)</li><li>1 min twisted cross (each side)</li><li>30 sec bicep stretch on wall (each side</li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "31697531",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "135826917",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
