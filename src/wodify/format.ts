@@ -11,7 +11,7 @@ export function fixCrossAxedWorkoutComponents(components: WorkoutComponent[]): W
     const c = comps[i]
     if (!c.IsSection && looksLikeSectionName(c.Name) && !comps[i - 1]?.IsSection) {
       comps[i] = { ...c, Name: '' }
-      comps.splice(i, 0, { ...c, IsSection: true, Description: '' })
+      comps.splice(i, 0, { ...c, IsSection: true, Description: '', Comment: '' })
     }
 
     if (!c.IsSection && !comps[i - 1]?.IsSection && c.IsWeightlifting && comps[i + 1]?.Name == 'Metcon') {
@@ -75,7 +75,7 @@ export function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutCom
 }
 
 export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  const extrasIndex = workoutComponents.findIndex((c) => looksLikeExtrasSectionName(c.Name))
+  const extrasIndex = workoutComponents.findIndex((c) => looksLikeExtrasSectionName(c.Name.trim()))
   if (extrasIndex > 0) {
     return workoutComponents.slice(0, extrasIndex)
   }
