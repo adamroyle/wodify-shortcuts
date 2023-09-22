@@ -1,0 +1,250 @@
+[
+  {
+    "Id": "82222684",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>With Your Partner</p><p>Partner 1 does 500m Row</p><p>Partner 2 does:</p><p>10 Barbel deadlifts</p><p>10 Beat swings</p><p>10 Med Ball Squats</p><p>10 Push Ups</p><p> </p><p>Swap once row is complete for 2 rounds building to workout movements</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "32475721",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138709638",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        },
+        {
+          "ClassId": "138709639",
+          "StartTime": "09:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "82222649",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "\"Relentless\"",
+    "Comment": "<p>Partners switch as needed, except during the rounds of \"Cindy,\" where partners switch after each full round.</p><p> </p><p>Background: Dedicated to Scott Beard, a respected member of the local CrossFit community in Oklahoma City. Created by Coach Jon Choat of Major Jam CrossFit, who created it to honor Scott’s memory and raise awareness about mental health issues.<br />Scott and Kristina Beard were the former owners of CrossFit Alter in Oklahoma City, OK, where they made a significant impact within their local CrossFit community. Scott’s struggles with mental health and his passing on April 23, 2022 (at age 43) inspired Choat to create this workout as a tribute.<br />The name “Relentless” is derived from Scott’s tattoo, displaying a large “Relentless.” This word perfectly encapsulated his unwavering determination and resilience. The workout serves as a testament to Scott’s character, honoring his memory through physical challenge and spreading awareness about mental well-being. </p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>With a partner, for time:<br />Row, 2000 m<br />4x [ 5 Pull-ups + 10 Push-ups + 15 Air Squats ]<br />50 Toes-to-bars<br />4x [ 5 Pull-ups + 10 Push-ups + 15 Air Squats ]<br />50 Power Cleans, 61/43 kg<br />4x [ 5 Pull-ups + 10 Push-ups + 15 Air Squats ]<br />50 Wall Balls, 9/6 kg, 10/9 ft<br />4x [ 5 Pull-ups + 10 Push-ups + 15 Air Squats ]<br />Row, 2000 m</p><p> </p><p>Option 1</p><p>2000 m Row<br />4 rounds of assisted \"Cindy\"<br />40 Toes-to-bars / 40 Leg Raises<br />4 rounds of assisted \"Cindy\"<br />40 Power Cleans, 95/65 lbs / 43/30 kg<br />4 rounds of assisted \"Cindy\"<br />50 Wall Balls, 20/14 lbs, 10/9 ft<br />4 rounds of assisted \"Cindy\"<br />2000 m Row</p><p> </p><p>Time cap: 30 mins</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "32475709",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138709638",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        },
+        {
+          "ClassId": "138709639",
+          "StartTime": "09:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "82222377",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "R U OK Workout",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138709638",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        },
+        {
+          "ClassId": "138709639",
+          "StartTime": "09:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "82222363",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "\"Lawry\" ",
+    "Comment": "<p>Today we will be tackling a version of \"Lawry\" a memorial workout dedicated to Chris Lawry who sadly took his own life at the beginning of 2023.</p><p> </p><p>Chris was a massive part of the CrossAxed Community and while it is incredibly difficult to understand why Chris decided to leave this life, what we do know is he was severly affected by mental health issues and depression. Chris was being supported by those in the community closest to him.</p><p> </p><p>Today is about having conversations, being vulnerable enough to let your mates know if you are having a tough time of it so they can be there to help. Its about supporting each other within the confines of something that has brought us altogether, health and community.</p><p> </p><p>20 Minute AMRAP</p><p>Teams of 4 - 2 Athletes working at a time</p><p>12 Synchro BMU/Pull Ups</p><p>68 Double Unders/Drag Rope Singles</p><p>53 Synchro Burpees</p><p>200m Tethered Run</p><p> </p><p>The way this will flow is 2 Athletes from the team will be working together at the same time. The team can split reps as desired for example 6 Synchro BMU per partnership within the team or sets of 2 until 12 is reached. Similar for the doubles, 1 pair will complete x amount of reps before the second pair takes over and finally the burpees will be whole team synchro.</p><p> </p><p>*Don't stress if we have a team of experienced athletes mixed with newr or less fit athletes we have a plan so all will get the most from the workout.</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "20 Minute AMRAP (representing date of birth)\n\n12 BMU (month of birth)\n68 Double Unders (year of birth)\n53 Burpees (age)\n\nRX+: Drag Rope",
+    "Rounds": 0,
+    "ResultTypeId": 4,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "24840283",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "138709638",
+          "StartTime": "08:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        },
+        {
+          "ClassId": "138709639",
+          "StartTime": "09:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
