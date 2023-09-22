@@ -1,7 +1,3 @@
-METCON
-
-*Score total time inc rest
-
 For time:
 10-8-6-4-2 reps of:
 Power Clean 70/52kg
@@ -35,20 +31,3 @@ Sandbag Carry, 45/35kg 30m
 Pull Up/Jumping BMU
 
 *Score total time inc rest
-
-EXTRA WORK
-
-Power Clean
-
-Handstand Push-ups
-
-Aerobic
-Run
-5 rounds:
-3min moderate
-1min rest
-2min moderate
-1min rest
-1min fast
-
-Rest 3min b/t rounds

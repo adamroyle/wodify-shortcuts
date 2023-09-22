@@ -1,5 +1,3 @@
-WORKOUT
-
 Blackout
 
 10 min AMRAP
@@ -54,11 +52,3 @@ Target number of reps workout 1: Through the round of 15 Strict Pull-Ups (420+ r
 Minimum number of reps before scaling workout 1: Through the round of 12 Strict Pull Ups (280 reps)
 Target number of reps workout 2: Through the round of 15 Strict handstand push-ups (90+ men, 80+ women)
 Minimum number of reps before scaling workout 2: Through the round of 12 Strict handstand push-ups (60 reps men, 54 women)
-
-STRENGTH/ACCESSORY
-
-Back Squat
-
-Every 2:00 (10:00)
-5 Back Squats
-Start at 60% of 1RM and build to a moderately-heavy set (75-80%).

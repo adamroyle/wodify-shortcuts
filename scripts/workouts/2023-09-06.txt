@@ -17,8 +17,6 @@ Then
 
 WORKOUT
 
-*score time here and clean weight below
-
 A.
 10-9-8-7-6-5-4-3-2-1
 Deadlifts 100/70kg

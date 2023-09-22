@@ -8,8 +8,6 @@ Run 200m
 
 METCON
 
-*score each round for time and do not include rest
-
 5 rounds, each round for time, of:
 Run, 400 m
 10 Bench Press, 1x bodyweight

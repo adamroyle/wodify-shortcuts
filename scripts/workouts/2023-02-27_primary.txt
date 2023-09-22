@@ -1,5 +1,3 @@
-METCON
-
 2 rounds, each round for time, of:
 Run, 800 m
 Walk, 200m

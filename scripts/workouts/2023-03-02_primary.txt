@@ -1,5 +1,3 @@
-METCON
-
 Every 1 min for 20 mins, alternating between:
 max distance Handstand Walk
 10 Pull ups
@@ -8,27 +6,3 @@ Machine Calories, 1 min
 
 RX+: CTB, HS Walk Over Obstacle
 *scored for total reps, 1m = 1 rep on the HS Walk
-
-EXTRA WORK
-
-Active Recovery
-For time:
-2 rounds of:
-Run, 700 m
-Recovery Bike Erg, 1 min
-Run, 600 m
-Recovery Bike Erg, 1 min
-Run, 500 m
-Recovery Bike Erg, 1 min
--- Rest 2 mins --
-2 rounds of:
-Run, 400 m
-Recovery Bike Erg, 1 min
-Run, 300 m
-Recovery Bike Erg, 1 min
-Run, 200 m
-Recovery Bike Erg, 1 min
-
-Pacing
-Part A: 10 km pace
-Part B: 5 km pace or faster
