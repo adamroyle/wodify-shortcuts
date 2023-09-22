@@ -10,7 +10,8 @@ export function fixCrossAxedWorkoutComponents(components: WorkoutComponent[]): W
   for (let i = 0; i < comps.length; i++) {
     const c = comps[i]
     if (!c.IsSection && looksLikeSectionName(c.Name) && !comps[i - 1]?.IsSection) {
-      comps.splice(i, 0, { ...c, IsSection: true })
+      comps[i] = { ...c, Name: '' }
+      comps.splice(i, 0, { ...c, IsSection: true, Description: '' })
     }
 
     if (!c.IsSection && !comps[i - 1]?.IsSection && c.IsWeightlifting && comps[i + 1]?.Name == 'Metcon') {
