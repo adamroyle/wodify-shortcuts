@@ -1,5 +1,5 @@
 import { login, listWorkoutComponents, listClasses, signinClass, getGymDateTime } from './wodify/api.js'
-import { excludeExtras, excludeWarmup, fixCrossAxedWorkoutComponents, formatWorkout } from './wodify/format.js'
+import { excludeExtras, excludeWarmup, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
 type GetWorkoutParams = {
@@ -21,7 +21,6 @@ export async function getWorkout({
   // hack for crossfit crossaxed - if gym program is "CrossFit", change it to "CrossFit GPP"
   const programId = session.User.GymProgramId === '20714' ? '109084' : session.User.GymProgramId
   let workout = await listWorkoutComponents(session, date, programId)
-  workout = fixCrossAxedWorkoutComponents(workout)
   if (!includeWarmup) {
     workout = excludeWarmup(workout)
   }

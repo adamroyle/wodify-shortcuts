@@ -2,68 +2,6 @@ import decodeEntities from 'entities-decode'
 
 import type { WorkoutComponent } from './types.js'
 
-// really wish we didn't need this, but apparently we do
-export function fixCrossAxedWorkoutComponents(components: WorkoutComponent[]): WorkoutComponent[] {
-  let comps = components.slice()
-
-  // add a section for each component that is missing one
-  for (let i = 0; i < comps.length; i++) {
-    const c = comps[i]
-    if (!c.IsSection && looksLikeSectionName(c.Name) && !comps[i - 1]?.IsSection) {
-      comps[i] = { ...c, Name: '' }
-      comps.splice(i, 0, { ...c, IsSection: true, Description: '', Comment: '' })
-    }
-
-    if (!c.IsSection && !comps[i - 1]?.IsSection && c.IsWeightlifting && comps[i + 1]?.Name == 'Metcon') {
-      comps.splice(i, 0, {
-        IsSection: true,
-        Name: 'Pre-Metcon',
-        Comment: '',
-        Description: '',
-        IsWeightlifting: false,
-        TotalWeightLiftingComponents: { List: [] },
-      })
-    }
-  }
-
-  // rename warm up to warm-up
-  comps = comps.map((c) => {
-    if (c.Name.match(/Warm up/i)) {
-      return { ...c, Name: 'Warm-up' }
-    }
-    return c
-  })
-
-  return comps
-}
-
-export function filterWorkout(
-  workoutComponents: WorkoutComponent[],
-  includeSections: string[],
-  excludeSections: string[]
-): WorkoutComponent[] {
-  includeSections = includeSections.map((s) => s.toLowerCase())
-  excludeSections = excludeSections.map((s) => s.toLowerCase())
-  const mainComponents: WorkoutComponent[] = []
-  let includeSection = false
-  for (let i = 0; i < workoutComponents.length; i++) {
-    const component = workoutComponents[i]
-    if (component.IsSection) {
-      includeSection = true
-      if (includeSections.length > 0) {
-        includeSection = includeSections.some((s) => component.Name.toLowerCase().includes(s))
-      }
-      if (includeSection && excludeSections.length > 0) {
-        includeSection = !excludeSections.some((s) => component.Name.toLowerCase().includes(s))
-      }
-    }
-    if (includeSection) {
-      mainComponents.push(component)
-    }
-  }
-  return mainComponents
-}
-
 export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   workoutComponents = excludeWarmup(workoutComponents)
   workoutComponents = excludeExtras(workoutComponents)
@@ -71,7 +9,8 @@ export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): Workou
 }
 
 export function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  return filterWorkout(workoutComponents, [], ['Warm-up', 'Warm up', 'Warmup'])
+  const excludeNames = ['warm-up', 'warm up', 'warmup']
+  return workoutComponents.filter((c) => !excludeNames.includes(c.Name.toLowerCase().trim()))
 }
 
 export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
@@ -83,7 +22,7 @@ export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutCom
 }
 
 export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
-  const includeSections = workoutComponents.filter((c) => c.IsSection).length > 1
+  const includeSections = workoutComponents.filter((c, index) => c.IsSection && index > 0).length > 0
   return workoutComponents
     .filter(includeSections ? Boolean : (c) => !c.IsSection)
     .filter(excludeEmptySections)
@@ -153,14 +92,8 @@ function removeFillerText(text: string): string {
   return text.replace(/^(Athlete Instructions|Instructions|Athlete Notes|Extra Details)$/gim, '')
 }
 
-function looksLikeSectionName(name: string): boolean {
-  return !!name.match(
-    /^(Metcon|Warm-up|Warm up|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|Workout|Mobility)$/i
-  )
-}
-
 function looksLikeExtrasSectionName(name: string): boolean {
   return !!name.match(
-    /^(Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY|Mobility)$/i
+    /^(Extras|Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY|Mobility)$/i
   )
 }

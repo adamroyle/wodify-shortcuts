@@ -1,6 +1,6 @@
 [
   {
-    "Id": "81630910",
+    "Id": "82838377",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -19,7 +19,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>3 rounds for quality of:<br />20 secs Wall Supported Handstand Hold<br />10 Cossack Squats with 3-second hold at the bottom of each rep.<br />5/5 Single Arm Kettlebell Thrusters- moderate load<br />10 Alternating Single Leg Toes-to-bars or V- Ups</p><p>100m Run</p>",
+    "Description": "<p>3 Rounds</p><p>60s Machine Effort</p><p>10 Banded Good Mornings</p><p>5 Straight Leg Sit Ups</p><p>10 Beat Swings</p>",
     "Rounds": 0,
     "ResultTypeId": 6,
     "IsResultTypeEachRound": false,
@@ -27,7 +27,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "32234388",
+    "ComponentId": "32722199",
     "ComponentExternalURL": "",
     "ComponentSystemComment": "",
     "TotalWeightLiftingComponents": {
@@ -51,7 +51,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "81630828",
+    "Id": "82838288",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -70,7 +70,7 @@
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
     "MeasureRepScheme": "",
-    "Description": "<p>4 rounds for time of:<br />Run, 400 m<br />30 Wall Balls, 20/14 lbs, 10/9 ft<br />20 Toes-to-bars<br />10 Deadlifts, 102/70kg</p><p><br />RX+:</p><p>4 rounds for time of:<br />Run, 600 m<br />30 Wall Balls, 20/14 lbs, 10/9 ft<br />20 Toes-to-bars<br />10 Deadlifts, 125/84kg</p><p> </p><p>Time cap: 24 mins<br />Goal: sub 20 mins</p>",
+    "Description": "<p>For time with a partner:<br />15/13 Cal Echo Bike &amp; 12/9 Cal Ski<br />30 Deadlifts 84/58kg<br />15/13 Cal Echo Bike &amp; 12/9 Cal Ski<br />20 Synchronized Bar Facing Burpees<br />15/13 Cal Echo Bike &amp; 12/9 Cal Ski<br />50 Synchronized GHD Sit-ups/Toes To Bar<br />15/13 Cal Echo Bike &amp; 12/9 Cal Ski<br />20 Synchronized Bar Facing Burpees<br />15/13 Cal Echo Bike &amp; 12/9 Cal Ski<br />30 Deadlifts 84/58kg</p><p>15/13 Cal Echo Bike &amp; 12/9 Cal Ski</p><p> </p><p>Both athletes complete the bike and ski at the same time then swap before moving to the next movement, deadlifts are shared, burpees are synchro or scale to shared, same for the ghd or TTB.</p><p> </p><p>No partner option if you don't like people or just want some \"me\" time:</p><p> </p><p>For time:<br />15/13 Cal Echo Bike  </p><p>12/9 Cal Ski<br />15 Deadlifts 84/58kg<br />15/13 Cal Echo Bike</p><p>12/9 Cal Ski<br />20 Synchronized Bar Facing Burpees<br />15/13 Cal Echo Bike</p><p>12/9 Cal Ski<br />50 GHD Sit-ups/Toes To Bar<br />15/13 Cal Echo Bike</p><p>12/9 Cal Ski<br />20 Synchronized Bar Facing Burpees<br />15/13 Cal Echo Bike</p><p>12/9 Cal Ski<br />15 Deadlifts 84/58kg</p><p>15/13 Cal Echo Bike</p><p>12/9 Cal Ski</p>",
     "Rounds": 1,
     "ResultTypeId": 2,
     "IsResultTypeEachRound": false,
@@ -78,7 +78,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "32234362",
+    "ComponentId": "32722164",
     "ComponentExternalURL": "",
     "ComponentSystemComment": "",
     "TotalWeightLiftingComponents": {
@@ -102,7 +102,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "81836492",
+    "Id": "82838386",
     "IsSection": true,
     "IsVideoURL": false,
     "IsImage": false,
@@ -153,7 +153,7 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "81630932",
+    "Id": "82838390",
     "IsSection": false,
     "IsVideoURL": false,
     "IsImage": false,
@@ -162,8 +162,8 @@
     "IsWeightlifting": true,
     "IsMetcon": false,
     "IsWeightliftingTotal": false,
-    "Name": "Squat Clean and Jerk",
-    "Comment": "",
+    "Name": "Power Snatch",
+    "Comment": "<p>Power Snatch 1x3 at 60% 1RM<br />Power Snatch 1x2 at 70% 1RM<br />Power Snatch 1x2 at 70% 1RM<br />Power Snatch 1x1 at 80% 1RM<br />Power Snatch 1x1 at 80% 1RM<br />Power Snatch 1x1 at 80% 1RM</p><p>Rest as needed between sets.</p>",
     "VideoURL": "",
     "VideoURLComment": "",
     "ImageURL": "",
@@ -171,7 +171,7 @@
     "ImageComment": "",
     "PrefixText": "",
     "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "1x [ 2 Squat Cleans + 1 Split Jerk ], pick load\n\nEvery 2 mins for 12 mins.\n\n\nLoad\nSet 1-2: 75% 1RM Clean & Jerk\nSet 3-4: 80% 1RM Clean & Jerk\nSet 5-6: 85% 1RM Clean & Jerk\n\n*not touch and go",
+    "MeasureRepScheme": "3-2-2-1-1-1",
     "Description": "",
     "Rounds": 0,
     "ResultTypeId": 1,
@@ -180,7 +180,7 @@
     "IsResultTypeCheckmark": false,
     "EachRoundTypeLabel": "",
     "ScalingId": 2,
-    "ComponentId": "62",
+    "ComponentId": "48",
     "ComponentExternalURL": "",
     "ComponentSystemComment": "",
     "TotalWeightLiftingComponents": {
@@ -200,109 +200,7 @@
         "HasBeenScored": false
       }
     },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "81630976",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": true,
-    "IsWeightliftingTotal": false,
-    "Name": "Metcon",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>4 rounds, each round for time, of:<br />5/3 Strict Pull Ups<br />Sandbag Carry, 65/45kg 30m<br />5/3 Strict Ring Dips</p><p> </p><p>Rest 3 mins between each round.</p><p> </p><p>*It says for time but keep movement quality high</p>",
-    "Rounds": 4,
-    "ResultTypeId": 10,
-    "IsResultTypeEachRound": true,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "For Time",
-    "ScalingId": 2,
-    "ComponentId": "32234405",
-    "ComponentExternalURL": "",
-    "ComponentSystemComment": "",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false,
-        "HasBeenScored": false
-      }
-    },
-    "HasPerformedAtLeastOnce": false,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
-    "Id": "81630986",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": false,
-    "IsMetcon": true,
-    "IsWeightliftingTotal": false,
-    "Name": "Row Conditioning 210823",
-    "Comment": "",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "",
-    "Description": "<p>Each for time:<br />Row 2000 m<br />Row 1500 m<br />Row 750 m<br />Row 2000 m<br />Row 1500 m<br />Row 750 m<br />Row 2000 m<br />Row 1500 m<br />Row 750 m</p><p>Rest as needed between efforts.</p><p><br />Instructions<br />Complete as 3 rounds of:<br />2000 m- 10 km pace<br />Rest 1:30 <br />1500 m- 10 km pace -2 secs/500 m<br />Rest 1:30<br />750 m- 2 km -5 secs/500 m<br />Rest 3 mins</p>",
-    "Rounds": 9,
-    "ResultTypeId": 10,
-    "IsResultTypeEachRound": true,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "For Time",
-    "ScalingId": 2,
-    "ComponentId": "32234411",
-    "ComponentExternalURL": "",
-    "ComponentSystemComment": "",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false,
-        "HasBeenScored": false
-      }
-    },
-    "HasPerformedAtLeastOnce": false,
+    "HasPerformedAtLeastOnce": true,
     "HasAtLeastOneWorkoutComponentResult": false
   }
 ]

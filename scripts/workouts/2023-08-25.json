@@ -51,57 +51,6 @@
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
-    "Id": "81443948",
-    "IsSection": false,
-    "IsVideoURL": false,
-    "IsImage": false,
-    "IsWarmup": false,
-    "IsGymnastics": false,
-    "IsWeightlifting": true,
-    "IsMetcon": false,
-    "IsWeightliftingTotal": false,
-    "Name": "Back Squat",
-    "Comment": "<p>App. 80% of 1rm</p>",
-    "VideoURL": "",
-    "VideoURLComment": "",
-    "ImageURL": "",
-    "ImageFilename": "",
-    "ImageComment": "",
-    "PrefixText": "",
-    "MeasureIsMaxEffort": false,
-    "MeasureRepScheme": "3-3-3",
-    "Description": "",
-    "Rounds": 0,
-    "ResultTypeId": 1,
-    "IsResultTypeEachRound": false,
-    "IsResultTypeNoMeasure": false,
-    "IsResultTypeCheckmark": false,
-    "EachRoundTypeLabel": "",
-    "ScalingId": 2,
-    "ComponentId": "22",
-    "ComponentExternalURL": "",
-    "ComponentSystemComment": "",
-    "TotalWeightLiftingComponents": {
-      "List": [],
-      "EmptyListItem": ""
-    },
-    "WorkoutComponentResults": {
-      "List": [],
-      "EmptyListItem": {
-        "ClassId": "0",
-        "StartTime": "",
-        "HasResultsForClass": false,
-        "PerformanceResultId": "0",
-        "FullyFormattedResult": "",
-        "IsRx": false,
-        "IsRxPlus": false,
-        "HasBeenScored": false
-      }
-    },
-    "HasPerformedAtLeastOnce": true,
-    "HasAtLeastOneWorkoutComponentResult": false
-  },
-  {
     "Id": "81443969",
     "IsSection": false,
     "IsVideoURL": false,
@@ -150,6 +99,57 @@
       }
     },
     "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "81443948",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": true,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Back Squat",
+    "Comment": "<p>App. 80% of 1rm</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "3-3-3",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 1,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "22",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false,
+        "HasBeenScored": false
+      }
+    },
+    "HasPerformedAtLeastOnce": true,
     "HasAtLeastOneWorkoutComponentResult": false
   },
   {
