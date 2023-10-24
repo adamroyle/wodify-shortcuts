@@ -79,6 +79,7 @@ export type WorkoutComponent = {
   Description: string
   IsWeightlifting: boolean
   TotalWeightLiftingComponents: { List: string[] }
+  MeasureRepScheme: string
 }
 
 export enum ReservationStatusId {

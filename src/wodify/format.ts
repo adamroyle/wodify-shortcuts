@@ -41,6 +41,7 @@ function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComp
   const prevSection = arr[i - 1]?.IsSection ? arr[i - 1] : undefined
   return [
     [workoutName(c, prevSection), removeFillerText(c.Description)].filter(Boolean).join('\n'),
+    c.MeasureRepScheme,
     c.TotalWeightLiftingComponents.List.join('\n'),
     removeFillerText(c.Comment),
   ]

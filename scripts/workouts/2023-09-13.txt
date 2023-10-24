@@ -43,3 +43,7 @@ Echo Bike Calories: 4 x 1 min / 1 min
 Score is the total reps performed in all of the intervals.
 
 Push Jerk
+
+1 Push Jerk, 80% 1RM
+
+Every 1 min for 10 mins.
