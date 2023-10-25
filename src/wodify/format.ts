@@ -47,6 +47,7 @@ function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComp
   ]
     .filter(Boolean)
     .join('\n\n')
+    .trim()
 }
 
 function cleanText(c: WorkoutComponent): WorkoutComponent {
