@@ -32,6 +32,7 @@ export function formatWorkout(workoutComponents: WorkoutComponent[]): string {
     .replace(/\r/g, '') // remove carriage returns
     .replace(/[\t ]+$/gm, '') // remove trailing whitespace
     .replace(/\n\n\n+/g, '\n\n') // remove extra newlines
+    .trim()
 }
 
 function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComponent[]): string {
@@ -47,7 +48,6 @@ function formatWorkoutComponent(c: WorkoutComponent, i: number, arr: WorkoutComp
   ]
     .filter(Boolean)
     .join('\n\n')
-    .trim()
 }
 
 function cleanText(c: WorkoutComponent): WorkoutComponent {
