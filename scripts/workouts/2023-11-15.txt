@@ -31,6 +31,41 @@ Run 200m
 EXTRA WORK
 
 Conditioning 151123
-For time:50 Double Unders11 Deadlifts, 225/155 lbs40 Double Unders9 Deadlifts, 225/155 lbs30 Double Unders7 Deadlifts, 225/155 lbs20 Double Unders5 Deadlifts, 225/155 lbs10 Double Unders3 Deadlifts, 225/155 lbs-- Rest 1:1 --50 Double Unders10 Deadlifts, 275/185 lbs40 Double Unders8 Deadlifts, 275/185 lbs30 Double Unders6 Deadlifts, 275/185 lbs20 Double Unders4 Deadlifts, 275/185 lbs10 Double Unders2 Deadlifts, 275/185 lbs-- Rest 1:1 --50 Double Unders9 Deadlifts, 315/225 lbs40 Double Unders7 Deadlifts, 315/225 lbs30 Double Unders5 Deadlifts, 315/225 lbs20 Double Unders3 Deadlifts, 315/225 lbs10 Double Unders1 Deadlift, 315/225 lbs
+For time:
+50 Double Unders
+11 Deadlifts, 225/155 lbs
+40 Double Unders
+9 Deadlifts, 225/155 lbs
+30 Double Unders
+7 Deadlifts, 225/155 lbs
+20 Double Unders
+5 Deadlifts, 225/155 lbs
+10 Double Unders
+3 Deadlifts, 225/155 lbs
+-- Rest 1:1 --
+50 Double Unders
+10 Deadlifts, 275/185 lbs
+40 Double Unders
+8 Deadlifts, 275/185 lbs
+30 Double Unders
+6 Deadlifts, 275/185 lbs
+20 Double Unders
+4 Deadlifts, 275/185 lbs
+10 Double Unders
+2 Deadlifts, 275/185 lbs
+-- Rest 1:1 --
+50 Double Unders
+9 Deadlifts, 315/225 lbs
+40 Double Unders
+7 Deadlifts, 315/225 lbs
+30 Double Unders
+5 Deadlifts, 315/225 lbs
+20 Double Unders
+3 Deadlifts, 315/225 lbs
+10 Double Unders
+1 Deadlift, 315/225 lbs
 
-In Kg102/70 kg125/84 kg143/102 kg
+In Kg
+102/70 kg
+125/84 kg
+143/102 kg

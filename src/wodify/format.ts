@@ -62,6 +62,7 @@ function cleanText(c: WorkoutComponent): WorkoutComponent {
 function htmlToPlainText(html: string): string {
   html = html.replace(/<\/p>/g, '\n')
   html = html.replace(/<br \/>/g, '\n')
+  html = html.replace(/<br>/g, '\n')
   html = html.replace(/<[^>]+>/g, '')
   return decodeEntities(html)
 }
