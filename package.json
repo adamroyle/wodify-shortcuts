@@ -21,7 +21,7 @@
   "devDependencies": {
     "@bigfishtv/prettier-config": "^1.0.5",
     "@types/aws-lambda": "^8.10.125",
-    "@types/cookie": "^0.5.3",
+    "@types/cookie": "^0.6.0",
     "@types/set-cookie-parser": "^2.4.5",
     "serverless": "^3.36.0",
     "serverless-plugin-typescript": "^2.1.2",
@@ -29,7 +29,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "cookie": "^0.5.0",
+    "cookie": "^0.6.0",
     "entities-decode": "^2.0.0",
     "node-fetch": "^3.2.10",
     "set-cookie-parser": "^2.5.1"
