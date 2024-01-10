@@ -1,0 +1,314 @@
+[
+  {
+    "Id": "86127298",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 rounds for quality:</p><p>5 Back roll to straddle</p><p>5 Seated Leg Raises</p><p>10 Beat Swings</p><p>10 RDL's</p><p>50m High Knees</p><p>50m Butt Kickers</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "34042635",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "86125687",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "CrossFit Games Open 13.4",
+    "Comment": "<p>At the 7 minute mark you will have 3 minutes rest then 5 minutes to find a 1rm power clean</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "Complete AMRAP in 7 minutes of:\r\n3 Clean and Jerk  #135/95\r\n3 Toes-To-Bar\r\n6 Clean and Jerk\r\n6 Toes-To-Bar\r\n9 Clean and Jerk\r\n9 Toes-To-Bar\r\n12 Clean and Jerk\r\n12 Toes-To-Bar\r\n15 Clean and Jerk\r\n15 Toes-To-Bar\r\n18 Clean and Jerk\r\n18 Toes-To-Bar\r\n21 Clean and Jerk\r\n21 Toes-To-Bar\r\n*If you complete the round of 21, go on to 24. If you complete 24, go on to 27, etc.",
+    "Rounds": 0,
+    "ResultTypeId": 3,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "1999840",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "86125692",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": true,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Power Clean",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "1rm",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 1,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "47",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": true,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "86127290",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "86127291",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Swim 141223",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"color:#000000;\">Warm-up</span></p><p><span style=\"color:#000000;\">(SKIPS)</span></p><p><span style=\"color:#000000;\">100m Swim</span></p><p><span style=\"color:#000000;\">100m Kick</span></p><p><span style=\"color:#000000;\">100m IM Swim</span></p><p><span style=\"color:#000000;\">100m Pull</span></p><p><span style=\"color:#000000;\">100m Swim</span></p><p><span style=\"color:#000000;\">Rest as needed between 100s</span></p><p> </p><p><span style=\"color:#000000;\">Technique Work</span></p><p><span style=\"color:#000000;\">3 Sets: </span></p><p><span style=\"color:#000000;\">25 Fingertip Drag</span></p><p><span style=\"color:#000000;\">25 Swim</span></p><p><span style=\"color:#000000;\">25 Catch Up Drill</span></p><p><span style=\"color:#000000;\">25 Swim</span></p><p><span style=\"color:#000000;\">Rest 30-60 seconds between sets</span></p><p> </p><p><span style=\"color:#000000;\">Into:</span></p><p> </p><p><span style=\"color:#000000;\">Kick Set</span></p><p><span style=\"color:#000000;\">8 x 25 Kick *AFAP (as fast as possible)</span></p><p><span style=\"color:#000000;\">Rest 30-60 seconds after each set</span></p><p> </p><p><span style=\"color:#000000;\">Main</span></p><p><span style=\"color:#000000;\">4 Sets:</span></p><p><span style=\"color:#000000;\">150m @ 500m Pace + 10 seconds (Think smooth long strokes breathing every 3)</span></p><p><span style=\"color:#000000;\">Rest: 30 Seconds</span></p><p><span style=\"color:#000000;\">100m @ 500m Pace + 5 seconds (Pick up stroke rate, try to stick with breathing every 3)</span></p><p><span style=\"color:#000000;\">Rest: 30 Seconds</span></p><p><span style=\"color:#000000;\">50m @ 500m Pace (Just put in a hard effort on these)</span></p><p><span style=\"color:#000000;\">Rest: 75-90 seconds between sets</span></p><p> </p><p><span style=\"color:#000000;\">Pull Set (Finisher / Optional)</span></p><p><span style=\"color:#000000;\">200m</span></p><p> </p><p><span style=\"color:#000000;\">Smooth and steady *count strokes per 50 and try to work on long strong strokes and getting less strokes per 50m</span></p>",
+    "Rounds": 12,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Time",
+    "ScalingId": 2,
+    "ComponentId": "34041976",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "86127293",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Engine Building Option 141223",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"color:#000000;\">Engine Building </span></p><p> </p><p><span style=\"color:#000000;\">For time:</span></p><p><span style=\"color:#000000;\">In 2 mins do:</span></p><p><span style=\"color:#000000;\">Run, 200 m</span></p><p><span style=\"color:#000000;\">max reps in remaining time Echo Bike Calories</span></p><p><span style=\"color:#000000;\">Rest 1 min</span></p><p><span style=\"color:#000000;\">...</span></p><p><span style=\"color:#000000;\">Repeat until you reach 60/48 Echo Bike Calorie reps.</span></p><p> </p><p><span style=\"color:#000000;\">Rest 3 mins </span></p><p> </p><p><span style=\"color:#000000;\">For quality:</span></p><p><span style=\"color:#000000;\">30/24 Echo Bike Calories</span></p><p><span style=\"color:#000000;\">Run, 600 m</span></p><p><span style=\"color:#000000;\">30/24 Echo Bike Calories</span></p><p> </p><p><span style=\"color:#000000;\">Rest 3 mins </span></p><p> </p><p><span style=\"color:#000000;\">For time:</span></p><p><span style=\"color:#000000;\">In 2 mins do:</span></p><p><span style=\"color:#000000;\">Run, 200 m</span></p><p><span style=\"color:#000000;\">max reps in remaining time Echo Bike Calories</span></p><p><span style=\"color:#000000;\">Rest 1 min</span></p><p><span style=\"color:#000000;\">...</span></p><p><span style=\"color:#000000;\">Repeat until you reach 60/48 Echo Bike Calorie reps.</span></p>",
+    "Rounds": 3,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Time",
+    "ScalingId": 2,
+    "ComponentId": "34042003",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "140321201",
+          "StartTime": "06:15:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
