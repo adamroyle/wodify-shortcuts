@@ -168,14 +168,14 @@ export async function signinClass(session: Session, classId: string): Promise<Re
       Request: {
         LocationId: session.User.ActiveLocationId,
         RequestSignInClassClient: {
-          UserId: session.User.UserId,
-          LeadId: '0',
+          AutoRenewSessionPlanIfPossible: true,
           ClassId: classId,
-          OnlineMembershipSaleId: '0',
           CustomerId: session.User.CustomerId,
           IgnoreSignInClassPolicy: false,
           IsDropIn: false,
-          AutoRenewSessionPlanIfPossible: true,
+          LeadId: '0',
+          OnlineMembershipSaleId: '0',
+          UserId: session.User.UserId,
         },
       },
     },
