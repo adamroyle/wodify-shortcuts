@@ -7,6 +7,9 @@ provider:
   versionFunctions: false
   timeout: 15
 
+package:
+  individually: true
+
 functions:
   getWorkout:
     handler: src/handler.getWorkoutHandler
