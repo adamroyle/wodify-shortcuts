@@ -8,6 +8,7 @@ import {
   defaultErrorResolver,
   topLevelErrorResolver,
   getProgramsFromLocationsProgramsResponse,
+  scheduleErrorResolver,
 } from './network.js'
 
 import type {
@@ -157,7 +158,7 @@ export async function reserveClass(session: Session, classId: string): Promise<R
       },
     },
   })
-    .then(toJson<ReservationResponse>(defaultErrorResolver))
+    .then(toJson<ReservationResponse>(scheduleErrorResolver))
     .then((json) => json.data.Response)
 }
 
@@ -180,7 +181,7 @@ export async function signinClass(session: Session, classId: string): Promise<Re
       },
     },
   })
-    .then(toJson<ReservationResponse>(defaultErrorResolver))
+    .then(toJson<ReservationResponse>(scheduleErrorResolver))
     .then((json) => json.data.Response)
 }
 
@@ -196,6 +197,6 @@ export async function cancelReservation(session: Session, classReservationId: st
       },
     },
   })
-    .then(toJson<ReservationResponse>(defaultErrorResolver))
+    .then(toJson<ReservationResponse>(scheduleErrorResolver))
     .then((json) => json.data.Response)
 }

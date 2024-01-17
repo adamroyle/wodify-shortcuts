@@ -46,7 +46,10 @@ export function getProgramsFromLocationsProgramsResponse(data: LocationsPrograms
 export const defaultErrorResolver = (responseData: { data: { Response: { Error: RequestError } } }) =>
   responseData.data.Response.Error
 
-export const topLevelErrorResolver = (responseData: { data: { ErrorMessage: string } }) => {
+export const scheduleErrorResolver = (responseData: { data: { Response: { Error_Schedule: RequestError } } }) =>
+  responseData.data.Response.Error_Schedule
+
+export const topLevelErrorResolver = (responseData: { data: { ErrorMessage: string } }): RequestError => {
   return {
     HasError: responseData.data.ErrorMessage.length > 0,
     ErrorMessage: responseData.data.ErrorMessage,

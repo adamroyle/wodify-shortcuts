@@ -187,7 +187,7 @@ export type GetClassAccessesResponse = {
 }
 
 export type ReservationStatus = {
-  Error: RequestError
+  Error_Schedule: RequestError
   Message: string
   NewStatusId: ReservationStatusId
   MessageTypeId: number
