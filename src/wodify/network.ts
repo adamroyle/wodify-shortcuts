@@ -72,7 +72,7 @@ const apiEndpoints: { [key in ApiName]: string } = {
   LocationsPrograms: 'screenservices/WodifyClient_CS/ActionSyncLocationsPrograms',
   GetClassesAttendance: 'screenservices/WodifyClient_Class/Classes/Attendance/DataActionGetClasses',
   GetClasses: 'screenservices/WodifyClient_Class/Classes/Classes/DataActionGetClasses',
-  GetAllData: 'screenservices/WodifyClient_Performance/Exercise_Server/Workout/DataActionGetAllData',
+  GetAllData: 'screenservices/WodifyClient_Performance/Exercise/Workout/DataActionGetAllData',
   GetClassAccesses: 'screenservices/WodifyClient_Class/Classes/Class/DataActionGetClassAccesses',
   CreateClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICreateClassReservation',
   SignInClass: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass',
@@ -95,7 +95,7 @@ export async function createApiCache(): Promise<ApiCache> {
     fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`).then(toText),
     fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_Performance.Exercise_Server.Workout.mvc.js`).then(toText),
+    fetch(`${BASE}/scripts/WodifyClient_Performance.Exercise.Workout.mvc.js`).then(toText),
   ]).then((str) => str.join(''))
 
   const createApi: (apiName: ApiName) => Api = (apiName: ApiName) => {
