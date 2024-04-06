@@ -1,5 +1,5 @@
 import fetch, { AbortError, Response } from 'node-fetch'
-import type { User, RequestError, LocationsProgramsResponse, Program } from './types.js'
+import type { User, RequestError, LocationsProgramsResponse, Program, ModuleInfoResponse } from './types.js'
 
 const BASE = 'https://app.wodify.com/WodifyClient'
 
@@ -88,14 +88,27 @@ type ApiCache = Record<ApiName, Api>
 
 let apiCache: Promise<ApiCache> | undefined
 
+async function getModuleInfo(): Promise<ModuleInfoResponse> {
+  const response = await fetch(`${BASE}/moduleservices/moduleinfo`)
+  return await toJson<ModuleInfoResponse>()(response)
+}
+
 export async function createApiCache(): Promise<ApiCache> {
+  const moduleInfo = await getModuleInfo()
+
+  const withVersion = (moduleUrl: string) => {
+    const url = new URL(moduleUrl)
+    url.search = moduleInfo.manifest.urlVersions[url.pathname]
+    return url.toString()
+  }
+
   const codebase = await Promise.all([
-    fetch(`${BASE}/scripts/WodifyClient.controller.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_CS.controller.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`).then(toText),
-    fetch(`${BASE}/scripts/WodifyClient_Performance.Exercise.Workout.mvc.js`).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient.controller.js`)).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_CS.controller.js`)).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`)).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`)).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`)).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_Performance.Exercise.Workout.mvc.js`)).then(toText),
   ]).then((str) => str.join(''))
 
   const createApi: (apiName: ApiName) => Api = (apiName: ApiName) => {

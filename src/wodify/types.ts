@@ -101,6 +101,12 @@ export type RequestError = {
   ErrorMessage: string
 }
 
+export type ModuleInfoResponse = {
+  manifest: {
+    urlVersions: { [key: string]: string }
+  }
+}
+
 export type LoginResponse = {
   data: {
     Response: {
@@ -159,7 +165,7 @@ export type GetAllDataResponse = {
   data: {
     ErrorMessage: string
     ResponseWorkout: {
-      Error: RequestError
+      WorkoutError: RequestError
       ResponseWorkoutActions: {
         WorkoutComponents: {
           List: WorkoutComponent[]
