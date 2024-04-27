@@ -1,7 +1,7 @@
 import type { Handler, APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda'
 import crypto from 'crypto'
 
-import { getWorkout, signin } from './functions.js'
+import { getAllWorkouts, getWorkout, signin } from './functions.js'
 
 export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2> = async (event) => {
   const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
@@ -27,6 +27,36 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
     }
   } catch (error: any) {
     console.error(error.message, { user: hash(email), date, includeWarmup, includeExtras })
+    return {
+      statusCode: 500,
+      body: error.message,
+    }
+  }
+}
+
+export const getAllWorkoutsHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2> = async (event) => {
+  const formData = new URLSearchParams(Buffer.from(event.body || '', 'base64').toString('utf8'))
+  const dateStart = formData.get('dateStart')
+  const dateEnd = formData.get('dateEnd')
+  const email = formData.get('email')
+  const password = formData.get('password')
+
+  if (!dateStart || !dateEnd || !email || !password) {
+    console.error('Start date, end date, email and password are required.')
+    return {
+      statusCode: 400,
+      body: 'Start date, end date, email and password are required.',
+    }
+  }
+
+  try {
+    console.log({ user: hash(email), dateStart, dateEnd })
+    return {
+      statusCode: 200,
+      body: await getAllWorkouts({ username: email, password, dateStart, dateEnd }),
+    }
+  } catch (error: any) {
+    console.error(error.message, { user: hash(email), dateStart, dateEnd })
     return {
       statusCode: 500,
       body: error.message,

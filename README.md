@@ -104,6 +104,33 @@ curl https://adam.royle.dev/wodify/workout \
 
 ---
 
+### Get all workouts for a date range
+
+```
+POST https://adam.royle.dev/wodify/all-workouts
+```
+
+**Params**
+
+| Name      | Required |                                          |
+| --------- | -------- | ---------------------------------------- |
+| email     | Yes      | The email used to login to Wodify.       |
+| password  | Yes      | The password used to login to Wodify.    |
+| dateStart | Yes      | The date in ISO 8601 format.             |
+| dateEnd   | Yes      | The date in ISO 8601 format. (inclusive) |
+
+**Example**
+
+```sh
+curl https://adam.royle.dev/wodify/all-workouts \
+  --data email=email@example.com \
+  --data password=YourPassword1 \
+  --data dateStart=2022-09-27 \
+  --data dateEnd=2022-10-01
+```
+
+---
+
 ### Sign in to the next available class on a specific date
 
 ```

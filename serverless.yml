@@ -17,6 +17,12 @@ functions:
       - httpApi:
           path: /workout
           method: post
+  getAllWorkouts:
+    handler: src/handler.getAllWorkoutsHandler
+    events:
+      - httpApi:
+          path: /all-workouts
+          method: post
   signin:
     handler: src/handler.signinHandler
     events:

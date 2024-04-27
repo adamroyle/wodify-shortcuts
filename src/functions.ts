@@ -30,6 +30,45 @@ export async function getWorkout({
   return formatWorkout(workout) || 'Oh no! There is no workout posted.'
 }
 
+type GetAllWorkoutsParams = {
+  username: string
+  password: string
+  dateStart: string
+  dateEnd: string
+}
+
+export async function getAllWorkouts({
+  username,
+  password,
+  dateStart,
+  dateEnd,
+}: GetAllWorkoutsParams): Promise<string> {
+  const session = await loginWrapper(username, password)
+  // hack for crossfit crossaxed - if gym program is "CrossFit", change it to "CrossFit GPP"
+  const programId = session.User.GymProgramId === '20714' ? '109084' : session.User.GymProgramId
+  const dateRange = getDateRange(dateStart, dateEnd)
+  let workouts = await Promise.allSettled(
+    dateRange.map(async (date) => {
+      let workoutComponents = await listWorkoutComponents(session, date, programId)
+      let workout = formatWorkout(excludeExtras(excludeWarmup(workoutComponents)))
+      if (!workout) {
+        throw new Error('No workout posted')
+      }
+      return workout
+    })
+  )
+
+  return workouts
+    .map((w, i) => {
+      if (w.status === 'fulfilled') {
+        return `${getDayName(dateRange[i]).toUpperCase()}\n\n${w.value || ''}`
+      }
+      return ''
+    })
+    .filter(Boolean)
+    .join('\n\n')
+}
+
 type SigninParams = {
   username: string
   password: string
@@ -106,4 +145,19 @@ function loginWrapper(username: string, password: string): ReturnType<typeof log
     // return the first error instead of the AggregateError
     Promise.reject(e.errors[0])
   )
+}
+
+function getDateRange(dateStart: string, dateEnd: string): string[] {
+  const dateRange = []
+  const start = new Date(dateStart)
+  const end = new Date(dateEnd)
+  for (let date = start; date <= end; date.setDate(date.getDate() + 1)) {
+    dateRange.push(date.toISOString().slice(0, 10))
+  }
+  return dateRange
+}
+
+function getDayName(date: string): string {
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  return days[new Date(date).getDay()]
 }
