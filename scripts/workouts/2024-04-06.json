@@ -1,0 +1,262 @@
+[
+  {
+    "Id": "90944234",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Line drills</p><p>Then:</p><p> </p><p>2 Rounds </p><p>10 Beat Swings</p><p>2 Eccentric Lowers</p><p>Break in elbow - Build to Chin over Bar Pull up (2nd Round C2B)</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "35975790",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823849",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90944133",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Chipper",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Complete in teams of 2.</p><p>For time:</p><p><br>Partner Run, 1600 m<br>120 Air Squats<br>50 Pull-ups</p><p><br>Partner Run, 1000 m<br>80 Air Squats<br>40 Chest-to-bar Pull-ups</p><p><br>Partner Run, 600 m<br>40 Air Squats<br>12 Rope Climbs</p><p> </p><p>Partners will run together and split the reps inside evenly.</p><p> </p><p>Time Domain: 27:00-33:00 minutes<br>Time Cap: 36:00 minutes</p><p> </p><p>RX+</p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">For time:</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">Partner Run, 1600 m</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">180 Air Squats</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">60 Pull-ups</span></p><p><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">Partner Run, 1000 m</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">90 Air Squats</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">30 Ring Muscle-ups</span></p><p><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">Partner Run, 600 m</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">45 Air Squats</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">15 Rope Climbs</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">Solo Option:</span></p><p> </p><p>1600m Run</p><p>60 Air Squats</p><p>25 Pull Ups</p><p> </p><p>1000m Run</p><p>40 Air Squats</p><p>20 C2B Pull Ups</p><p> </p><p>600m Run</p><p>20 Air Squats</p><p>6 Rope Climbs</p><p> </p><p>Solo Rx+</p><p> </p><p>1600m Run</p><p>90 Air Squats</p><p>30 Pull Ups</p><p> </p><p>1000m Run</p><p>45 Air Squats</p><p>15 RMU</p><p> </p><p>600m Run</p><p>30 Air Squats</p><p>8 Rope Climbs</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 3,
+    "ComponentId": "35975750",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823849",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90944117",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823849",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90944126",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 2",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>1:00 Childs Pose<br>1:00/1:00 Low Dragon Stretch<br>1:00/1:00 Scorpion Stretch<br>:30/:30 Thread the Needle Stretch<br>5/5 Side Lying Thoracic Rotations</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=2pkLUbN34GI\">Childs Pose</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=vIbx23Nk4q4\">Low Dragon Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=NSLDV4N5Gl4\">Scorpion Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=MfUx9FCOb1E\">Thread the Needle Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=EHZJns1bXPM\">Side Lying Thoracic Rotations</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "35679886",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823849",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90944301",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Accessories 060424",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">5 rounds for quality of:</span></p><p><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">5 Tempo Strict Dips</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">10 Dumbbell Hammer Curls, pick load</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">15 Barbell Wrist Curls, pick load</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "35975813",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823849",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

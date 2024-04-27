@@ -1,0 +1,314 @@
+[
+  {
+    "Id": "90824234",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>5L/5R Banded Leg Circles</p><p>10 Banded Good Mornings</p><p>5L/5R Split Squat</p><p>5 Inchworm to push up</p><p> </p><p>Then:</p><p>3 Rounds</p><p>10 Barbell RDLS</p><p>10 Beat Swings (Build to TTB)</p><p>3 Inch Worm to push ups (Build to WW)</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "35922053",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90824264",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90813906",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">For time:</span></p><p><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">1 W</span>all Walk</p><p>5 TTB</p><p>1 Deadlift 143/93kg<br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">2 Wall Walks</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">10 TTB</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">2 Deadlift 143/93kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">3 Wall Walks</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">15 TTB</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">3 Deadlift 143/93kg</span><br>4<span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\"> Wall Walks</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">20 TTB</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">4 Deadlift 143/93kg</span></p><p><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">Rest 1 min</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">4 Deadlift 143/93kg</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">20 TTB</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">4 Wall Walks</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">3 Deadlift 143/93kg</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">15 TTB</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">3 Wall Walks</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">2 Deadlift 143/93kg</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">10 TTB</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">2 Wall Walks</span></p><p>1 Deadlift 143/93kg<br><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">5 TTB</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(62,62,63);font-size:14px;\">1 Wall Walk</span></p><p> </p><p>RX+: 5m HS Walk Length for each wall walk rep, 160/110kg</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 3,
+    "ComponentId": "35918244",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90824415",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 4",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Scorpion Stretch, L 1 min/R 1 min<br>Couch Stretch, L 1 min/R 1 min<br>Extended Arm Lizard Pose, L 1 min/R 1 min<br>Single Leg Forward Fold, L 1 min/R 1 min<br>Child Pose, 1 min</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=zWpBcCuV7QA\">KB Calf Smash</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=EZj0m8IRVRE\">Half Kneeling Hamstring Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=Mkr6xhfrWnc\">Tall Dragon Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=oy2AfcI1CXA\">Standing Forward Fold</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=pVmOOluGAv8\">Updog Pose</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 3,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "35922119",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90824333",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": true,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Bench Press",
+    "Comment": "<p>Bench Press 1x3 at 82% 1RM<br>Bench Press 1x2 at 85% 1RM<br>Bench Press 1x2 at 87% 1RM<br>Bench Press 1x1 at 90% 1RM<br>Bench Press 1x1 at 95% 1RM</p><p> </p><p>Rest as needed between sets</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "3 - 2 - 2 - 1 - 1",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 1,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "25",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": true,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "90824343",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Run Conditioning 020424",
+    "Comment": "<p> </p><p>Warm-Up<br>800m Easy</p><p><br>into.</p><p>2 Rounds</p><p><br>10m Toy Soldiers<br>10m Ostrich Walk<br>10/10m Lateral Lunge Walk<br>20m/20m A Skips + B-Skips</p><p> </p><p>Primer:<br>8:00 minute EMOM<br>50m Sprint</p><p> </p><p>into..</p><p>Main Set:<br> </p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 rounds, each round for time, of:</p><p><br>Run, 200 m<br>Rest 1 min</p><p><br>Run, 200 m<br>Rest 1 min</p><p><br>Run, 400 m</p><p> </p><p>Rest 4 mins between each round.</p><p> </p><p>Pace: 800m to Mile Race Pace</p>",
+    "Rounds": 3,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Time",
+    "ScalingId": 1,
+    "ComponentId": "35922094",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "146823772",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
