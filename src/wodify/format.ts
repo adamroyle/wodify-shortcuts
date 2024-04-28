@@ -60,9 +60,19 @@ function cleanText(c: WorkoutComponent): WorkoutComponent {
 }
 
 function htmlToPlainText(html: string): string {
+  // replace paragraph and break tags with newlines
   html = html.replace(/<\/p>/g, '\n')
   html = html.replace(/<br \/>/g, '\n')
   html = html.replace(/<br>/g, '\n')
+  // remove links since these are generally videos
+  html = html.replace(/<a (.+?)<\/a>/g, '')
+  // remove empty list items
+  html = html.replace(/<li>\s*<\/li>/g, '')
+  // replace list items with bullets
+  html = html.replace(/<li>/g, '• ')
+  // replace closing list tags with newlines
+  html = html.replace(/<\/li>/g, '\n')
+  // remove all other tags
   html = html.replace(/<[^>]+>/g, '')
   return decodeEntities(html)
 }

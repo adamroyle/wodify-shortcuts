@@ -30,8 +30,6 @@ Recovery Stretches 5
 1:00 Seated Chest Stretch
 1:00/1:00 Crossbody Lat Stretch
 
-Elevated Prayer StretchElevated Pigeon StretchSeated Chest StretchCrossbody Lat Stretch
-
 Accessory EMOM
 Every 1 min for 12 mins, alternating between:
 
@@ -39,5 +37,3 @@ Every 1 min for 12 mins, alternating between:
 12 Inverted Rows
 12 Banded Y Raises
 12 Dumbbell Zottman Curls, pick load
-
-Dumbbell Zottman Curls
