@@ -1,4 +1,3 @@
-import fetch, { AbortError, Response } from 'node-fetch'
 import type { User, RequestError, LocationsProgramsResponse, Program, ModuleInfoResponse } from './types.js'
 
 const BASE = 'https://app.wodify.com/WodifyClient'
@@ -174,7 +173,8 @@ export async function callApi(apiName: ApiName, session: Session | null, body: o
           }),
         })
       } catch (error) {
-        if (error instanceof AbortError) {
+        // if error is DOMException (reason is AbortError)
+        if (error instanceof DOMException) {
           console.log(`${apiName} TIMED OUT after ${timeoutMs}ms`)
         } else {
           console.log(`${apiName} error`, error)

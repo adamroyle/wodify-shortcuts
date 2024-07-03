@@ -23,8 +23,6 @@
  * https://docs.google.com/spreadsheets/d/1iRTG26NRS9x5z9yYNXkitA2CIdc7fCiC7fqoxYN5ovk/edit?usp=sharing
  */
 
-import fetch from 'node-fetch'
-
 type Region = {
   name: string
   url: string

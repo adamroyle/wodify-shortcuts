@@ -43,7 +43,7 @@ export async function login(username: string, password: string): Promise<Session
 
   const loginResponse = await toJson<LoginResponse>(defaultErrorResolver)(response)
 
-  const cookies = response.headers.raw()['set-cookie'].map((c) => cookieParser.parseString(c))
+  const cookies = response.headers.getSetCookie().map((c) => cookieParser.parseString(c))
   const csrfToken = cookieParser.parseString(cookies.find((c) => c.name === 'nr2W_Theme_UI')?.value || '').value
   const cookie = cookies.map((c) => cookieBuilder.serialize(c.name, c.value)).join('; ')
 

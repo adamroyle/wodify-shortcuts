@@ -31,7 +31,6 @@
   "dependencies": {
     "cookie": "^0.6.0",
     "entities-decode": "^2.0.0",
-    "node-fetch": "^3.2.10",
     "set-cookie-parser": "^2.5.1"
   }
 }
