@@ -115,6 +115,6 @@ function removeFillerText(text: string): string {
 
 function looksLikeExtrasSectionName(name: string): boolean {
   return !!name.match(
-    /^(Extras|Extra Work|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY|Mobility)$/i
+    /^(Extras|Extra Work|Stretching|Aerobic Conditioning|Midline|Aerobic Capacity|Gymnastics|Weightlifting|Strength|FOR SCORING PURPOSE ONLY|Mobility)$/i
   )
 }
