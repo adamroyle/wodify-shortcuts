@@ -9,7 +9,7 @@ export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): Workou
 }
 
 export function excludeWarmup(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
-  const excludeNames = ['warm-up', 'warm up', 'warmup']
+  const excludeNames = ['warm-up', 'warm up', 'warmup', 'general warm-up']
   return workoutComponents.filter((c) => !excludeNames.includes(c.Name.toLowerCase().trim()))
 }
 
