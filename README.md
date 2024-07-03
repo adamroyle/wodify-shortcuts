@@ -90,6 +90,7 @@ POST https://adam.royle.dev/wodify/workout
 | date           | Yes      | The date in ISO 8601 format.                           |
 | include_warmup | No       | Set to "1" to include warmup sections. Default is "0". |
 | include_extras | No       | Set to "1" to include extras sections. Default is "0". |
+| include_scaled | No       | Set to "1" to include scaled workouts. Default is "0". |
 
 **Example**
 

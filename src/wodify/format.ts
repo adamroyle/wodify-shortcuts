@@ -5,6 +5,7 @@ import type { WorkoutComponent } from './types.js'
 export function getPrimaryWorkout(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   workoutComponents = excludeWarmup(workoutComponents)
   workoutComponents = excludeExtras(workoutComponents)
+  workoutComponents = excludeScaled(workoutComponents)
   return workoutComponents
 }
 
@@ -19,6 +20,13 @@ export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutCom
     return workoutComponents.slice(0, extrasIndex)
   }
   return workoutComponents
+}
+
+// this removes the Intermediate and Beginner scaling options for the primary workout
+export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
+  return workoutComponents.map((c) => {
+    return { ...c, Description: c.Description.replace(/<p>- INTERMEDIATE -.+$/s, '') }
+  })
 }
 
 export function formatWorkout(workoutComponents: WorkoutComponent[]): string {

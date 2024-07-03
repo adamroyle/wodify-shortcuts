@@ -1,5 +1,5 @@
 import { login, listWorkoutComponents, listClasses, signinClass, getGymDateTime } from './wodify/api.js'
-import { excludeExtras, excludeWarmup, formatWorkout } from './wodify/format.js'
+import { getPrimaryWorkout, excludeExtras, excludeScaled, excludeWarmup, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
 type GetWorkoutParams = {
@@ -8,6 +8,7 @@ type GetWorkoutParams = {
   date: string
   includeWarmup: boolean
   includeExtras: boolean
+  includeScaled: boolean
 }
 
 export async function getWorkout({
@@ -16,6 +17,7 @@ export async function getWorkout({
   date,
   includeWarmup,
   includeExtras,
+  includeScaled,
 }: GetWorkoutParams): Promise<string> {
   const session = await loginWrapper(username, password)
   // hack for crossfit crossaxed - if gym program is "CrossFit", change it to "CrossFit GPP"
@@ -26,6 +28,9 @@ export async function getWorkout({
   }
   if (!includeExtras) {
     workout = excludeExtras(workout)
+  }
+  if (!includeScaled) {
+    workout = excludeScaled(workout)
   }
   return formatWorkout(workout) || 'Oh no! There is no workout posted.'
 }
@@ -50,7 +55,7 @@ export async function getAllWorkouts({
   let workouts = await Promise.allSettled(
     dateRange.map(async (date) => {
       let workoutComponents = await listWorkoutComponents(session, date, programId)
-      let workout = formatWorkout(excludeExtras(excludeWarmup(workoutComponents)))
+      let workout = formatWorkout(getPrimaryWorkout(workoutComponents))
       if (!workout) {
         throw new Error('No workout posted')
       }

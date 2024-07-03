@@ -9,15 +9,3 @@ Minute 4: Rest
 RX+ Strict C2B, Deficit Strict HSPU
 
 Scoring = Total Max Rep Step Ups
-
-- INTERMEDIATE -
-Minute 1: 2 Eccentric Pull Ups + 4 Toe Assisted Pull Ups
-Minute 2: 5 Feet Elevated Box HSPU
-Minute 3: Max Rep Double Dumbbell Box Step Up (15/10kg)
-Minute 4: Rest
-
-- BEGINNER -
-Minute 1: 2 Eccentric Pull Ups + 3 Ring Rows
-Minute 2: 5 Push Ups or Elevated Box Push Up
-Minute 3: Max Rep Double Dumbbell Box Step Up (10/7.5kg)
-Minute 4: Rest
