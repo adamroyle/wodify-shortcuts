@@ -4,7 +4,14 @@ async function main(username: string, password: string, date: string) {
   const start = Date.now()
 
   try {
-    const workout = await getWorkout({ username, password, date, includeWarmup: false, includeExtras: false })
+    const workout = await getWorkout({
+      username,
+      password,
+      date,
+      includeWarmup: false,
+      includeExtras: false,
+      includeScaled: false,
+    })
     console.log(workout)
   } catch (e: any) {
     console.log('Error:', e.message)
