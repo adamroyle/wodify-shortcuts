@@ -25,7 +25,12 @@ export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutCom
 // this removes the Intermediate and Beginner scaling options for the primary workout
 export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   return workoutComponents.map((c) => {
-    return { ...c, Description: htmlToPlainText(c.Description).replace(/^- INTERMEDIATE -.+$/ms, '') }
+    return {
+      ...c,
+      Description: htmlToPlainText(c.Description)
+        .replace(/^- INTERMEDIATE -.+$/ims, '')
+        .replace(/^Scaling:.+$/ims, ''),
+    }
   })
 }
 
