@@ -1,0 +1,53 @@
+[
+  {
+    "Id": "93117564",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><strong>Conditioning challenge:</strong><br>20:00 to establish max meters on a machine of your choice.</p>",
+    "Rounds": 1,
+    "ResultTypeId": 8,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "36916451",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false,
+        "HasBeenScored": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

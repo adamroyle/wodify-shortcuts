@@ -1,0 +1,262 @@
+[
+  {
+    "Id": "93813802",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "General Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>200m Run</p><p>Banded Scap Retractions</p><p>Banded Wall Slides</p><p>3 Inchworm to push up</p><p>Partner Thoracic Stretch</p><p>20 Second Handstand Hold</p><p> </p><p> </p><p>2 Rounds progressing through:</p><p> </p><p>8 Suitcase Deadlifts</p><p>8 DB Push Press</p><p>Air Squat - Single Arm OH Sq</p><p>8 Hang Dumbell Snatches</p><p>1 Wall Walk</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37226880",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148362756",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93813608",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "AMRAP18",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>As many rounds and reps as possible in 18 Minutes:</p><p> </p><p>3 Wall Walks</p><p>10 Deadlifts 84/61kg</p><p>5L/5R Dumbbell Hang Squat Snatch 22.5/15kg</p><p>20/16 Echo Bike Cals</p><p> </p><p>RX+ 9m HS walk, 32/22.5kg DB</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- INTERMEDIATE -</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">2 Wall Walks</span></p><p>10 Deadlifts 70/52kg</p><p>5L/5R Dumbbell Hang Squat Snatch 17.5/12.5kg</p><p>15/12 Echo Cals</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- BEGINNER -</span></p><p>3 Inchworm to Push Up</p><p>10 Deadlifts 52/34kg</p><p>5L/5R DB Hang Snatch 10/7.5kg</p><p>10/8 Echo Cals</p>",
+    "Rounds": 0,
+    "ResultTypeId": 4,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 3,
+    "ComponentId": "37226698",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148362756",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042390",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148362756",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042396",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 10",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>10/10 Quadruped Adductor Hip Rock (5 sec Pause in Stretch)</p><p><br>1:00 Down Dog Calf Stretch</p><p><br>1:00/1:00 Active Pigeon Stretch (5 sec Pause in Stretch)</p><p><br>1:00/1:00 Couch Stretch</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=yF8o6I6aSZg\">Quadruped Adductor Hip Rock</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=4afOqZ_awcw\">Down Dog Calf Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=Djxo1ujgoxk\">Active Pigeon Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=9_2Qemb_oBY\">Couch Stretch</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36036953",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148362756",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93813658",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "STRENGTH",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>5 sets for load:<br>10 close grip bench presses<br><br>- Rest as needed and build to your heaviest set of 10.<br>- Use a spotter for this session if possible. If you are alone, be sure to not push to failure and be smart about the load you are lifting.<br> </p>",
+    "Rounds": 5,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Weight",
+    "ScalingId": 2,
+    "ComponentId": "37226747",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148362756",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

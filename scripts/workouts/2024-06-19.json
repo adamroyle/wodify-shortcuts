@@ -1,0 +1,262 @@
+[
+  {
+    "Id": "93813917",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "General Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:transparent;color:#000000;\"><strong>Dynamic warm-up</strong></span><br><br><span style=\"background-color:transparent;color:#000000;\">200-meter run, slow</span><br><span style=\"background-color:transparent;color:#000000;\">10 leg swings/leg</span><br><span style=\"background-color:transparent;color:#000000;\">10 lateral leg swings/leg</span><br><span style=\"background-color:transparent;color:#000000;\">10 alternating lunges</span><br><span style=\"background-color:transparent;color:#000000;\">10 hamstring scoops/leg</span><br><span style=\"background-color:transparent;color:#000000;\">10 alternating Cossack squats</span><br><span style=\"background-color:transparent;color:#000000;\">10 hamstring kick-ups/leg</span><br><span style=\"background-color:transparent;color:#000000;\">200-meter run, moderate pace</span><br> </p><p>10 Squat to Stands</p><p>10 Beat Swings</p><p>5m Crab Walk</p><p>5L/5R Single Leg Good Mornings</p><p>10 Barbell Front Squats</p><p>3 Eccentric Pull Up Lowers</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37226990",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148409724",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93884396",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>For Time:</p><p><br>5 Rounds<br>12 Front Squats 70/48kg<br>6 Ring Muscle Ups<br>200m Run</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- INTERMEDIATE -</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">12 Front Squats 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">6 Bar Muscle Ups</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">200m Run</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- BEGINNER -</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">12 Front Squats 43/30kg</span></p><p>6 Jumping BMU</p><p>200m Run</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37255433",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148409724",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042403",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148409724",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042398",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Yoga Flow",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>2 Rounds<br>Right Leg + Left Leg<br>:15sec Down Dog<br>:30sec Low Lunge<br>:15 Elbow to Knee and Rotate<br>:15sec Reach to Sky and Hold<br>:30sec Half Kneeling Hamstring Stretch<br>:30sec Pigeon</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://youtu.be/W4gtQ6aoCzE\">PRVN Yoga Flow</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36037142",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148409724",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042879",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Row Conditioning 190624",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">5k Row @ Conversational Pace, Stroke Rate 22-25spm</span><br><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">Every 3:00 minutes, Include 20 sec @ Goal 5k Pace</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgba(0,0,0,0.7);font-size:14px;\">RPE: 4/10</span></p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37255366",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148409724",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

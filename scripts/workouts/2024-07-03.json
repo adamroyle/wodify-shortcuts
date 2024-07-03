@@ -1,0 +1,262 @@
+[
+  {
+    "Id": "94360965",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Line Drills</p><p>Into</p><p> </p><p>Interventions</p><p>Hamstring - RDL's</p><p>Hips - Split Squat</p><p>Stability - Single Leg kettlebell Airplane RDL</p><p> </p><p>3 Rounds of</p><p>Air Squat - Kang Squat - Back Squat</p><p>Progressive Hang Leg Raise - TTB</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37468651",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148967909",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94419444",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 Rounds of:</p><p> </p><p>2:00 on, 1:00 off</p><p>15 Back Squats 61/43kg</p><p>15 Toes to bar</p><p>Max Reps Bar Facing Burpees</p><p> </p><p>Into</p><p>1 Round of:</p><p>3:00 on,</p><p>15 Back Squats 61/43kg</p><p>15 Toes to bar</p><p>Max Reps Bar Facing Burpees</p><p> </p><p>RX+ 75/52kg</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- INTERMEDIATE -</span></p><p> </p><p>15 Back Squats 52/38kg</p><p>15 Toes to bar/Hang Leg Raise</p><p>Max Reps Bar Facing Burpees</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- BEGINNER -</span></p><p> </p><p>15 Back Squats 35/25kg</p><p>10 Hang Leg Raise/Straight Leg Sit up</p><p>Max Reps Burpee</p>",
+    "Rounds": 4,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Reps",
+    "ScalingId": 2,
+    "ComponentId": "37489865",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148967909",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94419482",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148967909",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94360705",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "- STAMINA I -",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>10 sets for time:<br>300-meter row<br>- Rest 1:00 between sets.<br><br>- Score your slowest round.<br>- Keep each interval under 1:20.<br>- Maintain the same pace across all intervals.<br>- If you cannot complete multiple sets of the 300-meter distance in under 1:20, scale back the distances by 50-75 meters.<br>- Today's session is about developing consistency. Ideally, you want to maintain the same pace across all distances.<br><br>Modifications: 300-meter run, 700-meter bike</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37468416",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148967909",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94419732",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 8",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>1:00 Extended Reverse Plank Bridge<br>1:00/1:00 Crossbody Lat Stretch<br>1;00/1:00 Single Leg Forward Fold<br>1:00/1:00 Couch Stretch<br>1:00 Childs Pose</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=YFKBQXOlRxk\">Extended Reverse Plank Bridge</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=GGZqtCCxn4A\">Crossbody Lat Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ANtAzrwn-8M\">Single Leg Forward Fold</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ulgAOykAgV4&amp;t=6s\">Couch Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=2pkLUbN34GI\">Childs Pose</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36259009",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148967909",
+          "StartTime": "06:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

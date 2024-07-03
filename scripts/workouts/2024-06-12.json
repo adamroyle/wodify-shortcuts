@@ -1,0 +1,210 @@
+[
+  {
+    "Id": "93518751",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "General Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:transparent;color:#000000;\"><strong>Junkyard dog warm-up</strong></span><br><span style=\"background-color:transparent;color:#000000;\">• Scale to step-overs instead of jump-overs as needed.</span><br><span style=\"background-color:transparent;color:#000000;\">• Scale the crawl under to a bear crawl around the partner.</span><br><br><span style=\"background-color:transparent;color:#000000;\"><strong>AMRAP 6:</strong></span><br><span style=\"background-color:transparent;color:#000000;\">Partner A: 8 jumps around partner</span><br><span style=\"background-color:transparent;color:#000000;\">Partner B: 8 jumps around partner</span><br><span style=\"background-color:transparent;color:#000000;\">Partner A: 8 jump over and crawl under partner</span><br><span style=\"background-color:transparent;color:#000000;\">Partner B: 8 jump over and crawl under partner</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37095404",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148138313",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93518742",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "EMOM20",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Every Minute for 20 minutes complete:</p><p><br>Minute 1: 5 Strict Pull Ups<br>Minute 2: 5 Strict Handstand Push Ups<br>Minute 3: Max Rep Double Dumbbell Box Step Up (22.5/15kg) 20 Inch</p><p>Minute 4: Rest</p><p> </p><p>RX+ Strict C2B, Deficit Strict HSPU</p><p> </p><p>Scoring = Total Max Rep Step Ups</p><p> </p><p>- INTERMEDIATE -<br>Minute 1: 2 Eccentric Pull Ups + 4 Toe Assisted Pull Ups<br>Minute 2: 5 Feet Elevated Box HSPU<br>Minute 3: Max Rep Double Dumbbell Box Step Up (15/10kg)</p><p>Minute 4: Rest</p><p> </p><p>- BEGINNER -<br>Minute 1: 2 Eccentric Pull Ups + 3 Ring Rows<br>Minute 2: 5 Push Ups or Elevated Box Push Up<br>Minute 3: Max Rep Double Dumbbell Box Step Up (10/7.5kg)</p><p>Minute 4: Rest</p>",
+    "Rounds": 1,
+    "ResultTypeId": 3,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37095400",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148138313",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93796204",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148138313",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93796203",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 3",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>1:00/1:00 Couch Stretch<br>1:00/1:00 Single Leg Forward Fold<br>1:00 Updog Pose<br>1:00 Seated Straddle Stretch<br>1:00 Saddle Pose</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ulgAOykAgV4&amp;t=6s\">Couch Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ANtAzrwn-8M\">Single Leg Forward Fold</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=pVmOOluGAv8\">Updog Pose</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=MZCnxbsvZac\">Seated Straddle Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=V7utij-7rws\">Saddle Pose</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36521560",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148138313",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "Id": "93814182",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "General Warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:transparent;color:#000000;\"><strong>1 set:</strong></span><br><span style=\"background-color:transparent;color:#000000;\">:30 single-unders</span><br><span style=\"background-color:transparent;color:#000000;\">20 alternating plank shoulder taps</span><br><span style=\"background-color:transparent;color:#000000;\">5 single-arm shoulder presses/arm</span><br><br><span style=\"background-color:transparent;color:#000000;\"><strong>1 set:</strong></span><br><span style=\"background-color:transparent;color:#000000;\">:30 single-single-double</span><br><span style=\"background-color:transparent;color:#000000;\">:20 side plank hold/side</span><br><span style=\"background-color:transparent;color:#000000;\">5 dumbbell shoulder presses</span><br><span style=\"background-color:transparent;color:#000000;\">- Hold the top of each rep for :03.</span><br><br><span style=\"background-color:transparent;color:#000000;\"><strong>1 set:</strong></span><br><span style=\"background-color:transparent;color:#000000;\">:30 double-unders</span><br><span style=\"background-color:transparent;color:#000000;\">:20 hollow hold</span><br><span style=\"background-color:transparent;color:#000000;\">10 dumbbell shoulder presses</span><br><span style=\"background-color:transparent;color:#000000;\">- Cycle reps quickly.</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37227236",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93814175",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>For Time:</p><p>8 Push Jerk 61/43kg</p><p>1000m Run</p><p> </p><p>8 Push Jerk 61/43kg<br>800m Row/Ski</p><p> </p><p>8 Push Jerk 61/43kg<br>45 Box Jump overs 24/20</p><p> </p><p>8 Push Jerk 61/43kg<br>30 Bar Facing Burpee</p><p> </p><p>8 Push Jerk 61/43kg<br>15 Power Cleans 61/43kg</p><p> </p><p>RX+ 70/48kg</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- INTERMEDIATE -</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">800m Run</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">800m Row/Ski</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">45 Box Jumps</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">30 Burpees</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 52/38kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">15 Power Cleans 52/34kg</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">- BEGINNER -</span></p><p>8 Push Jerk 35/25kg</p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">600m Run</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 35/25kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">600m Row/Ski</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 35/25kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">30 Box Step overs</span></p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">8 Push Jerk 35/25kg</span></p><p><span style=\"background-color:rgb(255,255,255);color:rgb(77,71,91);font-size:14px;\">20 Burpees</span></p><p> </p><p>8 Push Jerk 35/25kg</p><p>15 Power Cleans 35/25kg</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 3,
+    "ComponentId": "37227229",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042414",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94042427",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Recovery Stretches 9",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>1:00 Barbell Adductor Stretch<br>1:00/1:00 Couch Stretch<br>1:00 Extended Reverse Plank Bridge<br>1:00/1:00 Crossbody Lat Stretch<br>1;00/1:00 Single Leg Forward Fold</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=pXWuFqoAh5U\">Barbell Adductor Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ulgAOykAgV4&amp;t=6s\">Couch Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=YFKBQXOlRxk\">Extended Reverse Plank Bridge</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=GGZqtCCxn4A\">Crossbody Lat Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=ANtAzrwn-8M\">Single Leg Forward Fold</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36037314",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "93813670",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "HS Walk Practise",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>10 sets:<br>15m handstand walk</p><p><br>- Rest 1:00 between sets.<br><br>- Advanced athletes should try to complete each set unbroken. If you fail an attempt, go back to the start.<br>- If 15m is too far, reduce the distance to accommodate your ability.<br><br> </p>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "37226757",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94353509",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Weightlifting Class - Pick your poison",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>Pick one</p><p>Clean, Jerk or Snatch</p><p> </p><p>Technique - Spend 15 Minutes building to a moderate set of 3, once you found that moderate weight we will do 3 - 5 sets on that weight focusing on technique.</p><p> </p><p>Strength and stability - We will spend 10 - 15 minutes from there focusing on strength through that range in the pull or push of the movement. </p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37462795",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "148540397",
+          "StartTime": "07:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
