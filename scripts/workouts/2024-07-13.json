@@ -1,0 +1,158 @@
+[
+  {
+    "Id": "94498756",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "General warm-up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"color:rgb(0,0,0);\">Progressive warm-up | 9:00</span><br><br><span style=\"color:rgb(0,0,0);\">1 set:</span><br><span style=\"color:rgb(0,0,0);\">7 inchworms</span><br><span style=\"color:rgb(0,0,0);\">10 forward lunges in place</span><br><span style=\"color:rgb(0,0,0);\">10 deadlifts</span><br><span style=\"color:rgb(0,0,0);\">:30 power singles</span><br><br><span style=\"color:rgb(0,0,0);\">1 set:</span><br><span style=\"color:rgb(0,0,0);\">7 x [2 shoulder taps + 1 push-up]</span><br><span style=\"color:rgb(0,0,0);\">10 walking lunges, slow</span><br><span style=\"color:rgb(0,0,0);\">10 hang muscle cleans</span><br><span style=\"color:rgb(0,0,0);\">:30 single-single-doubles</span><br><br><span style=\"color:rgb(0,0,0);\">1 set:</span><br><span style=\"color:rgb(0,0,0);\">5 inchworm + push-ups</span><br><span style=\"color:rgb(0,0,0);\">10 walking lunges, fast</span><br><span style=\"color:rgb(0,0,0);\">10 hang power cleans</span><br><span style=\"color:rgb(0,0,0);\">:30 double-unders</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37528169",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "149390367",
+          "StartTime": "06:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94889131",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>For Time:</p><p> </p><p>50 Drag Rope Double Unders</p><p>10 Squat Cleans 80kg/56kg</p><p> </p><p>40 Drag Rope Double Unders</p><p>8 Squat Cleans 90/63kg</p><p> </p><p>30 Drag Rope Double Unders</p><p>6 Squat Cleans 100/70kg</p><p> </p><p>20 Drag Rope Double Unders</p><p>4 Squat Cleans 110/77kg</p><p> </p><p>10 Drag Rope Double Unders</p><p>2 Squat Cleans 120/84kg</p><p> </p><p>RX+ Final Weight 92% of 1rm,</p><p>For RX+ Drop 12/8kg off Working % for each Jump</p><p> </p><p>- INTERMEDIATE -</p><p> </p><p>50 Double Unders</p><p>10 Squat Cleans 60/42kg or 56%</p><p> </p><p>40 Double Unders</p><p>8 Squat Cleans 70/49kg or 65%</p><p> </p><p>30 Double Unders</p><p>6 Squat Cleans 80/56kg or 74%</p><p> </p><p>20 Double Unders</p><p>4 Squat Cleans 90/63kg or 83%</p><p> </p><p>10 Double Unders</p><p>2 Squat Cleans 100/70kg or 92%</p><p> </p><p>- BEGINNER -</p><p> </p><p>50 Drag Rope Single skips</p><p>10 Squat Cleans 20/15kg</p><p> </p><p>40 Drag Rope Singles</p><p>8 Squat Cleans 28/20kg</p><p> </p><p>30 Drag Rope Singles</p><p>6 Squat Cleans 36/25kg</p><p> </p><p>20 Drag Rope Singles</p><p>4 Squat Cleans 44/30kg</p><p> </p><p>10 Drag Rope Singles</p><p>2 Squat Cleans 52/35kg</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37695539",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "149390367",
+          "StartTime": "06:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "94498779",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Skill work",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"color:rgb(0,0,0);\">Rest, stretch, recover.</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "37528182",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "149390367",
+          "StartTime": "06:30:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
