@@ -28,7 +28,7 @@ export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutCom
     return {
       ...c,
       Description: htmlToPlainText(c.Description)
-        .replace(/^- INTERMEDIATE -.+$/ims, '')
+        .replace(/^[^a-z0-9\n]*INTERMEDIATE[^a-z0-9\n]*\n.+$/ims, '')
         .replace(/^Scaling:.+$/ims, ''),
     }
   })
