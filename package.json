@@ -16,7 +16,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   },
   "devDependencies": {
     "@bigfishtv/prettier-config": "^1.0.5",
@@ -24,7 +24,6 @@
     "@types/cookie": "^0.6.0",
     "@types/set-cookie-parser": "^2.4.10",
     "serverless": "^4.1.22",
-    "serverless-plugin-typescript": "^2.1.2",
     "tsm": "^2.2.2",
     "typescript": "^5.5.4"
   },

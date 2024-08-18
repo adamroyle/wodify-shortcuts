@@ -1,5 +1,5 @@
 service: wodify-client-api
-frameworkVersion: '3'
+frameworkVersion: '4'
 
 provider:
   name: aws
@@ -32,6 +32,3 @@ functions:
       - httpApi: # deprecated (but still supported)
           path: /signin-crossfit
           method: post
-
-plugins:
-  - serverless-plugin-typescript
