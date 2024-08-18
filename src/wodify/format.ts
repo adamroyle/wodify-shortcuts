@@ -29,7 +29,8 @@ export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutCom
       ...c,
       Description: htmlToPlainText(c.Description)
         .replace(/^[^a-z0-9\n]*INTERMEDIATE[^a-z0-9\n]*\n.+$/ims, '')
-        .replace(/^Scaling:.+$/ims, ''),
+        .replace(/^Scaling:.+$/ims, '')
+        .replace(/^Int\.\n.+^Beg\.\n.+/ims, ''),
     }
   })
 }
