@@ -1,0 +1,314 @@
+[
+  {
+    "Id": "95846444",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>3 Rounds</p><p>20 Calf Pumps</p><p>Run 200m</p><p>5/5 Single DB Deadlifts</p><p>5 Candle stick to pancake </p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "38103681",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "95800033",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Ab Conditioning",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>EMOM12:</p><p>Minute 1: 3 Dragon Flys</p><p>Minute 2: 20 Second Hollow hold + 20 Flutter Kicks</p><p>Minute 3: 10 V Ups</p><p>Minute 4: Rest</p><p> </p><p>Scaling: Eccentric Dragon Fly's</p><p>Single Leg V Ups, Tuck Ups or straight leg sit ups</p>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "38081949",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "95799580",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>For Time:</p><p> </p><p>Run 200m</p><p>30 DB Snatches 22.5/15kg</p><p> </p><p>Run 400m</p><p>25 DB Snatches 22.5/15kg</p><p> </p><p>Run 600m</p><p>20 DB Snatches 22.5/15kg</p><p> </p><p>Run 800m</p><p>15 DB Snatches 22.5/15kg</p><p> </p><p>Run 1000m</p><p>10 DB Snatches 22.5/15kg</p><p> </p><p>RX+: 32/22.5kg</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 3,
+    "ComponentId": "38081794",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96033233",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96033239",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Shoulder Mobility",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>10/10 Side Lying Thoracic Rotation</p><p><br>10 Thoracic Extension with Foam Roller</p><p><br>1:00/1:00 Scorpion Stretch</p><p><br>:30/:30 Thread the Needle Stretch</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=EHZJns1bXPM\">Side Lying Thoracic Rotation</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=GUBUD1Rt9KY\">Thoracic Extension with Foam Roller</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=NSLDV4N5Gl4\">Scorpion Stretch</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/watch?v=MfUx9FCOb1E\">Thread the Needle Stretch</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36036969",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96035188",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Mixed Modal Conditioning",
+    "Comment": "<p> </p><p>Scaling:</p><p><span style=\"background-color:rgb(255,255,255);color:rgba(0,0,0,0.7);font-size:14px;\">Level 2: Reduce starting cals to 13/10 on Ski and Row, 12/9 on Echo and finish at 18/14 on Ski/Row, 18/13 Cal on Echo, increase in line with the progression</span><br><span style=\"background-color:rgb(255,255,255);color:rgba(0,0,0,0.7);font-size:14px;\">Level 1: Reduce starting cals to 12/9 on Ski and Row, 10/7 on Echo and increase in line with the progression</span></p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">For Completion / </span><span style=\"background-color:rgb(255,255,255);color:rgba(0,0,0,0.7);font-size:14px;\">RPE: 8/10</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">2 Sets, Through Sequence (30:00 Clock)</span><br><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 1: 15/12 Calorie Row</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 2: 16/13 Calorie Row</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 3: 18/14 Calorie Row</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 4: 20/15 Calorie Row</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 5: Rest</span><br><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 1: 15/12 Calorie Ski</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 2: 16/13 Calorie Ski</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 3: 18/14 Calorie Ski</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 4: 20/15 Calorie Ski</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 5: Rest</span><br><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 1: 13/10 Calorie Echo</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 2: 15/11 Calorie Echo</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 3: 18/13 Calorie Echo</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 4: 20/14 Calorie Echo</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">min 5: Rest</span></p>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "38186753",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150313812",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

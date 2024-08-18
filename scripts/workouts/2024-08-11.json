@@ -1,0 +1,53 @@
+[
+  {
+    "Id": "95846573",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Steady State",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">For Calories:</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">6 Sets x 7:00 AMRAP, Continuous (42:00 AMRAP @ Steady state effort)</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">400m Run</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">30/24 Calorie Bike Erg</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">200m Run @ Harder Pace</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">-Max Calorie Standing Bike Erg @ 8 RPE</span></p>",
+    "Rounds": 1,
+    "ResultTypeId": 11,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "38103736",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [],
+      "EmptyListItem": {
+        "ClassId": "0",
+        "StartTime": "",
+        "HasResultsForClass": false,
+        "PerformanceResultId": "0",
+        "FullyFormattedResult": "",
+        "IsRx": false,
+        "IsRxPlus": false,
+        "HasBeenScored": false
+      }
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]

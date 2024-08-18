@@ -1,0 +1,314 @@
+[
+  {
+    "Id": "96199104",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Warm Up",
+    "Comment": "<p>1:00 Wrist mobilisation<br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">20 Block &amp; Twists from Squat</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">-then-</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">For Quality:</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">4 Rounds</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">12 Calorie Row, Building</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">30 Single Unders</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">5/5 Bird Dog from Crawling</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">5L/5R KB deadlifts</span></p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96064362",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Metcon",
+    "Comment": "<p>Remember to take a rest day and or do a recovery session this week. See the extras for options.</p>",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>2 Rounds for time</p><p>100 Double Unders</p><p>80/60 Calories Machine (60/40 Echo Bike)</p><p>60m Farmers Carry 32's/24's kg</p><p>40m Walking Lunge</p><p>20 Double KB Deadlifts 32's/24's kg</p>",
+    "Rounds": 1,
+    "ResultTypeId": 2,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "38196086",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96072528",
+    "IsSection": true,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": false,
+    "IsWeightliftingTotal": false,
+    "Name": "Extra Work ",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "",
+    "Rounds": 0,
+    "ResultTypeId": 0,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 0,
+    "ComponentId": "0",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96072530",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Active Recovery",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>For quality:<br>Bike Erg, 30 mins<br>Stretch, 20 mins<br>Sauna, 20 mins</p><p>Cold Plunge 5-10 mins</p>",
+    "Rounds": 0,
+    "ResultTypeId": 6,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": true,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 2,
+    "ComponentId": "35845938",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96072529",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Yoga Flow",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p>2 Rounds<br>Right Leg + Left Leg<br>:15sec Down Dog<br>:30sec Low Lunge<br>:15 Elbow to Knee and Rotate<br>:15sec Reach to Sky and Hold<br>:30sec Half Kneeling Hamstring Stretch<br>:30sec Pigeon</p><p> </p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://youtu.be/W4gtQ6aoCzE\">PRVN Yoga Flow</a></li></ul>",
+    "Rounds": 0,
+    "ResultTypeId": 13,
+    "IsResultTypeEachRound": false,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": true,
+    "EachRoundTypeLabel": "",
+    "ScalingId": 1,
+    "ComponentId": "36037142",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  },
+  {
+    "Id": "96072591",
+    "IsSection": false,
+    "IsVideoURL": false,
+    "IsImage": false,
+    "IsWarmup": false,
+    "IsGymnastics": false,
+    "IsWeightlifting": false,
+    "IsMetcon": true,
+    "IsWeightliftingTotal": false,
+    "Name": "Swim Conditioning 150824",
+    "Comment": "",
+    "VideoURL": "",
+    "VideoURLComment": "",
+    "ImageURL": "",
+    "ImageFilename": "",
+    "ImageComment": "",
+    "PrefixText": "",
+    "MeasureIsMaxEffort": false,
+    "MeasureRepScheme": "",
+    "Description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\"><strong>Main Set</strong></span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\"><strong>6x200 swim</strong></span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\"><strong>odds- w/fins @ steady pace</strong></span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\"><strong>evens- fastest pace you can hold each time</strong></span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\"><strong>Rest 30sec between intervals</strong></span></p><p> </p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">Warm-Up</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">2x</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">100m swim</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">50m kick</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">--</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">4x25m swim descending 1-4</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">rest :15 second between each</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">--</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">Rest 1:00 minute</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">---</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">4x50m swim descending 1-4</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">rest :15 second between each</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">---</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">Rest 1:00 minute</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">---</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">200m Pull with Paddles and Buoy</span><br><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">*Consistent effort focus on long pull</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">and feeling the pressure of the water</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">on your hands</span><br> </p><p>Main Set</p><p> </p><p><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">Cooldown:</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(103,106,108);font-size:13px;\">100m Easy</span></p>",
+    "Rounds": 6,
+    "ResultTypeId": 10,
+    "IsResultTypeEachRound": true,
+    "IsResultTypeNoMeasure": false,
+    "IsResultTypeCheckmark": false,
+    "EachRoundTypeLabel": "For Distance",
+    "ScalingId": 2,
+    "ComponentId": "38199206",
+    "ComponentExternalURL": "",
+    "ComponentSystemComment": "",
+    "TotalWeightLiftingComponents": {
+      "List": [],
+      "EmptyListItem": ""
+    },
+    "WorkoutComponentResults": {
+      "List": [
+        {
+          "ClassId": "150674687",
+          "StartTime": "07:00:00",
+          "HasResultsForClass": false,
+          "PerformanceResultId": "0",
+          "FullyFormattedResult": "",
+          "IsRx": false,
+          "IsRxPlus": false,
+          "HasBeenScored": false
+        }
+      ]
+    },
+    "HasPerformedAtLeastOnce": false,
+    "HasAtLeastOneWorkoutComponentResult": false
+  }
+]
