@@ -1,4 +1,4 @@
-import { login, listWorkoutComponents, listClasses, signinClass, getGymDateTime } from './wodify/api.js'
+import { login, listWorkoutComponents, listClasses, signinClass, getCustomerDateTime } from './wodify/api.js'
 import { getPrimaryWorkout, excludeExtras, excludeScaled, excludeWarmup, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
@@ -90,7 +90,7 @@ export async function signin({
   excludeClasses,
 }: SigninParams): Promise<string> {
   const session = await loginWrapper(username, password)
-  const [gymTime, classes] = await Promise.all([getGymDateTime(session), listClasses(session, date)])
+  const [customerDateTime, classes] = await Promise.all([getCustomerDateTime(session), listClasses(session, date)])
   const filteredClasses = classes.filter(createClassesFilter(includeClasses, excludeClasses))
   const alreadySignedIn = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
   const alreadyReserved = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
@@ -99,7 +99,7 @@ export async function signin({
       c.ClassReservationStatusId === ReservationStatusId.None &&
       c.IsAvailable &&
       // if signing in for today, only show future classes
-      (date === gymTime.GymCurrDate ? c.StartTime >= gymTime.GymCurrTime : true)
+      (date === customerDateTime.CurrentDate ? c.StartTime >= customerDateTime.CurrentTime : true)
   )
   const signInto = alreadyReserved || nextAvailable
 

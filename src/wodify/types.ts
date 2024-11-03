@@ -3,11 +3,17 @@ export type User = {
   ClientHasProgression: boolean
   CustomerId: string
   CustomerPublicName: string
+  DateOfBirth: string
+  DefaultTab: number
   FirstDayOfWeek: number
   FirstName: string
+  GenderId: string
   GlobalUserId: string
   GymProgramId: string
-  IsCoachOrAbove: boolean
+  IsAdmin: boolean
+  IsBirthdayPrivate: boolean
+  IsCoach: boolean
+  IsManager: boolean
   IsNonPrd: boolean
   IsUse24HourTime: boolean
   IsUserSuspended: boolean
@@ -18,6 +24,7 @@ export type User = {
   SystemOfMeasureWeight: number
   UserAllowedToComment: boolean
   UserId: string
+  UserProfileImageURL: string
 }
 
 export type Program = {
@@ -28,15 +35,19 @@ export type Program = {
 }
 
 export type Class = {
+  CanCancelSignIn: boolean
   CanSignin: boolean
   ClassLimit: number
   ClassReservationStatusId: string
+  CoachImgUrl: string
+  CoachName: string
   Description: string
   EndTime: string
   Id: string
   IsAvailable: boolean
   IsWaitlisting: boolean
   Name: string
+  OnlineMembershipSaleId: string
   ProgramId: string
   ReservationCount: number
   StartTime: string
@@ -89,9 +100,10 @@ export enum ReservationStatusId {
   SignedIn = '3',
 }
 
-export type GymDateTime = {
-  GymCurrDate: string
-  GymCurrTime: string
+export type CustomerDateTime = {
+  CurrentDate: string
+  CurrentTime: string
+  CurrentDateTime: string
 }
 
 // network
@@ -113,6 +125,12 @@ export type LoginResponse = {
       ResponseUserData: User
       Error: RequestError
     }
+  }
+}
+
+export type GetCustomerDateTimeResponse = {
+  data: {
+    Response: CustomerDateTime
   }
 }
 
@@ -161,7 +179,7 @@ export type GetClassesResponse = {
   }
 }
 
-export type GetAllDataResponse = {
+export type GetAllWorkoutDataResponse = {
   data: {
     ErrorMessage: string
     ResponseWorkout: {
@@ -172,14 +190,6 @@ export type GetAllDataResponse = {
         }
       }
     }
-  }
-}
-
-export type GetClassesAttendanceResponse = {
-  data: {
-    GymCurrDate: string
-    GymCurrTime: string
-    Classes: RequestError
   }
 }
 

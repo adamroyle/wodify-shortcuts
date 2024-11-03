@@ -60,22 +60,28 @@ type ApiName =
   | 'LocationsPrograms'
   | 'GetClassesAttendance'
   | 'GetClasses'
-  | 'GetAllData'
+  | 'GetAllWorkoutData'
   | 'GetClassAccesses'
   | 'CreateClassReservation'
   | 'SignInClass'
   | 'CancelClassReservation'
+  | 'GetCustomerDateTime'
 
 const apiEndpoints: { [key in ApiName]: string } = {
   Login: 'screenservices/WodifyClient/ActionDo_Login',
   LocationsPrograms: 'screenservices/WodifyClient_CS/ActionSyncLocationsPrograms',
   GetClassesAttendance: 'screenservices/WodifyClient_Class/Classes/Attendance/DataActionGetClasses',
-  GetClasses: 'screenservices/WodifyClient_Class/Classes/Classes/DataActionGetClasses',
-  GetAllData: 'screenservices/WodifyClient_Performance/Exercise/Workout/DataActionGetAllData',
-  GetClassAccesses: 'screenservices/WodifyClient_Class/Classes/Class/DataActionGetClassAccesses',
+  GetClasses:
+    'screenservices/WodifyClient_DataFetch_WB/Schedule_OS/GetClassList_ForClient_WithReservationCounts_WB/DataActionGetClassList_ForClient_WithReservationCounts',
+  GetAllWorkoutData:
+    'screenservices/WodifyClient_DataFetch_WB/WOD_Flow/GetAllWorkoutData_WB/DataActionGetAllWorkoutData',
+  GetClassAccesses:
+    'screenservices/WodifyClient_DataFetch_WB/Schedule_OS/GetClassListAccesses_WB/DataActionGetClassListAccesses',
   CreateClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICreateClassReservation',
   SignInClass: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass',
   CancelClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICancelClassReservation',
+  GetCustomerDateTime:
+    'screenservices/WodifyClient_DataFetch_WB/Customer_OS/GetCustomerDateTime_WB/DataActionGetCustomerDateTime',
 }
 
 type Api = {
@@ -108,7 +114,24 @@ export async function createApiCache(): Promise<ApiCache> {
     fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`)).then(toText),
     fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`)).then(toText),
     fetch(withVersion(`${BASE}/scripts/WodifyClient_Performance.Exercise.Workout.mvc.js`)).then(toText),
-  ]).then((str) => str.join(''))
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.WOD_Flow.GetAllWorkoutData_WB.mvc.js`)).then(toText),
+    fetch(
+      withVersion(
+        `${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassList_ForClient_WithReservationCounts_WB.mvc.js`
+      )
+    ).then(toText),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassListAccesses_WB.mvc.js`)).then(
+      toText
+    ),
+    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Customer_OS.GetCustomerDateTime_WB.mvc.js`)).then(
+      toText
+    ),
+  ])
+    .catch((error) => {
+      console.error('Error fetching codebase:', error)
+      throw error
+    })
+    .then((str) => str.join(''))
 
   const createApi: (apiName: ApiName) => Api = (apiName: ApiName) => {
     const matches = codebase.match(new RegExp(`"${apiEndpoints[apiName]}", "(.*?)"`))
@@ -125,12 +148,13 @@ export async function createApiCache(): Promise<ApiCache> {
     Login: createApi('Login'),
     LocationsPrograms: createApi('LocationsPrograms'),
     GetClassesAttendance: createApi('GetClassesAttendance'),
-    GetAllData: createApi('GetAllData'),
+    GetAllWorkoutData: createApi('GetAllWorkoutData'),
     GetClasses: createApi('GetClasses'),
     GetClassAccesses: createApi('GetClassAccesses'),
     CreateClassReservation: createApi('CreateClassReservation'),
     SignInClass: createApi('SignInClass'),
     CancelClassReservation: createApi('CancelClassReservation'),
+    GetCustomerDateTime: createApi('GetCustomerDateTime'),
   }
 }
 
