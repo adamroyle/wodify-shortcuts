@@ -1,4 +1,4 @@
-import cookieBuilder from 'cookie'
+import * as cookieBuilder from 'cookie'
 import cookieParser from 'set-cookie-parser'
 
 import {
