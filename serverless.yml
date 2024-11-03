@@ -1,3 +1,5 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: adamroyle
 service: wodify-client-api
 frameworkVersion: '4'
 
