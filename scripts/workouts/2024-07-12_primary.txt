@@ -31,9 +31,3 @@ RX - 43/30kg
 RX+ 61/43kg
 Score - total time for both parts, incomplete reps get added as seconds to score, 1 Rep = 10 Seconds added to total time.
 Overall Cap 22:00
-
-Scaling: Intermediate
-Rope Climbs 2, 3 , 4 , 5
-
-Beginner: Rope Climbs 1, 1, 1, 2
-Laybacks 4, 8 ,12, 16

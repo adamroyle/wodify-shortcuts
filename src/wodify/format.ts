@@ -23,6 +23,7 @@ export function excludeExtras(workoutComponents: WorkoutComponent[]): WorkoutCom
 }
 
 // this removes the Intermediate and Beginner scaling options for the primary workout
+// but only if they are multi-line (single line scaling options are kept)
 export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutComponent[] {
   return workoutComponents.map((c) => {
     return {
@@ -30,7 +31,13 @@ export function excludeScaled(workoutComponents: WorkoutComponent[]): WorkoutCom
       Description: htmlToPlainText(c.Description)
         .replace(/^[^a-z0-9\n]*INTERMEDIATE[^a-z0-9\n]*\n.+$/ims, '')
         .replace(/^Scaling:.+$/ims, '')
-        .replace(/^Int\.\n.+^Beg\.\n.+/ims, ''),
+        .replace(/^RX\+:\s*\n.+/ims, '')
+        .replace(/^Int\.?\n.+^Beg\.?\n.+/ims, ''),
+      Comment: htmlToPlainText(c.Comment)
+        .replace(/^[^a-z0-9\n]*INTERMEDIATE[^a-z0-9\n]*\n.+$/ims, '')
+        .replace(/^Scaling:.+$/ims, '')
+        .replace(/^RX\+:\s*\n.+/ims, '')
+        .replace(/^Int\.?\n.+^Beg\.?\n.+/ims, ''),
     }
   })
 }
