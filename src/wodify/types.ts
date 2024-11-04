@@ -181,12 +181,14 @@ export type GetClassesResponse = {
 
 export type GetAllWorkoutDataResponse = {
   data: {
-    ErrorMessage: string
-    ResponseWorkout: {
-      WorkoutError: RequestError
-      ResponseWorkoutActions: {
-        WorkoutComponents: {
-          List: WorkoutComponent[]
+    Response: {
+      ErrorMessage: string
+      ResponseWorkout: {
+        WorkoutError: RequestError
+        ResponseWorkoutActions: {
+          WorkoutComponents: {
+            List: WorkoutComponent[]
+          }
         }
       }
     }

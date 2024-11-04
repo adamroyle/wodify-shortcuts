@@ -121,8 +121,8 @@ export async function listWorkoutComponents(
       },
     },
   })
-    .then(toJson<GetAllWorkoutDataResponse>(topLevelErrorResolver))
-    .then((json) => json.data.ResponseWorkout.ResponseWorkoutActions.WorkoutComponents.List)
+    .then(toJson<GetAllWorkoutDataResponse>((json) => json.data.Response.ResponseWorkout.WorkoutError))
+    .then((json) => json.data.Response.ResponseWorkout.ResponseWorkoutActions.WorkoutComponents.List)
 }
 
 export async function getClassAccess(session: Session, classId: string): Promise<ClassAccess> {
