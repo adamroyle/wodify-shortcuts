@@ -122,6 +122,7 @@ export type ModuleInfoResponse = {
 export type LoginResponse = {
   data: {
     Response: {
+      Customer: string
       ResponseUserData: User
       Error: RequestError
     }

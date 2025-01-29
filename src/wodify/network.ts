@@ -8,6 +8,7 @@ export type Session = {
   CsrfToken: string
   Cookie: string
   User: User
+  Customer: string
 }
 
 // utilities

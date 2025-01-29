@@ -1,4 +1,4 @@
-import { login, listClasses } from '../src/wodify/api'
+import { login, listClasses, getCustomerDateTime } from '../src/wodify/api'
 
 async function main(username: string, password: string, date: string) {
   const start = Date.now()
@@ -6,6 +6,8 @@ async function main(username: string, password: string, date: string) {
   try {
     const session = await login(username, password)
     console.log(session)
+    const dateTime = await getCustomerDateTime(session)
+    console.log(dateTime)
     const classes = await listClasses(session, date)
     console.log(classes)
   } catch (e: any) {

@@ -51,6 +51,7 @@ export async function login(username: string, password: string): Promise<Session
     CsrfToken: csrfToken,
     Cookie: cookie,
     User: loginResponse.data.Response.ResponseUserData,
+    Customer: loginResponse.data.Response.Customer,
   }
 }
 
@@ -60,7 +61,7 @@ export async function getCustomerDateTime(session: Session): Promise<CustomerDat
     screenData: {
       variables: {
         In_Request: {
-          LocationId: session.User.ActiveLocationId,
+          Customer: session.Customer,
         },
       },
     },
