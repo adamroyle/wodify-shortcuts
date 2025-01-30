@@ -16,7 +16,7 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
     console.error('Date, email and password are required.')
     return {
       statusCode: 400,
-      body: 'Date, email and password are required.',
+      body: 'Date, email and password are required.\n',
     }
   }
 
@@ -30,7 +30,7 @@ export const getWorkoutHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyR
     console.error(error.message, { user: hash(email), date, includeWarmup, includeExtras, includeScaled })
     return {
       statusCode: 500,
-      body: error.message,
+      body: error.message + '\n',
     }
   }
 }
@@ -46,7 +46,7 @@ export const getAllWorkoutsHandler: Handler<APIGatewayProxyEventV2, APIGatewayPr
     console.error('Start date, end date, email and password are required.')
     return {
       statusCode: 400,
-      body: 'Start date, end date, email and password are required.',
+      body: 'Start date, end date, email and password are required.\n',
     }
   }
 
@@ -60,7 +60,7 @@ export const getAllWorkoutsHandler: Handler<APIGatewayProxyEventV2, APIGatewayPr
     console.error(error.message, { user: hash(email), dateStart, dateEnd })
     return {
       statusCode: 500,
-      body: error.message,
+      body: error.message + '\n',
     }
   }
 }
@@ -82,7 +82,7 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
     console.error('Date, email and password are required.')
     return {
       statusCode: 400,
-      body: 'Date, email and password are required.',
+      body: 'Date, email and password are required.\n',
     }
   }
 
@@ -91,13 +91,13 @@ export const signinHandler: Handler<APIGatewayProxyEventV2, APIGatewayProxyResul
     console.log(message, { user: hash(email), date, includeClasses, excludeClasses })
     return {
       statusCode: 200,
-      body: message,
+      body: message + '\n',
     }
   } catch (error: any) {
     console.error(error.message, { user: hash(email), date, includeClasses, excludeClasses })
     return {
       statusCode: 500,
-      body: error.message,
+      body: error.message + '\n',
     }
   }
 }
