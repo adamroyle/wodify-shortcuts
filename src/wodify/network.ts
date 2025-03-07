@@ -79,7 +79,7 @@ const apiEndpoints: { [key in ApiName]: string } = {
   GetClassAccesses:
     'screenservices/WodifyClient_DataFetch_WB/Schedule_OS/GetClassListAccesses_WB/DataActionGetClassListAccesses',
   CreateClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICreateClassReservation',
-  SignInClass: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass',
+  SignInClass: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPISignInClass_Mobile',
   CancelClassReservation: 'screenservices/WodifyClient_Class/Classes/Class/ServiceAPICancelClassReservation',
   GetCustomerDateTime:
     'screenservices/WodifyClient_DataFetch_WB/Customer_OS/GetCustomerDateTime_WB/DataActionGetCustomerDateTime',
@@ -108,26 +108,31 @@ export async function createApiCache(): Promise<ApiCache> {
     return url.toString()
   }
 
-  const codebase = await Promise.all([
-    fetch(withVersion(`${BASE}/scripts/WodifyClient.controller.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_CS.controller.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Classes.mvc.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_Performance.Exercise.Workout.mvc.js`)).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.WOD_Flow.GetAllWorkoutData_WB.mvc.js`)).then(toText),
-    fetch(
-      withVersion(
-        `${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassList_ForClient_WithReservationCounts_WB.mvc.js`
-      )
-    ).then(toText),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassListAccesses_WB.mvc.js`)).then(
-      toText
-    ),
-    fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Customer_OS.GetCustomerDateTime_WB.mvc.js`)).then(
-      toText
-    ),
-  ])
+  const codebase = await Promise.all(
+    // prettier-ignore
+    [
+      // Login
+      fetch(withVersion(`${BASE}/scripts/WodifyClient.controller.js`)).then(toText),
+      // LocationsPrograms
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_CS.controller.js`)).then(toText),
+      // GetClassesAttendance
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`)).then(toText),
+      // CreateClassReservation
+      // CancelClassReservation
+      // SignInClass
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`)).then(toText),
+      // GetClasses
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_Performance.Exercise.Modal_WorkoutSignInToClass.mvc.js`)).then(toText),
+      // GetAllWorkoutData
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.WOD_Flow.GetAllWorkoutData_WB.mvc.js`)).then(toText),
+      // GetClasses
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassList_ForClient_WithReservationCounts_WB.mvc.js`)).then(toText),
+      // GetClassAccesses
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassListAccesses_WB.mvc.js`)).then(toText),
+      // GetCustomerDateTime
+      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Customer_OS.GetCustomerDateTime_WB.mvc.js`)).then(toText),
+    ]
+  )
     .catch((error) => {
       console.error('Error fetching codebase:', error)
       throw error
