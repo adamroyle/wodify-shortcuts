@@ -144,7 +144,7 @@ POST https://adam.royle.dev/wodify/signin
 | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | email         | Yes      | The email used to login to Wodify.                                                                                                                         |
 | password      | Yes      | The password used to login to Wodify.                                                                                                                      |
-| date          | Yes      | The date in ISO 8601 format.                                                                                                                               |
+| date          | Yes      | The date or date/time in ISO 8601 format. If no time is specified, it will default to current Australia/Brisbane time.                                     |
 | include_class | No       | Exclude classes without a matching title. Case-insensitive. **Allows partial matches.** Multiple supported with duplicate param or separated by a newline. |
 | exclude_class | No       | Exclude classes with a matching title. Case-insensitive. **Allows partial matches.** Multiple supported with duplicate param or separated by a newline.    |
 
@@ -155,6 +155,16 @@ curl https://adam.royle.dev/wodify/signin \
   --data email=email@example.com \
   --data password=YourPassword1 \
   --data date=2022-09-27 \
+  --data include_class=crossfit
+```
+
+If you want to specify a time:
+
+```sh
+curl https://adam.royle.dev/wodify/signin \
+  --data email=email@example.com \
+  --data password=YourPassword1 \
+  --data date=2022-09-27T16:30:00 \
   --data include_class=crossfit
 ```
 

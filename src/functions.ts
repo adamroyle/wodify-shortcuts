@@ -1,4 +1,4 @@
-import { login, listWorkoutComponents, listClasses, signinClass, getCustomerDateTime } from './wodify/api.js'
+import { login, listWorkoutComponents, listClasses, signinClass } from './wodify/api.js'
 import { getPrimaryWorkout, excludeExtras, excludeScaled, excludeWarmup, formatWorkout } from './wodify/format.js'
 import { Class, ReservationStatusId } from './wodify/types.js'
 
@@ -90,16 +90,13 @@ export async function signin({
   excludeClasses,
 }: SigninParams): Promise<string> {
   const session = await loginWrapper(username, password)
-  const [customerDateTime, classes] = await Promise.all([getCustomerDateTime(session), listClasses(session, date)])
+  const [dateString, timeString] = parseDateTime(date)
+  const classes = await listClasses(session, dateString)
   const filteredClasses = classes.filter(createClassesFilter(includeClasses, excludeClasses))
   const alreadySignedIn = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.SignedIn)
   const alreadyReserved = filteredClasses.find((c) => c.ClassReservationStatusId === ReservationStatusId.Reserved)
   const nextAvailable = filteredClasses.find(
-    (c) =>
-      c.ClassReservationStatusId === ReservationStatusId.None &&
-      c.IsAvailable &&
-      // if signing in for today, only show future classes
-      (date === customerDateTime.CurrentDate ? c.StartTime >= customerDateTime.CurrentTime : true)
+    (c) => c.ClassReservationStatusId === ReservationStatusId.None && c.IsAvailable && c.StartTime >= timeString
   )
   const signInto = alreadyReserved || nextAvailable
 
@@ -165,4 +162,26 @@ function getDateRange(dateStart: string, dateEnd: string): string[] {
 function getDayName(date: string): string {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   return days[new Date(date).getDay()]
+}
+
+function parseDateTime(date: string): [string, string] {
+  const matches = date.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}:\d{2})/)
+  if (matches) {
+    return [matches[1], matches[2]]
+  }
+  const time = formatTimeInTimezone(new Date(), 'Australia/Brisbane')
+  return [date, time]
+}
+
+function formatTimeInTimezone(date: Date, timeZone: string): string {
+  const parts = new Intl.DateTimeFormat('en-AU', {
+    timeZone,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).formatToParts(date)
+
+  const get = (type: string) => parts.find((p) => p.type === type)?.value
+  return `${get('hour')}:${get('minute')}:${get('second')}`
 }
