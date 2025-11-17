@@ -10,7 +10,7 @@ Tap these icons to save them to your Shortcuts app.
 
 <p>
 <a href="https://www.icloud.com/shortcuts/8a27e4ffdafc4dea92aa36e9c235ea01"><img width="150" height="104" alt="signin" src="https://github.com/user-attachments/assets/75357891-288f-4f7e-990a-d3199cc4e39e" /></a>
-<a href="https://www.icloud.com/shortcuts/ada718181aab4580a4305855a38405c0"><img width="150" height="104" alt="upcoming" src="https://github.com/user-attachments/assets/ab62a74f-32bc-4f36-aa2b-ee68115275d1" /></a>
+<a href="https://www.icloud.com/shortcuts/ca52a6002da74b2c821b816c4a3b74f9"><img width="150" height="104" alt="upcoming" src="https://github.com/user-attachments/assets/ab62a74f-32bc-4f36-aa2b-ee68115275d1" /></a>
 <a href="https://www.icloud.com/shortcuts/320b006c0cf945bc92a8de556047c8b6"><img width="150" height="104" alt="tomorrow" src="https://github.com/user-attachments/assets/242a4726-3ce1-44c0-916c-ffef91e388b7" /></a>
 <a href="https://www.icloud.com/shortcuts/fe4749c122514a67a9bf39eadb71ae01"><img width="150" height="104" alt="today" src="https://github.com/user-attachments/assets/76fd599d-f08b-4e33-9c4c-add80c5a661a" /></a>
 </p>
