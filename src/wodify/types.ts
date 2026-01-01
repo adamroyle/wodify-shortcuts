@@ -113,12 +113,6 @@ export type RequestError = {
   ErrorMessage: string
 }
 
-export type ModuleInfoResponse = {
-  manifest: {
-    urlVersions: { [key: string]: string }
-  }
-}
-
 export type LoginResponse = {
   data: {
     Response: {

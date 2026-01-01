@@ -1,4 +1,4 @@
-import type { User, RequestError, LocationsProgramsResponse, Program, ModuleInfoResponse } from './types.js'
+import type { User, RequestError, LocationsProgramsResponse, Program } from './types.js'
 
 const BASE = 'https://app.wodify.com/WodifyClient'
 
@@ -94,17 +94,24 @@ type ApiCache = Record<ApiName, Api>
 
 let apiCache: Promise<ApiCache> | undefined
 
-async function getModuleInfo(): Promise<ModuleInfoResponse> {
-  const response = await fetch(`${BASE}/moduleservices/moduleinfo`)
-  return await toJson<ModuleInfoResponse>()(response)
+async function getUrlVersions(): Promise<string[]> {
+  const response = await fetch(`${BASE}/pwaServiceWorker.js`)
+  const text = await response.text()
+  const matches = text.matchAll(/^"(\/WodifyClient\/.+?)",$/gm)
+  const urls = []
+  for (let match of matches) {
+    urls.push(match[1])
+  }
+  return urls
 }
 
 export async function createApiCache(): Promise<ApiCache> {
-  const moduleInfo = await getModuleInfo()
+  const urlVersions = await getUrlVersions()
 
-  const withVersion = (moduleUrl: string) => {
-    const url = new URL(moduleUrl)
-    url.search = moduleInfo.manifest.urlVersions[url.pathname]
+  const getFullUrl = (pathFragment: string) => {
+    const path = urlVersions.find((url) => url.includes(pathFragment))
+    if (!path) throw new Error(`Could not find URL with path fragment: ${pathFragment}`)
+    const url = new URL(path, BASE)
     return url.toString()
   }
 
@@ -112,25 +119,25 @@ export async function createApiCache(): Promise<ApiCache> {
     // prettier-ignore
     [
       // Login
-      fetch(withVersion(`${BASE}/scripts/WodifyClient.controller.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient.controller')).then(toText),
       // LocationsPrograms
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_CS.controller.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_CS.controller')).then(toText),
       // GetClassesAttendance
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Attendance.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_Class.Classes.Attendance.mvc')).then(toText),
       // CreateClassReservation
       // CancelClassReservation
       // SignInClass
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_Class.Classes.Class.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_Class.Classes.Class.mvc')).then(toText),
       // GetClasses
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_Performance.Exercise.Modal_WorkoutSignInToClass.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_Performance.Exercise.Modal_WorkoutSignInToClass.mvc')).then(toText),
       // GetAllWorkoutData
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.WOD_Flow.GetAllWorkoutData_WB.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_DataFetch_WB.WOD_Flow.GetAllWorkoutData_WB.mvc')).then(toText),
       // GetClasses
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassList_ForClient_WithReservationCounts_WB.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_DataFetch_WB.Schedule_OS.GetClassList_ForClient_WithReservationCounts_WB.mvc')).then(toText),
       // GetClassAccesses
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Schedule_OS.GetClassListAccesses_WB.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_DataFetch_WB.Schedule_OS.GetClassListAccesses_WB.mvc')).then(toText),
       // GetCustomerDateTime
-      fetch(withVersion(`${BASE}/scripts/WodifyClient_DataFetch_WB.Customer_OS.GetCustomerDateTime_WB.mvc.js`)).then(toText),
+      fetch(getFullUrl('WodifyClient_DataFetch_WB.Customer_OS.GetCustomerDateTime_WB.mvc')).then(toText),
     ]
   )
     .catch((error) => {
