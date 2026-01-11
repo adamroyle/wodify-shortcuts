@@ -28,7 +28,7 @@ import type {
 } from './types.js'
 
 export async function login(username: string, password: string): Promise<Session> {
-  const response = await callApi('Login', null, {
+  const response = await callApi('PrepareLogin', null, {
     viewName: 'Home.Login',
     inputParameters: {
       Request: {
@@ -43,15 +43,33 @@ export async function login(username: string, password: string): Promise<Session
 
   const loginResponse = await toJson<LoginResponse>(defaultErrorResolver)(response)
 
-  const cookies = response.headers.getSetCookie().map((c) => cookieParser.parseString(c))
+  const session = parseSession(loginResponse, response.headers)
+
+  const response2 = await callApi('Login', session, {
+    viewName: 'Home.Login',
+    inputParameters: {
+      ValidatedLogin: {
+        Customer: session.Customer,
+        UserData: session.User,
+      },
+    },
+  })
+
+  const loginResponse2 = await toJson<LoginResponse>(defaultErrorResolver)(response2)
+
+  return parseSession(loginResponse2, response2.headers)
+}
+
+function parseSession(response: LoginResponse, headers: Headers): Session {
+  const cookies = headers.getSetCookie().map((c) => cookieParser.parseString(c))
   const csrfToken = cookieParser.parseString(cookies.find((c) => c.name === 'nr2W_Theme_UI')?.value || '').value
   const cookie = cookies.map((c) => cookieBuilder.serialize(c.name, c.value)).join('; ')
 
   return {
     CsrfToken: csrfToken,
     Cookie: cookie,
-    User: loginResponse.data.Response.ResponseUserData,
-    Customer: loginResponse.data.Response.Customer,
+    User: response.data.Response.ResponseUserData,
+    Customer: response.data.Response.Customer,
   }
 }
 

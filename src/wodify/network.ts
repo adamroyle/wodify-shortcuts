@@ -57,6 +57,7 @@ export const topLevelErrorResolver = (responseData: { data: { ErrorMessage: stri
 }
 
 type ApiName =
+  | 'PrepareLogin'
   | 'Login'
   | 'LocationsPrograms'
   | 'GetClassesAttendance'
@@ -69,6 +70,7 @@ type ApiName =
   | 'GetCustomerDateTime'
 
 const apiEndpoints: { [key in ApiName]: string } = {
+  PrepareLogin: 'screenservices/WodifyClient/ActionPrepare_Login',
   Login: 'screenservices/WodifyClient/ActionDo_Login',
   LocationsPrograms: 'screenservices/WodifyClient_CS/ActionSyncLocationsPrograms',
   GetClassesAttendance: 'screenservices/WodifyClient_Class/Classes/Attendance/DataActionGetClasses',
@@ -158,6 +160,7 @@ export async function createApiCache(): Promise<ApiCache> {
   }
 
   return {
+    PrepareLogin: createApi('PrepareLogin'),
     Login: createApi('Login'),
     LocationsPrograms: createApi('LocationsPrograms'),
     GetClassesAttendance: createApi('GetClassesAttendance'),
