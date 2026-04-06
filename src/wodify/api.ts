@@ -68,7 +68,7 @@ function parseSession(response: LoginResponse, headers: Headers): Session {
   return {
     CsrfToken: csrfToken,
     Cookie: cookie,
-    User: response.data.Response.ResponseUserData,
+    User: response.data.Response.ResponseGetUserData,
     Customer: response.data.Response.Customer,
   }
 }

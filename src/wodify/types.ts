@@ -117,7 +117,7 @@ export type LoginResponse = {
   data: {
     Response: {
       Customer: string
-      ResponseUserData: User
+      ResponseGetUserData: User
       Error: RequestError
     }
   }
@@ -152,10 +152,10 @@ export type LocationsProgramsResponse = {
                 SecureProgrammingEnabled: boolean
                 SecureProgrammingOptionId: number
                 IsActive: boolean
-              }
+              },
             ]
           }
-        }
+        },
       ]
     }
   }
