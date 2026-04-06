@@ -108,6 +108,22 @@ export type CustomerDateTime = {
 
 // network
 
+export type GetAllWorkoutDataResponse = {
+  data: {
+    Response: {
+      ErrorMessage: string
+      ResponseWorkout: {
+        WorkoutError: RequestError
+        ResponseWorkoutActions: {
+          WorkoutComponents: {
+            List: WorkoutComponent[]
+          }
+        }
+      }
+    }
+  }
+}
+
 export type RequestError = {
   HasError: boolean
   ErrorMessage: string
@@ -133,30 +149,26 @@ export type LocationsProgramsResponse = {
   data: {
     ErrorMessage: string
     Locations: {
-      List: [
-        {
-          LocationId: string
-          LocationName: string
-          HasEnforceMembershipLimits: boolean
-          LocalPrograms: {
-            List: [
-              {
-                Id: string
-                ProgramId: string
-                LocalLocationId: string
-                Name: string
-                Description: string
-                Color: string
-                PublishExternally: boolean
-                CountTowardsAttendanceLimits: boolean
-                SecureProgrammingEnabled: boolean
-                SecureProgrammingOptionId: number
-                IsActive: boolean
-              },
-            ]
-          }
-        },
-      ]
+      List: {
+        LocationId: string
+        LocationName: string
+        HasEnforceMembershipLimits: boolean
+        LocalPrograms: {
+          List: {
+            Id: string
+            ProgramId: string
+            LocalLocationId: string
+            Name: string
+            Description: string
+            Color: string
+            PublishExternally: boolean
+            CountTowardsAttendanceLimits: boolean
+            SecureProgrammingEnabled: boolean
+            SecureProgrammingOptionId: number
+            IsActive: boolean
+          }[]
+        }
+      }[]
     }
   }
 }
@@ -168,22 +180,6 @@ export type GetClassesResponse = {
       ResponseClassList: {
         Class: {
           List: Class[]
-        }
-      }
-    }
-  }
-}
-
-export type GetAllWorkoutDataResponse = {
-  data: {
-    Response: {
-      ErrorMessage: string
-      ResponseWorkout: {
-        WorkoutError: RequestError
-        ResponseWorkoutActions: {
-          WorkoutComponents: {
-            List: WorkoutComponent[]
-          }
         }
       }
     }
