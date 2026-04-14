@@ -61,7 +61,7 @@ async function main(username: string, password: string, date: string) {
   const start = Date.now()
 
   try {
-    const result = await reserve({ username, password, date, includeClasses: ['06:15'], excludeClasses: [] })
+    const result = await reserve({ username, password, date, includeClasses: ['Crossfit'], excludeClasses: [] })
     console.log(result)
   } catch (e: any) {
     console.log('Error:', e.message)

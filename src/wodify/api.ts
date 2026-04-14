@@ -109,7 +109,7 @@ export async function listClasses(session: Session, date: string): Promise<Class
         In_Request: {
           RequestClassList: {
             FromDate: date,
-            CustomerId: session.User.CustomerId,
+            Customer: session.Customer,
             LocationId: session.User.ActiveLocationId,
             UserId: session.User.UserId,
           },
