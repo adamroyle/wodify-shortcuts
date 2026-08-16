@@ -97,14 +97,19 @@ type ApiCache = Record<ApiName, Api>
 let apiCache: Promise<ApiCache> | undefined
 
 async function getUrlVersions(): Promise<string[]> {
-  const response = await fetch(`${BASE}/pwaServiceWorker.js`)
-  const text = await response.text()
-  const matches = text.matchAll(/^"(\/WodifyClient\/.+?)",$/gm)
-  const urls = []
-  for (let match of matches) {
-    urls.push(match[1])
+  const indexResponse = await fetch(`${BASE}/`)
+  const index = await indexResponse.text()
+  const moduleInfoPath = index.match(/["']([^"']*moduleservices\/moduleinfo[^"']*)["']/)?.[1]
+  if (!moduleInfoPath) throw new Error('Could not find module-info URL')
+
+  const moduleInfoResponse = await fetch(new URL(moduleInfoPath, `${BASE}/`))
+  const moduleInfo = (await moduleInfoResponse.json()) as {
+    manifest?: { urlVersions?: Record<string, string> }
   }
-  return urls
+  const urlVersions = moduleInfo.manifest?.urlVersions
+  if (!urlVersions) throw new Error('Could not find URL versions in module-info response')
+
+  return Object.keys(urlVersions)
 }
 
 export async function createApiCache(): Promise<ApiCache> {
