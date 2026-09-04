@@ -97,12 +97,18 @@ type ApiCache = Record<ApiName, Api>
 let apiCache: Promise<ApiCache> | undefined
 
 async function getUrlVersions(): Promise<string[]> {
-  const indexResponse = await fetch(`${BASE}/`)
-  const index = await indexResponse.text()
-  const moduleInfoPath = index.match(/["']([^"']*moduleservices\/moduleinfo[^"']*)["']/)?.[1]
-  if (!moduleInfoPath) throw new Error('Could not find module-info URL')
+  // Follow OutSystems' loader rather than relying on optional HTML preload hints.
+  const headers = { Accept: 'application/json', 'OutSystems-client-env': 'browser' }
+  const versionResponse = await fetch(`${BASE}/moduleservices/moduleversioninfo?${Date.now()}`, { headers })
+  if (!versionResponse.ok) throw new Error(`Could not fetch module version: HTTP ${versionResponse.status}`)
+  const versionInfo = (await versionResponse.json()) as { versionToken?: unknown } | null
+  const versionToken = versionInfo?.versionToken
+  if (typeof versionToken !== 'string' || !versionToken) {
+    throw new Error('Could not find version token in module-version response')
+  }
 
-  const moduleInfoResponse = await fetch(new URL(moduleInfoPath, `${BASE}/`))
+  const moduleInfoResponse = await fetch(`${BASE}/moduleservices/moduleinfo?${versionToken}`, { headers })
+  if (!moduleInfoResponse.ok) throw new Error(`Could not fetch module-info: HTTP ${moduleInfoResponse.status}`)
   const moduleInfo = (await moduleInfoResponse.json()) as {
     manifest?: { urlVersions?: Record<string, string> }
   }

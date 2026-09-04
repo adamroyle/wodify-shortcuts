@@ -2,7 +2,8 @@ import assert from 'node:assert/strict'
 import { createApiCache } from '../src/wodify/network.js'
 
 const BASE = 'https://app.wodify.com/WodifyClient'
-const MODULE_INFO_PATH = 'moduleservices/moduleinfo?current-version'
+const VERSION_TOKEN = 'current+version_token'
+const MODULE_INFO_PATH = `moduleservices/moduleinfo?${VERSION_TOKEN}`
 
 const assetPaths = [
   '/WodifyClient/scripts/WodifyClient.controller__version.js',
@@ -60,15 +61,24 @@ const codebase = Object.values(apiVersions)
 
 const originalFetch = globalThis.fetch
 const requestedUrls: string[] = []
+let versionBody: unknown = { versionToken: VERSION_TOKEN }
+let versionStatus = 200
+let manifestStatus = 200
 
 globalThis.fetch = async (input) => {
   const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : input.url
   requestedUrls.push(url)
 
   if (url === `${BASE}/`) {
-    return new Response(`<link rel="preload" href="${MODULE_INFO_PATH}" as="fetch">`)
+    // Wodify no longer advertises module-info in a preload link.
+    return new Response('<html><body><div id="reactContainer"></div></body></html>')
+  }
+  if (url.startsWith(`${BASE}/moduleservices/moduleversioninfo?`)) {
+    assert.match(new URL(url).search, /^\?\d+$/)
+    return Response.json(versionBody, { status: versionStatus })
   }
   if (url === `${BASE}/${MODULE_INFO_PATH}`) {
+    if (manifestStatus !== 200) return new Response('Unavailable', { status: manifestStatus })
     return Response.json({
       manifest: {
         urlVersions: Object.fromEntries(assetPaths.map((path) => [path, '?version'])),
@@ -89,7 +99,20 @@ try {
     Object.fromEntries(Object.entries(apiVersions).map(([name, [, version]]) => [name, version]))
   )
   assert(requestedUrls.includes(`${BASE}/${MODULE_INFO_PATH}`))
+  assert(!requestedUrls.includes(`${BASE}/`))
   assert(!requestedUrls.includes(`${BASE}/pwaServiceWorker.js`))
+
+  for (const body of [null, {}, { versionToken: '' }, { versionToken: 123 }]) {
+    versionBody = body
+    await assert.rejects(createApiCache(), /Could not find version token in module-version response/)
+  }
+  versionBody = { versionToken: VERSION_TOKEN }
+  versionStatus = 503
+  await assert.rejects(createApiCache(), /Could not fetch module version: HTTP 503/)
+  versionStatus = 200
+  manifestStatus = 503
+  await assert.rejects(createApiCache(), /Could not fetch module-info: HTTP 503/)
+  console.log('PASS: manifest discovery, missing version tokens, and HTTP errors')
 } finally {
   globalThis.fetch = originalFetch
 }
