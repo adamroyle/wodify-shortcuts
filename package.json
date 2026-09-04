@@ -15,20 +15,24 @@
     "dist"
   ],
   "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsm scripts/test-network-manifest.ts && tsm scripts/test-workout-fixtures.ts"
+  },
   "engines": {
     "node": ">=22.0.0"
   },
   "devDependencies": {
-    "@bigfishtv/prettier-config": "^1.0.5",
-    "@types/aws-lambda": "^8.10.143",
-    "@types/set-cookie-parser": "^2.4.10",
-    "serverless": "^4.1.22",
-    "tsm": "^2.2.2",
-    "typescript": "^5.5.4"
+    "@bigfishtv/prettier-config": "^1.1.0",
+    "@types/aws-lambda": "^8.10.163",
+    "@types/node": "22",
+    "serverless": "^4.41.1",
+    "tsm": "^2.3.0",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
-    "cookie": "^1.0.1",
-    "entities-decode": "^2.0.0",
-    "set-cookie-parser": "^2.7.0"
+    "cookie": "^2.0.1",
+    "entities-decode": "^2.0.1",
+    "set-cookie-parser": "^3.1.2"
   }
 }

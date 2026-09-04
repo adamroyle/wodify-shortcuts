@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "rootDir": ".",
     "types": ["node"],
     "declaration": true,
     "outDir": "./dist",

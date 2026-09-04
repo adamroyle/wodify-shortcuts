@@ -1,5 +1,5 @@
-import * as cookieBuilder from 'cookie'
-import cookieParser from 'set-cookie-parser'
+import { stringifyCookie } from 'cookie'
+import { parseSetCookie } from 'set-cookie-parser'
 
 import {
   Session,
@@ -61,9 +61,12 @@ export async function login(username: string, password: string): Promise<Session
 }
 
 function parseSession(response: LoginResponse, headers: Headers): Session {
-  const cookies = headers.getSetCookie().map((c) => cookieParser.parseString(c))
-  const csrfToken = cookieParser.parseString(cookies.find((c) => c.name === 'nr2W_Theme_UI')?.value || '').value
-  const cookie = cookies.map((c) => cookieBuilder.serialize(c.name, c.value)).join('; ')
+  const cookies = parseSetCookie(headers.getSetCookie())
+  const csrfToken = parseSetCookie(cookies.find((c) => c.name === 'nr2W_Theme_UI')?.value || '')[0]?.value || ''
+  // Preserve the previous encoding and duplicate-cookie ordering when sending cookies back to Wodify.
+  const cookie = cookies
+    .map((c) => stringifyCookie({ [c.name]: c.value }, { encode: encodeURIComponent }))
+    .join('; ')
 
   return {
     CsrfToken: csrfToken,

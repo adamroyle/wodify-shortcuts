@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { createApiCache } from '../src/wodify/network.js'
+import { login } from '../src/wodify/api.js'
 
 const BASE = 'https://app.wodify.com/WodifyClient'
 const VERSION_TOKEN = 'current+version_token'
@@ -65,9 +66,37 @@ let versionBody: unknown = { versionToken: VERSION_TOKEN }
 let versionStatus = 200
 let manifestStatus = 200
 
-globalThis.fetch = async (input) => {
+globalThis.fetch = async (input, init) => {
   const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : input.url
   requestedUrls.push(url)
+
+  if (
+    url === `${BASE}/screenservices/WodifyClient/ActionPrepare_Login` ||
+    url === `${BASE}/screenservices/WodifyClient/ActionDo_Login`
+  ) {
+    if (url.endsWith('ActionDo_Login')) {
+      const headers = new Headers(init?.headers)
+      assert.equal(headers.get('x-csrftoken'), 'test-csrf')
+      assert.equal(headers.get('cookie'), 'session=abc%2B123%3D; nr2W_Theme_UI=csrf%3Dtest-csrf')
+    }
+    return Response.json(
+      {
+        data: {
+          Response: {
+            Error: { HasError: false, ErrorMessage: '' },
+            ResponseGetUserData: { UserId: 'test-user' },
+            Customer: 'test-customer',
+          },
+        },
+      },
+      {
+        headers: [
+          ['set-cookie', 'session=abc%2B123%3D; Path=/; HttpOnly'],
+          ['set-cookie', 'nr2W_Theme_UI=csrf%3Dtest-csrf; Path=/'],
+        ],
+      }
+    )
+  }
 
   if (url === `${BASE}/`) {
     // Wodify no longer advertises module-info in a preload link.
@@ -102,6 +131,11 @@ try {
   assert(!requestedUrls.includes(`${BASE}/`))
   assert(!requestedUrls.includes(`${BASE}/pwaServiceWorker.js`))
 
+  const session = await login('fixture@example.test', 'fixture-password')
+  assert.equal(session.CsrfToken, 'test-csrf')
+  assert.equal(session.Cookie, 'session=abc%2B123%3D; nr2W_Theme_UI=csrf%3Dtest-csrf')
+  assert.equal(session.Customer, 'test-customer')
+
   for (const body of [null, {}, { versionToken: '' }, { versionToken: 123 }]) {
     versionBody = body
     await assert.rejects(createApiCache(), /Could not find version token in module-version response/)
@@ -112,7 +146,7 @@ try {
   versionStatus = 200
   manifestStatus = 503
   await assert.rejects(createApiCache(), /Could not fetch module-info: HTTP 503/)
-  console.log('PASS: manifest discovery, missing version tokens, and HTTP errors')
+  console.log('PASS: manifest discovery, login cookies, missing version tokens, and HTTP errors')
 } finally {
   globalThis.fetch = originalFetch
 }
